@@ -6,31 +6,31 @@ She will attempt to contribute helpful community files
 so as to provide value as soon as possible to the community.
 
 - Context
-  - This tutorial is how we extend the [`alice please contribute recommended community standards`](https://github.com/intel/dffml/tree/main/entities/alice#recommend-community-standards)
+  - This tutorial is how we extend the [`alice please contribute recommended community standards`](https://github.com/dffml/dffml/tree/main/entities/alice#recommend-community-standards)
 command.
 - Goals
   - We want to be able to ask Alice to contribute a new kind of
 [recommended community standard](https://opensource.guide/) to our projects.
 - Actions
   - We're going to extend the existing
-[`alice please contribute recommended community standards`](https://github.com/intel/dffml/tree/main/entities/alice#recommend-community-standards)
+[`alice please contribute recommended community standards`](https://github.com/dffml/dffml/tree/main/entities/alice#recommend-community-standards)
 functionality to provide a `CODE_OF_CONDUCT.md` file to a repo if it doesn't
 have one already.
 - References
   - This tutorial is covered in
 [Our Open Source Guide: How to help Alice contribute additional Recommended Community Standards](https://www.youtube.com/watch?v=u2lGjMMIlAo&list=PLtzAOVTpO2ja6DXSCzoF3v_mQDh7l0ymH&index=2)
-  - The resulting commit from completion of this tutorial was: [6c1719f9ec779a9d64bfb3b364e2c41c5ac9aab7](https://github.com/intel/dffml/commit/6c1719f9ec779a9d64bfb3b364e2c41c5ac9aab7)
+  - The resulting commit from completion of this tutorial was: [6c1719f9ec779a9d64bfb3b364e2c41c5ac9aab7](https://github.com/dffml/dffml/commit/6c1719f9ec779a9d64bfb3b364e2c41c5ac9aab7)
 - Feedback
   - Please provide feedback / thoughts for extension / improvement about this tutorial in the following discussion thread: https://github.com/intel/dffml/discussions/1411
 
 ## Setup
 
 We need to get setup for contribing to Alice first
-see https://github.com/intel/dffml/blob/main/entities/alice/CONTRIBUTING.rst
+see https://github.com/dffml/dffml/blob/main/entities/alice/CONTRIBUTING.rst
 for more details.
 
 ```console
-$ git clone -b alice https://github.com/intel/dffml dffml
+$ git clone -b alice https://github.com/dffml/dffml dffml
 $ cd dffml/entities/alice
 $ python -m venv .venv
 $ . .venv/bin/activate
@@ -145,7 +145,7 @@ You can now edit the code in
 
 For tutorials which will help you extend further see the "Data Flow Programming"
 section of the Alice CONTRIBUTING docs.
-https://github.com/intel/dffml/blob/main/entities/alice/CONTRIBUTING.rst#data-flow-programming
+https://github.com/dffml/dffml/blob/main/entities/alice/CONTRIBUTING.rst#data-flow-programming
 
 ## Debugging
 
@@ -160,7 +160,7 @@ $ for pr in $(gh -R https://github.com/$USER/my-new-python-project pr list --jso
 This section is TODO but long term probably
 
 - Future work
-  - `-repos https://github.com/intel/dffml`
+  - `-repos https://github.com/dffml/dffml`
     - Infer from context (cwd)
 
 ### Meta Issue
@@ -170,10 +170,10 @@ Disabled for now
 What the body of the issue should be
 
 ```
-- [] [README](https://github.com/intel/dffml/blob/main/README.md)
+- [] [README](https://github.com/dffml/dffml/blob/main/README.md)
 - [] Code of conduct
-- [] [Contributing](https://github.com/intel/dffml/blob/main/CONTRIBUTING.md)
-- [] [License](https://github.com/intel/dffml/blob/main/LICENSE)
+- [] [Contributing](https://github.com/dffml/dffml/blob/main/CONTRIBUTING.md)
+- [] [License](https://github.com/dffml/dffml/blob/main/LICENSE)
 ```
 
 We will also add now (and later `THREATS.md`)
@@ -193,8 +193,8 @@ We will omit for now
 ## Misc. Notes
 
 - References:
-  - https://github.com/intel/dffml/community/code-of-conduct/new?template=contributor-covenant
-  - https://github.com/intel/dffml/community
+  - https://github.com/dffml/dffml/community/code-of-conduct/new?template=contributor-covenant
+  - https://github.com/dffml/dffml/community
     - List of files / must haves
   - https://opensource.guide/
   - https://github.com/intel/dffml/issues/1393

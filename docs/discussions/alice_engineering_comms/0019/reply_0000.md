@@ -34,7 +34,7 @@
   - https://motor.readthedocs.io/en/stable/api-asyncio/asyncio_motor_collection.html#motor.motor_asyncio.AsyncIOMotorCollection.insert_one
     - > *bypass_document_validation* requires server version **>= 3.2**
     - *bypass_document_validation*: (optional) If `True`, allows the write to opt-out of document level validation. Default is `False`.
-    - https://github.com/intel/dffml/blob/7627341b66f6209b85ea4ae74e3fb4159d125d30/source/mongodb/dffml_source_mongodb/source.py#L32-L39
+    - https://github.com/dffml/dffml/blob/7627341b66f6209b85ea4ae74e3fb4159d125d30/source/mongodb/dffml_source_mongodb/source.py#L32-L39
     - https://motor.readthedocs.io/en/stable/api-asyncio/asyncio_motor_collection.html#motor.motor_asyncio.AsyncIOMotorCollection.replace_one
 - TODO
   - [ ] Docs on on open source async first development model in a way which is a quick onramp to the fully connected development model.

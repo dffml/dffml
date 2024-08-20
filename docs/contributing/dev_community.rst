@@ -6,46 +6,46 @@ project that fits your time budget. Thank you for your help!
 
 - Estimated Time to Complete
 
-  - `XS: Extra Short <https://github.com/intel/dffml/labels/tXS>`_
+  - `XS: Extra Short <https://github.com/dffml/dffml/labels/tXS>`_
 
     - Find and replace, fix a spelling mistake, make a change that shouldn't
       break anything.
 
-  - `S: Short <https://github.com/intel/dffml/labels/tS>`_
+  - `S: Short <https://github.com/dffml/dffml/labels/tS>`_
 
     - Changes that are pretty much localized to one package
 
-  - `M: Medium <https://github.com/intel/dffml/labels/tM>`_
+  - `M: Medium <https://github.com/dffml/dffml/labels/tM>`_
 
     - Changes in one package that require changes in other packages
 
-  - `L: Long <https://github.com/intel/dffml/labels/tL>`_
+  - `L: Long <https://github.com/dffml/dffml/labels/tL>`_
 
     - Changes to core architecture or functionality, API breaking changes
 
-  - `XL: Extra Long <https://github.com/intel/dffml/labels/tXL>`_
+  - `XL: Extra Long <https://github.com/dffml/dffml/labels/tXL>`_
 
     - Re-write the codebase(s) in another language
 
 - Priority
 
-  - `p4 <https://github.com/intel/dffml/labels/p4>`_
+  - `p4 <https://github.com/dffml/dffml/labels/p4>`_
 
     - Nice To Have
 
-  - `p3 <https://github.com/intel/dffml/labels/p3>`_
+  - `p3 <https://github.com/dffml/dffml/labels/p3>`_
 
     - Average Priority
 
-  - `p2 <https://github.com/intel/dffml/labels/p2>`_
+  - `p2 <https://github.com/dffml/dffml/labels/p2>`_
 
     - Medium Priority
 
-  - `p1 <https://github.com/intel/dffml/labels/p1>`_
+  - `p1 <https://github.com/dffml/dffml/labels/p1>`_
 
     - High Priority
 
-  - `p0 <https://github.com/intel/dffml/labels/p0>`_
+  - `p0 <https://github.com/dffml/dffml/labels/p0>`_
 
     - Critical Priority
 

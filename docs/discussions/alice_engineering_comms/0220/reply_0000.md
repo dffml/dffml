@@ -69,7 +69,7 @@ $ export TARGET_OWNER=srossross \
 - https://code.forgejo.org/earl-warren/setup-forgejo-release/commit/89b6ae4da602c35e4d98b986fe98251e826e59c4
   - We need to enable some kind of per-branch upload-artifact style releases so that pull requests can grab built packages from other pull requests in their active poly repo virtual branch setup
 - https://forgejo.org/docs/latest/admin/database-preparation/
-  - https://github.com/intel/dffml/blob/d6631495b3d6c567de0841580ee63b625c571b4d/source/mysql/dffml_source_mysql/util/mysql_docker.py
+  - https://github.com/dffml/dffml/blob/d6631495b3d6c567de0841580ee63b625c571b4d/source/mysql/dffml_source_mysql/util/mysql_docker.py
   - https://github.com/go-gitea/gitea/issues/10828
     - We'll hold off on TLS until this issue is closed
 - https://docs.gitea.io/en-us/install-with-docker/
@@ -168,7 +168,7 @@ $ curl 'http://127.0.0.1:2000/user/sign_up' \
   - Maybe we can just disable CSRF to avoid having to double request every time
     - Update: It doesn't look like there is a way to do this across multiple handlers without recompiling
 
-[![use-the-source](https://img.shields.io/badge/use%20the-source-blueviolet)](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_easter_eggs.md#use-the-source-)
+[![use-the-source](https://img.shields.io/badge/use%20the-source-blueviolet)](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_easter_eggs.md#use-the-source-)
 
 ```console
 $ git grep -i disablecsrf

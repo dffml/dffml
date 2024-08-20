@@ -3,7 +3,7 @@
 - https://pages.nist.gov/metaschema/specification/overview/
 - Small team committed to support many formats
   - OSCAL, 7 models * 3 different formats
-  - > ![image](https://github.com/intel/dffml/assets/5950433/eec830a8-aa5f-4df3-8421-429823855680)
+  - > ![image](https://github.com/dffml/dffml/assets/5950433/eec830a8-aa5f-4df3-8421-429823855680)
 - Abstract modeling out of schema
 - Came out of IETF RFC3344 learnings
 - How do we create and information model about how different data relates to each other, pin down semantics, from that produce data models we represent data in
@@ -42,11 +42,11 @@
   - oscal-cli
   - A.J. live demo
     - ![live-demo-for-the-live-demo-god](https://user-images.githubusercontent.com/5950433/226699339-45b82b38-a7fc-4f2f-a858-e52ee5a6983d.png)
-    - ![image](https://github.com/intel/dffml/assets/5950433/942ecf6b-c263-40ff-a625-bc72d5c60764)
-    - ![image](https://github.com/intel/dffml/assets/5950433/64fc6d0f-f051-4b71-a51a-c7a034cd1c18)
-    - ![image](https://github.com/intel/dffml/assets/5950433/564e3eca-1ede-450b-b76b-605335161607)
-    - ![image](https://github.com/intel/dffml/assets/5950433/edef5bff-9144-40ef-83e0-b040b075ba60)
-    - ![image](https://github.com/intel/dffml/assets/5950433/ebc0c0d0-0695-46d8-841f-6fab2249b906)
+    - ![image](https://github.com/dffml/dffml/assets/5950433/942ecf6b-c263-40ff-a625-bc72d5c60764)
+    - ![image](https://github.com/dffml/dffml/assets/5950433/64fc6d0f-f051-4b71-a51a-c7a034cd1c18)
+    - ![image](https://github.com/dffml/dffml/assets/5950433/564e3eca-1ede-450b-b76b-605335161607)
+    - ![image](https://github.com/dffml/dffml/assets/5950433/edef5bff-9144-40ef-83e0-b040b075ba60)
+    - ![image](https://github.com/dffml/dffml/assets/5950433/ebc0c0d0-0695-46d8-841f-6fab2249b906)
       - Codegen of validators, then instantiate to validate
   - metaschema-cli
     - oscal-cli is metaschema-cli with the oscal metaschema embedded

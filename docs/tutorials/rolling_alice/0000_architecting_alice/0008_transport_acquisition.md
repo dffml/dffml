@@ -1,4 +1,4 @@
-# [Volume 0: Chapter 8: Transport Acquisition](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0008_transport_acquisition.md)
+# [Volume 0: Chapter 8: Transport Acquisition](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0008_transport_acquisition.md)
 
 [![asciicast](https://asciinema.org/a/572766.svg)](https://asciinema.org/a/572766)
 
@@ -9,8 +9,8 @@ $ . .venv/bin/activate
 $ echo "Clone DFFML/Alice at pinned state of art" \
   && set -x \
   && export TARGET_DIR=dffml \
-  && export TARGET_REPO_URL=https://github.com/intel/dffml \
-  && export TARGET_COMMIT=$(curl -sfL https://github.com/intel/dffml/raw/alice/entities/alice/README.rst | grep 'ALICE_STATE_OF_ART=' | sed -e 's/.*=//') \
+  && export TARGET_REPO_URL=https://github.com/dffml/dffml \
+  && export TARGET_COMMIT=$(curl -sfL https://github.com/dffml/dffml/raw/alice/entities/alice/README.rst | grep 'ALICE_STATE_OF_ART=' | sed -e 's/.*=//') \
   && mkdir -p "${TARGET_DIR}" \
   && cd "${TARGET_DIR}" \
   && git init \
@@ -87,10 +87,10 @@ graph TD
   - Fail safe conclusion
     - Add to vetted set via insertion of correct `Content-Type` to transparency service
       - `application/credential+ld+json`
-- [`kind-config.yml`](https://github.com/intel/dffml/tree/main/examples/tutorials/rolling_alice/transparency_service/kubernetes_dataflow_policy_engine)
+- [`kind-config.yml`](https://github.com/dffml/dffml/tree/main/examples/tutorials/rolling_alice/transparency_service/kubernetes_dataflow_policy_engine)
 
 ```console
-$ kind create cluster --name=nodes-test --config=https://github.com/intel/dffml/raw/alice/examples/tutorials/rolling_alice/transparency_service/kubernetes_dataflow_policy_engine/kind-config.yml
+$ kind create cluster --name=nodes-test --config=https://github.com/dffml/dffml/raw/alice/examples/tutorials/rolling_alice/transparency_service/kubernetes_dataflow_policy_engine/kind-config.yml
 ```
 
 - References

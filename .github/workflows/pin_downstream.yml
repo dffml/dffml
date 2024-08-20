@@ -90,7 +90,7 @@ jobs:
       GH_ACCESS_TOKEN: ${{ secrets.PIN_DOWNSTREAM_2ND_PARTY_GH_ACCESS_TOKEN }}
       PIN_TO_COMMIT: ${{ github.event.after || github.event.pull_request.head.sha }}
       UPSTREAM_PACKAGE_NAME: 'dffml'
-      BUMP_DEP: "dffml @ https://github.com/intel/dffml/archive/"
+      BUMP_DEP: "dffml @ https://github.com/dffml/dffml/archive/"
     needs:
     - manifest
     strategy:

@@ -16,7 +16,7 @@
     - https://github.com/xee5ch/metaschema_exploration/blob/visualization/visualization/graph.ipynb
       - https://pages.nist.gov/metaschema/specification/information-modeling/
       - John: I played with DAGs with networkx and ended up settling on mermaid trying to do something similar a while back. It will be a bit more work but you'll be able to commit the generated mermaid directly into markdown on github for consistently updated docs based on the metaschema.
-      - ![networkx-dag-layout-in-topigraphical-order](https://github.com/intel/dffml/assets/5950433/34ea3c07-dfa5-4479-9532-a5ec5945eb1b)
+      - ![networkx-dag-layout-in-topigraphical-order](https://github.com/dffml/dffml/assets/5950433/34ea3c07-dfa5-4479-9532-a5ec5945eb1b)
 - Wendell Piez
   - Exclusive choice implementation within jsonschema implementation
     - https://github.com/usnistgov/metaschema-xslt/pull/108

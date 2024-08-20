@@ -14,7 +14,7 @@ $ while [ ! -f stop ]; do FDQN=vcs.activitypub.securitytxt.dffml.chadig.com WEBH
   - Add YAML manifests for overlays
 
 ```console
-$ echo -e "### We created a new plugin, the GitHub repo is\nhttps://github.com/dffml/dffml-model-transformers" | gh issue create -R https://github.com/intel/dffml --title "plugin: new: dffml-model-transformers" --body-file /dev/stdin
+$ echo -e "### We created a new plugin, the GitHub repo is\nhttps://github.com/dffml/dffml-model-transformers" | gh issue create -R https://github.com/dffml/dffml --title "plugin: new: dffml-model-transformers" --body-file /dev/stdin
 $ jq -r -n 'env.BUILD_ARGS' | jq '. |= . + [["APPEND", env.APPEND]]'
 ```
 

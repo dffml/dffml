@@ -85,7 +85,7 @@ GITEA_WORK_DIR=$HOME/.local/appdata forgejo web
     > If you are testing locally you should add
     > `http://localhost:8055/auth/login/google/callback` too
 
-![image](https://github.com/intel/dffml/assets/5950433/301aedad-bb8a-4745-bca1-133eb941c399)
+![image](https://github.com/dffml/dffml/assets/5950433/301aedad-bb8a-4745-bca1-133eb941c399)
 
 ```bash
 echo AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA | python -m keyring set directus auth.forgejo.client_id

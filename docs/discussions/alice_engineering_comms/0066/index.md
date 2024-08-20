@@ -12,7 +12,7 @@
     - Enable downstream events for builds of different tags / layers
       within existing dockerfiles and push them (if intermediate rebuilt).
 - [ ] Fix DFFML CI
-  - https://github.com/intel/dffml/actions/runs/3318045403
+  - https://github.com/dffml/dffml/actions/runs/3318045403
     - Not looking good...
     - https://github.com/intel/dffml/pull/1420
 - [ ] Fix Alice CI
@@ -85,7 +85,7 @@ system context includes
 
 ## Living THREATS.md
 
-Install Alice https://github.com/intel/dffml/tree/main/entities/alice
+Install Alice https://github.com/dffml/dffml/tree/main/entities/alice
 
 Create the `THREATS.md` file
 

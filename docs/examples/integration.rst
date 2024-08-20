@@ -444,7 +444,7 @@ automatically.
 Making a Prediction
 -------------------
 
-Run the operations on the new repo: ``https://github.com/intel/dffml`` and
+Run the operations on the new repo: ``https://github.com/dffml/dffml`` and
 have the model make a prediction
 
 We're going to put the prediction command in it's own file, since it's very long
@@ -460,7 +460,7 @@ to make a prediction on the DFFML repo.
 .. code-block:: console
     :test:
 
-    $ bash predict.sh https://github.com/intel/dffml
+    $ bash predict.sh https://github.com/dffml/dffml
     [
         {
             "extra": {},
@@ -502,7 +502,7 @@ to make a prediction on the DFFML repo.
                     0
                 ]
             },
-            "key": "https://github.com/intel/dffml",
+            "key": "https://github.com/dffml/dffml",
             "last_updated": "2020-10-12T21:15:13Z",
             "prediction": {
                 "maintained": {
@@ -541,7 +541,7 @@ Test the new prediction capabilities from the command line with ``curl``
     :test:
     :replace: cmds[0][2] = cmds[0][2].replace("8000", str(ctx["HTTP_SERVER"]["8000"]))
 
-    $ curl -v 'http://127.0.0.1:8000/cgi-bin/api.py?action=predict&URL=https://github.com/intel/dffml' | \
+    $ curl -v 'http://127.0.0.1:8000/cgi-bin/api.py?action=predict&URL=https://github.com/dffml/dffml' | \
         python -m json.tool
 
 Hook up the predict button to call our new API by adding an event listener when

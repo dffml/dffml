@@ -2,9 +2,9 @@
 
 - Alice
   - State of the art updated to 98335d941116e76bbf4e07422adc2b5061e47934
-  - Overlay of CI/CD library detection example: https://github.com/intel/dffml/commit/90d5c52f4dd64f046a2e2469d001e32ec2d53966
+  - Overlay of CI/CD library detection example: https://github.com/dffml/dffml/commit/90d5c52f4dd64f046a2e2469d001e32ec2d53966
 
-Install Alice: https://github.com/intel/dffml/tree/main/entities/alice/
+Install Alice: https://github.com/dffml/dffml/tree/main/entities/alice/
 
 ```console
 $ python -m venv .venv
@@ -12,18 +12,18 @@ $ . .venv/bin/activate
 $ python -m pip install -U pip setuptools wheel
 $ export ALICE_STATE_OF_ART=98335d941116e76bbf4e07422adc2b5061e47934
 $ python -m pip install \
-    "[https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml](https://github.com/intel/dffml/archive/$%7BALICE_STATE_OF_ART%7D.zip#egg=dffml)" \
-    "[https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-feature-git&subdirectory=feature/git](https://github.com/intel/dffml/archive/$%7BALICE_STATE_OF_ART%7D.zip#egg=dffml-feature-git&subdirectory=feature/git)" \
-    "[https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=shouldi&subdirectory=examples/shouldi](https://github.com/intel/dffml/archive/$%7BALICE_STATE_OF_ART%7D.zip#egg=shouldi&subdirectory=examples/shouldi)" \
-    "[https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-config-yaml&subdirectory=configloader/yaml](https://github.com/intel/dffml/archive/$%7BALICE_STATE_OF_ART%7D.zip#egg=dffml-config-yaml&subdirectory=configloader/yaml)" \
-    "[https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-operations-innersource&subdirectory=operations/innersource](https://github.com/intel/dffml/archive/$%7BALICE_STATE_OF_ART%7D.zip#egg=dffml-operations-innersource&subdirectory=operations/innersource)" \
-    "[https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=alice&subdirectory=entities/alice](https://github.com/intel/dffml/archive/$%7BALICE_STATE_OF_ART%7D.zip#egg=alice&subdirectory=entities/alice)"
+    "[https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml](https://github.com/dffml/dffml/archive/$%7BALICE_STATE_OF_ART%7D.zip#egg=dffml)" \
+    "[https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-feature-git&subdirectory=feature/git](https://github.com/dffml/dffml/archive/$%7BALICE_STATE_OF_ART%7D.zip#egg=dffml-feature-git&subdirectory=feature/git)" \
+    "[https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=shouldi&subdirectory=examples/shouldi](https://github.com/dffml/dffml/archive/$%7BALICE_STATE_OF_ART%7D.zip#egg=shouldi&subdirectory=examples/shouldi)" \
+    "[https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-config-yaml&subdirectory=configloader/yaml](https://github.com/dffml/dffml/archive/$%7BALICE_STATE_OF_ART%7D.zip#egg=dffml-config-yaml&subdirectory=configloader/yaml)" \
+    "[https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-operations-innersource&subdirectory=operations/innersource](https://github.com/dffml/dffml/archive/$%7BALICE_STATE_OF_ART%7D.zip#egg=dffml-operations-innersource&subdirectory=operations/innersource)" \
+    "[https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=alice&subdirectory=entities/alice](https://github.com/dffml/dffml/archive/$%7BALICE_STATE_OF_ART%7D.zip#egg=alice&subdirectory=entities/alice)"
 ```
 
 Install this overlay (from this commit in this example):
 
 ```console
-$ python -m pip install --force-reinstall --upgrade "git+https://github.com/intel/dffml@d2a38d47445241fc99d26bc2a51184caa88bd033#subdirectory=entities/alice"
+$ python -m pip install --force-reinstall --upgrade "git+https://github.com/dffml/dffml@d2a38d47445241fc99d26bc2a51184caa88bd033#subdirectory=entities/alice"
 ```
 
 Collect metrics on a repo using `alice shouldi contribute`:
@@ -49,7 +49,7 @@ untagged:
     - https://pydantic-docs.helpmanual.io/usage/schema/#schema-customization
   - Initial commit: 168a3e26c62d7e0c8dd92b1761ec5fad273fb9c6
   - Added `$schema` to make output schema a valid Manifest schema per ADR requirements
-    - https://github.com/intel/dffml/blob/main/docs/arch/0008-Manifest.md
+    - https://github.com/dffml/dffml/blob/main/docs/arch/0008-Manifest.md
 - KERI
   - https://keri.one
   - https://humancolossus.foundation/blog/thinking-of-did-keri-on/keri-resources/
@@ -59,19 +59,19 @@ untagged:
     - > Calculate cyclomatic complexities of functions in Go source code.
 
 ```console
-$ curl -sfL https://github.com/intel/dffml/ | grep octolytics-dimension-repository_id
+$ curl -sfL https://github.com/dffml/dffml/ | grep octolytics-dimension-repository_id
   <meta name="octolytics-dimension-user_id" content="17888862" /><meta name="octolytics-dimension-user_login" content="intel" /><meta name="octolytics-dimension-repository_id" content="149512216" /><meta name="octolytics-dimension-repository_nwo" content="intel/dffml" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="149512216" /><meta name="octolytics-dimension-repository_network_root_nwo" content="intel/dffml" />
-coder@coder-john-s-andersen-alice:/src/dffml$ curl -sfL https://github.com/intel/dffml/ | grep octolytics-dimension-repository_id | sed -e 's/octolytics-dimension-repository_id" content="//'
+coder@coder-john-s-andersen-alice:/src/dffml$ curl -sfL https://github.com/dffml/dffml/ | grep octolytics-dimension-repository_id | sed -e 's/octolytics-dimension-repository_id" content="//'
   <meta name="octolytics-dimension-user_id" content="17888862" /><meta name="octolytics-dimension-user_login" content="intel" /><meta name="149512216" /><meta name="octolytics-dimension-repository_nwo" content="intel/dffml" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="149512216" /><meta name="octolytics-dimension-repository_network_root_nwo" content="intel/dffml" />
-coder@coder-john-s-andersen-alice:/src/dffml$ curl -sfL https://github.com/intel/dffml/ | grep octolytics-dimension-repository_id | sed -e 's/.*octolytics-dimension-repository_id" content="//'
+coder@coder-john-s-andersen-alice:/src/dffml$ curl -sfL https://github.com/dffml/dffml/ | grep octolytics-dimension-repository_id | sed -e 's/.*octolytics-dimension-repository_id" content="//'
 149512216" /><meta name="octolytics-dimension-repository_nwo" content="intel/dffml" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="149512216" /><meta name="octolytics-dimension-repository_network_root_nwo" content="intel/dffml" />
-coder@coder-john-s-andersen-alice:/src/dffml$ curl -sfL https://github.com/intel/dffml/ | grep octolytics-dimension-repository_id | sed -e 's/.*octolytics-dimension-repository_id" content="//' -e 's/".*//'
+coder@coder-john-s-andersen-alice:/src/dffml$ curl -sfL https://github.com/dffml/dffml/ | grep octolytics-dimension-repository_id | sed -e 's/.*octolytics-dimension-repository_id" content="//' -e 's/".*//'
 149512216
 coder@coder-john-s-andersen-alice:/src/dffml $ gh api https://api.github.com/repositories/149512216 | jq -r '.clone_url'
-https://github.com/intel/dffml.git
+https://github.com/dffml/dffml.git
 ```
 
-Added GitHubRepoID to URL lookup via https://github.com/intel/dffml/commit/4d64f011ccdee8882adbc4b7447953c4416ceb64
+Added GitHubRepoID to URL lookup via https://github.com/dffml/dffml/commit/4d64f011ccdee8882adbc4b7447953c4416ceb64
 
 Run the metric collection
 
@@ -110,9 +110,9 @@ untagged:
   - Enabled branch protected on the `alice` branch
   - Went to PR and looked for "forced pushed" in logs
   - Grabbed the commit and found the compare because we can download the patchset but it won't let us create a branch off it that we could tell
-    - https://github.com/intel/dffml/compare/alice...0c4b8191b13465980ced3fd1ddfbea30af3d1104.patch
+    - https://github.com/dffml/dffml/compare/alice...0c4b8191b13465980ced3fd1ddfbea30af3d1104.patch
   - Downloaded with curl
-    - `curl -sfLO https://github.com/intel/dffml/compare/alice...0c4b8191b13465980ced3fd1ddfbea30af3d1104.patch`
+    - `curl -sfLO https://github.com/dffml/dffml/compare/alice...0c4b8191b13465980ced3fd1ddfbea30af3d1104.patch`
   - Removed the first patch which we rebase squashed other commits into
     - `vim alice...0c4b8191b13465980ced3fd1ddfbea30af3d1104.patch`
   - Apply patches (there were 15 after removing the collecting Jenkins patch)

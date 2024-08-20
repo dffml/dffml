@@ -1,6 +1,6 @@
 ## 2023-11-11 @pdxjohnny Engineering Logs
 
-- Updated ADR 7: [A GitHub Public Key and TPM Based Supply Chain Security Mitigation Option](https://github.com/intel/dffml/blob/main/docs/arch/0007-A-GitHub-Public-Bey-and-TPM-Based-Supply-Chain-Security-Mitigation-Option.rst#a-github-public-key-and-tpm-based-supply-chain-security-mitigation-option)
+- Updated ADR 7: [A GitHub Public Key and TPM Based Supply Chain Security Mitigation Option](https://github.com/dffml/dffml/blob/main/docs/arch/0007-A-GitHub-Public-Bey-and-TPM-Based-Supply-Chain-Security-Mitigation-Option.rst#a-github-public-key-and-tpm-based-supply-chain-security-mitigation-option)
   - With Federated forges (long term target in WASM environment) we can leverage this ssh method ideally with an attested Transparency Service then we can get a receipt, issused with an ssh ECDSA-384 key.
   - CWT issuer is the keys endpoint.
   - We can use https://github.com/tpm2-software/tpm2-pkcs11 to bind the keys to a TPM owned by the developer.
@@ -13,7 +13,7 @@ ssh-keygen -q -f /dev/stdout -t ecdsa -b 384 -N '' <<<y | python -c 'import sys;
 
 - GitHub only exports SSH keys with Key type as "Authentication Key" at https://github.com/pdxjohnny.keys
 
-![image](https://github.com/intel/dffml/assets/5950433/5c185259-d269-4346-b111-e19982e4c1d4)
+![image](https://github.com/dffml/dffml/assets/5950433/5c185259-d269-4346-b111-e19982e4c1d4)
 
 - TODO
   - [ ] Investigate binding keys to a FIDO style key (things like YubiKeys)

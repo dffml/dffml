@@ -8,7 +8,7 @@
   - Kubernetes native service discovery
     - `namespace = pathlib.Path("/var/run/secrets/kubernetes.io/serviceaccount/namespace").read_text()`
 
-![chaos-for-the-chaos-god](https://github.com/intel/dffml/assets/5950433/636969a1-1f0f-4c96-8812-f10fa403e79c)
+![chaos-for-the-chaos-god](https://github.com/dffml/dffml/assets/5950433/636969a1-1f0f-4c96-8812-f10fa403e79c)
 
 - https://colab.research.google.com/drive/1z4rmOEiFkxkMiecAWeTUlPl0OmKgfEu7#scrollTo=4iBKg6Rmmpnw
   - SQL model

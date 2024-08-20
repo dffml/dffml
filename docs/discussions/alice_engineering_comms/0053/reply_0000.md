@@ -32,8 +32,8 @@ dffml/util/df/internal.py
       "additions": 4,
       "deletions": 1,
       "changes": 5,
-      "blob_url": "https://github.com/intel/dffml/blob/b6f9725a5eaa1696904a6b07ded61a27ba5e5b29/dffml%2Futil%2Fdf%2Finternal.py",
-      "raw_url": "https://github.com/intel/dffml/raw/b6f9725a5eaa1696904a6b07ded61a27ba5e5b29/dffml%2Futil%2Fdf%2Finternal.py",
+      "blob_url": "https://github.com/dffml/dffml/blob/b6f9725a5eaa1696904a6b07ded61a27ba5e5b29/dffml%2Futil%2Fdf%2Finternal.py",
+      "raw_url": "https://github.com/dffml/dffml/raw/b6f9725a5eaa1696904a6b07ded61a27ba5e5b29/dffml%2Futil%2Fdf%2Finternal.py",
       "contents_url": "https://api.github.com/repos/intel/dffml/contents/dffml%2Futil%2Fdf%2Finternal.py?ref=b6f9725a5eaa1696904a6b07ded61a27ba5e5b29",
       "patch": "@@ -24,6 +24,9 @@ def object_to_operations(obj, module=None):\n             obj,\n             predicate=lambda i: inspect.ismethod(i)\n             or inspect.isfunction(i)\n-            and not hasattr(i, \"__supertype__\"),\n+            and not hasattr(i, \"__supertype__\")\n+            # NOTE HACK
  Fails in 3.9.13 to remove\n+            # NewType without the check in the str repr.\n+            and \" NewType \" not in str(i),\n         )\n     ]"

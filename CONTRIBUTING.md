@@ -220,9 +220,9 @@ graph TD
 - https://github.com/scitt-community/scitt-api-emulator/commits/1e4ec8844aa1ead539ddfd1ac9b71623e25f4c0d
 - [ietf: scitt: mailing list archives: Orie: "Eventually a view of the supply chain emerges, for those for have been granted read access to one or more transparency services"](https://mailarchive.ietf.org/arch/msg/scitt/BjCAySWyODuhDWwn4kMtCoY5eDA/)
 - https://github.com/search?q=repo%3Aintel%2Fdffml+Phase+0&type=code&p=2
-  - https://github.com/intel/dffml/blob/c50b68c3af49167e9cbfef4c31d4096de9e1846a/docs/discussions/alice_engineering_comms/0572/reply_0000.md
-  - https://github.com/intel/dffml/blob/c50b68c3af49167e9cbfef4c31d4096de9e1846a/docs/discussions/alice_engineering_comms/0573/reply_0000.md
-  - https://github.com/intel/dffml/blob/c50b68c3af49167e9cbfef4c31d4096de9e1846a/docs/discussions/alice_engineering_comms/0574/reply_0000.md
+  - https://github.com/dffml/dffml/blob/c50b68c3af49167e9cbfef4c31d4096de9e1846a/docs/discussions/alice_engineering_comms/0572/reply_0000.md
+  - https://github.com/dffml/dffml/blob/c50b68c3af49167e9cbfef4c31d4096de9e1846a/docs/discussions/alice_engineering_comms/0573/reply_0000.md
+  - https://github.com/dffml/dffml/blob/c50b68c3af49167e9cbfef4c31d4096de9e1846a/docs/discussions/alice_engineering_comms/0574/reply_0000.md
 
 ## CI/CD
 
@@ -234,7 +234,7 @@ This section covers the integration status of automated checks into the processe
   - [github.com/intel/dffml#1415: Tutorial Feedback: Architecting Alice: Stream of Consciousness#1415](https://github.com/intel/dffml/discussions/1415)
   - https://github.com/builtree/builtree/blob/main/governance/STEERING-COMMITTEE.md
 
-https://thenewstack.io/what-are-the-next-steps-for-feature-flags and the following image sum up the motivations behind the [Entity Analysis Trinity](https://github.com/intel/dffml/tree/main/docs/tutorials/rolling_alice/0000_architecting_alice#entity-analysis-trinity), ThreatOps, and VCS+CI/CD a la https://github.com/scitt-community/scitt-api-emulator/pull/27#issuecomment-1528073552
+https://thenewstack.io/what-are-the-next-steps-for-feature-flags and the following image sum up the motivations behind the [Entity Analysis Trinity](https://github.com/dffml/dffml/tree/main/docs/tutorials/rolling_alice/0000_architecting_alice#entity-analysis-trinity), ThreatOps, and VCS+CI/CD a la https://github.com/scitt-community/scitt-api-emulator/pull/27#issuecomment-1528073552
 
 > ![thenewstack-deccc3f5-image4-me-trying-to-understand-the-benifits-of-clickops](https://user-images.githubusercontent.com/5950433/235471920-6f2228e1-76e4-4479-84c3-cb80326e80ce.png)
 
@@ -254,7 +254,7 @@ Virtual branch - shared context dependent trains of thought within a poly-repo e
 
 - TODO
   - [ ] [`THREATS.md`](https://gist.github.com/pdxjohnny/07b8c7b4a9e05579921aa3cc8aed4866#file-rolling_alice_progress_report_0006_living_threat_models_are_better_than_dead_threat_models-md) 
-  - [ ] https://github.com/intel/dffml/blob/f8377d07e181aaf69ba2fe168668dae4022bb436/docs/contributing/codebase.rst?plain=1#L1-L183
+  - [ ] https://github.com/dffml/dffml/blob/f8377d07e181aaf69ba2fe168668dae4022bb436/docs/contributing/codebase.rst?plain=1#L1-L183
   - [ ] Naming conventions
     - [ ] Dockerfile
     - [ ] CI/CD Workflows
@@ -434,7 +434,7 @@ and have worked hard to make that project better.
 
 ## Alice: Abstracted Lifecycle Instantiatation of Contributor Efectivo
 
-> Upstream: [Rolling Alice: Volume 0: Introduction and Context](https://github.com/intel/dffml/tree/main/docs/tutorials/rolling_alice/)
+> Upstream: [Rolling Alice: Volume 0: Introduction and Context](https://github.com/dffml/dffml/tree/main/docs/tutorials/rolling_alice/)
 
 To think about how we think about editing this document and how it MUST be
 written, imagine an open source developer named Alice. Phrase things here so that
@@ -478,7 +478,7 @@ following as we analyze the softare / system / entity over it's lifecycle.
 
 - Open Architecture
   - Standard architecture we use to describe anything. Provides the ability to use / reference domain specific architectures as needed to define architecture of whole.
-  - https://github.com/intel/dffml/blob/main/docs/arch/0009-Open-Architecture.rst
+  - https://github.com/dffml/dffml/blob/main/docs/arch/0009-Open-Architecture.rst
   - Referred to in old docs as Universal Blueprint
 - Think
   - Come up with new data flows and system context input
@@ -530,7 +530,7 @@ It defines actions taken by maintainers. Timelines for progression and example a
   - [github.com/intel/dffml#1273: util: testing: manifest: shim: Initial commit](https://github.com/intel/dffml/issues/1273)
   - [github.com/intel/dffml#1300: manifest: shim: Add JSON schema validation](https://github.com/intel/dffml/issues/1300)
   - [github.com/intel/dffml#1657: stream of consiousness: policy engine: step components: 1st party: MetaSchema based evaluation](https://github.com/intel/dffml/issues/1657)
-  - https://github.com/intel/dffml/blob/f8377d07e181aaf69ba2fe168668dae4022bb436/docs/arch/alice/discussion/0036/reply_0067.md?plain=1#L14-L25
+  - https://github.com/dffml/dffml/blob/f8377d07e181aaf69ba2fe168668dae4022bb436/docs/arch/alice/discussion/0036/reply_0067.md?plain=1#L14-L25
 - OpenSSF
   - [OpenSSF: Secure Supply Chain Consumption Framework (S2C2F): Simplified Requirements: Appendix: Relation to SCITT](https://github.com/ossf/s2c2f/blob/a08b79e61e27cc1e036837d93b32f2b4a9766cc4/specification/framework.md#appendix-relation-to-scitt)
     - > The Supply Chain Integrity, Transparency, and Trust initiative, or SCITT, is a set of proposed industry standards for managing the compliance of goods and services across end-to-end supply chains. In the future, we expect teams to output "attestations of alignment" to the S2C2F requirements and store it in SCITT. The format of such attestations is to be determined.

@@ -15,7 +15,7 @@ development mode.
     away.
 
     .. image:: https://gitpod.io/button/open-in-gitpod.svg
-       :target: https://gitpod.io/#https://github.com/intel/dffml
+       :target: https://gitpod.io/#https://github.com/dffml/dffml
 
 Before you install DFFML in development mode be sure to uninstall it! Python
 will use the version installed from PyPi rather than you're development version
@@ -65,7 +65,7 @@ their latest versions (``pip setuptools wheel``).
 
 .. code-block:: console
 
-    $ git clone https://github.com/intel/dffml
+    $ git clone https://github.com/dffml/dffml
     $ cd dffml
     $ python3 -m pip install -U pip setuptools wheel
     $ python3 -m pip install --prefix=~/.local -e .[dev]

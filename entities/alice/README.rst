@@ -4,7 +4,7 @@ Alice
 For more information on who / what Alice is, her architecture, strategic principles,
 and conceptual foundations, please reference the tutorial series on how we built
 her and how you can extend her:
-`Rolling Alice: Architecting Alice: Introduction and Context <https://github.com/intel/dffml/tree/main/docs/tutorials/rolling_alice/0000_architecting_alice>`_.
+`Rolling Alice: Architecting Alice: Introduction and Context <https://github.com/dffml/dffml/tree/main/docs/tutorials/rolling_alice/0000_architecting_alice>`_.
 
 Alice is a work in progress. Here is the most recent 5 minute
 `Status Update <https://www.youtube.com/watch?v=THKMfJpPt8I&list=PLtzAOVTpO2jZltVwl3dSEeQllKWZ0YU39>`_
@@ -49,7 +49,7 @@ First make sure you have the latest versions of ``pip``, ``setuptools``, and
 ``wheel``. Some ML libraries require them to be up-to-date.
 
 If you want to contribute please see
-https://github.com/intel/dffml/blob/main/entities/alice/CONTRIBUTING.rst
+https://github.com/dffml/dffml/blob/main/entities/alice/CONTRIBUTING.rst
 
 You may want to first create a virtual environment to avoid any permissions
 issues when running ``pip install``.
@@ -84,12 +84,12 @@ Install latest known working version
 
     $ export ALICE_STATE_OF_ART=98335d941116e76bbf4e07422adc2b5061e47934
     $ python -m pip install \
-        "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml" \
-        "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-feature-git&subdirectory=feature/git" \
-        "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=shouldi&subdirectory=examples/shouldi" \
-        "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-config-yaml&subdirectory=configloader/yaml" \
-        "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-operations-innersource&subdirectory=operations/innersource" \
-        "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=alice&subdirectory=entities/alice"
+        "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml" \
+        "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-feature-git&subdirectory=feature/git" \
+        "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=shouldi&subdirectory=examples/shouldi" \
+        "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-config-yaml&subdirectory=configloader/yaml" \
+        "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-operations-innersource&subdirectory=operations/innersource" \
+        "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=alice&subdirectory=entities/alice"
 
 .. note::
 
@@ -106,7 +106,7 @@ recommend community standards
 
 .. note::
 
-    Tutorial on how we made this: https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0002_our_open_source_guide.md
+    Tutorial on how we made this: https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0002_our_open_source_guide.md
 
 Create a new git repo and add some contents
 
@@ -156,7 +156,7 @@ shouldi
 
 .. note::
 
-    Tutorial on how we made this: https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0001_down_the_dependency_rabbit_hole_again.md
+    Tutorial on how we made this: https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0001_down_the_dependency_rabbit_hole_again.md
 
 Alice's initial functionality is based around
 https://intel.github.io/dffml/main/shouldi.html

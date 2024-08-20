@@ -57,7 +57,7 @@
   - A.J. likes https://github.com/ietf-scitt/use-cases/pull/18
     - Trusted bot tells me how much I need to care, based on threat model
 - Orie explains RDF
-  - ![the-trouble-with-triples](https://github.com/intel/dffml/assets/5950433/a73fb858-3074-4a6b-8588-e6fca33c55a7)
+  - ![the-trouble-with-triples](https://github.com/dffml/dffml/assets/5950433/a73fb858-3074-4a6b-8588-e6fca33c55a7)
   - Expresses knowledge
   - Can use OWL for traversing first order logic, forward chaining
   - Prolog reasoning engine operates on information which is an expression of first order logic
@@ -81,7 +81,7 @@
     - url(Brent), url(understands), url(CBOR)
     - Now this issue is that you can resolve the url to a different thing every time, this is a bug says Orie, feature says rest of W3C WG, TODO find this at context issue/pr thread from a while back
   - John: What if we combined with receipts?
-    - [2023-04-19 @pdxjohnny Engineering Logs](https://github.com/intel/dffml/blob/main/docs/discussions/alice_engineering_comms/0243/reply_0000.md)
+    - [2023-04-19 @pdxjohnny Engineering Logs](https://github.com/dffml/dffml/blob/main/docs/discussions/alice_engineering_comms/0243/reply_0000.md)
   - Henk Birkholz gives example of VEX and different parties saying something is a vuln or not within different contexts, USGov says no, GreenPeace says yes.
     - RDFStart is equivilant to labeled property graph, let's you put nodes on the edges
   - RATs versifiers use this.
@@ -133,7 +133,7 @@ graph LR
   - Kaliya started IIW
   - Topics include Supply Chain Security!
   - https://github.com/trustoverip/tswg-trust-registry-tf/tree/main/v2#high-level
-    - > ![image](https://github.com/intel/dffml/assets/5950433/6b421096-5201-42e9-98f8-c2208fe2077c)
+    - > ![image](https://github.com/dffml/dffml/assets/5950433/6b421096-5201-42e9-98f8-c2208fe2077c)
 - https://github.com/usnistgov/vulntology
   - Talked to Dave who works on this with A.J. at NIST about how this would be good for ad-hoc CVE creation, Dave said this was the original idea
     - https://github.com/ossf/wg-vulnerability-disclosures/issues/94#issuecomment-1483184591

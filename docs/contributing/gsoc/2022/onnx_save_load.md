@@ -36,7 +36,7 @@ Beginner
 - https://github.com/onnx/tutorials/blob/master/tutorials/TensorflowToOnnx-1.ipynb
 - https://github.com/onnx/tutorials/blob/master/tutorials/OnnxTensorflowImport.ipynb
 - The commit where archive support was implemented
-  - [38390a45ea5a2aacd1dc2398ac2acbcf9b8c7a53](https://github.com/intel/dffml/commit/38390a45ea5a2aacd1dc2398ac2acbcf9b8c7a53)
+  - [38390a45ea5a2aacd1dc2398ac2acbcf9b8c7a53](https://github.com/dffml/dffml/commit/38390a45ea5a2aacd1dc2398ac2acbcf9b8c7a53)
 - ``$ git log -p -- dffml/model/``
 
 ## Getting Started

@@ -1,4 +1,4 @@
-name: 'Create Manifest Instance: Build Images Containers: https://github.com/intel/dffml/blob/main/schema/github/actions/build/images/containers/'
+name: 'Create Manifest Instance: Build Images Containers: https://github.com/dffml/dffml/blob/main/schema/github/actions/build/images/containers/'
 description: 'Build manifest from changed Dockerfiles or single instance manifests'
 inputs:
   root_path:

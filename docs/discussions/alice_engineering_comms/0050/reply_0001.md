@@ -150,12 +150,12 @@ RUN echo "PATH=\"${PATH}\"" | tee /etc/environment
 # ARG ALICE_STATE_OF_ART=0c4b8191b13465980ced3fd1ddfbea30af3d1104
 # RUN python3 -m pip install -U setuptools pip wheel
 # RUN python3 -m pip install \
-#     "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml" \
-#     "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-feature-git&subdirectory=feature/git" \
-#     "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=shouldi&subdirectory=examples/shouldi" \
-#     "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-config-yaml&subdirectory=configloader/yaml" \
-#     "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-operations-innersource&subdirectory=operations/innersource" \
-#     "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=alice&subdirectory=entities/alice"
+#     "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml" \
+#     "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-feature-git&subdirectory=feature/git" \
+#     "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=shouldi&subdirectory=examples/shouldi" \
+#     "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-config-yaml&subdirectory=configloader/yaml" \
+#     "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-operations-innersource&subdirectory=operations/innersource" \
+#     "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=alice&subdirectory=entities/alice"
 
 FROM osdecentralice
 
@@ -393,5 +393,5 @@ Got dropped to dracut shell
 - TODO
 - Future
   - [ ] `alice shell` overlay to CSP of choice to start VM and then ssh in with recorded session (optionally via overlays)
-    - https://github.com/intel/dffml/commit/54a272822eeef759668b7396cf8c70beca352687
+    - https://github.com/dffml/dffml/commit/54a272822eeef759668b7396cf8c70beca352687
   - [ ] kernel cmdline (bpf?) DERP -> wireguard -> nfs (overlays applied as systemd files added)

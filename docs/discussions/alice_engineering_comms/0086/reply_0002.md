@@ -3,10 +3,10 @@
 Cross post: https://gist.github.com/pdxjohnny/57b049c284e58f51d0a0d35d05d03d4a
 Cross post: https://github.com/intel/dffml/discussions/1382#discussioncomment-4141177
 Cross post: https://github.com/intel/dffml/discussions/1406?sort=new#discussioncomment-4141183
-Upstream: https://github.com/intel/dffml/tree/8847989eb4cc9f6aa484285ba9c11ff920113ed3
+Upstream: https://github.com/dffml/dffml/tree/8847989eb4cc9f6aa484285ba9c11ff920113ed3
 
 ```console
-$ export TITLE="Alice, should I contribute? Data Flow (upstream: https://github.com/intel/dffml/tree/8847989eb4cc9f6aa484285ba9c11ff920113ed3)";
+$ export TITLE="Alice, should I contribute? Data Flow (upstream: https://github.com/dffml/dffml/tree/8847989eb4cc9f6aa484285ba9c11ff920113ed3)";
 $ (echo "${TITLE}" \
     && echo \
     && python -um dffml service dev export alice.cli:ALICE_COLLECTOR_DATAFLOW > alice_shouldi_contribute.json \

@@ -9,7 +9,7 @@
 - https://github.com/cue-lang/cue
   - Need to play with Cue language
 - GitHub Actions templates docs
-  - [Reusable workflows]() are identified by the presence of [`on.workflow_call`](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_call) an example of a reusable workflow for container builds following the [manifest](https://github.com/intel/dffml/blob/main/docs/arch/0008-Manifest.md) pattern can be found ​in the [`*build_images_containers.yml` files](https://github.com/intel/dffml/blob/main/.github/workflows/build_images_containers.yml).
+  - [Reusable workflows]() are identified by the presence of [`on.workflow_call`](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_call) an example of a reusable workflow for container builds following the [manifest](https://github.com/dffml/dffml/blob/main/docs/arch/0008-Manifest.md) pattern can be found ​in the [`*build_images_containers.yml` files](https://github.com/dffml/dffml/blob/main/.github/workflows/build_images_containers.yml).
 - GitHub Action runner support SCITT receipts on containers / actions
 - `podman` support SCITT recpits
 - https://ariadne.space/2019/07/13/federation-what-flows-where-and-why/
@@ -268,7 +268,7 @@ TypeError: list indices must be integers or slices, not str
 - TODO
   - [ ] Finish scorecard demo and intergate into shouldi
     - Put this in down the dependency rabbit hole again as one of the things we put in `THREATS.md`
-  - [ ] `alice threats cicd` (`-keys https://github.com/intel/dffml`)
+  - [ ] `alice threats cicd` (`-keys https://github.com/dffml/dffml`)
     - [ ] GitHub Actions workflow analysis overlays
       - [ ] Look for `runs-on:` and anything not GitHub hosted, then
             check `on:` triggers to ensure pull requests aren't being run.

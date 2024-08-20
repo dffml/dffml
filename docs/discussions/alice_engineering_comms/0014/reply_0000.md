@@ -14,7 +14,7 @@
     - Have the overlay be a function which outputs a return type of `ContributingContents` and takes the name of the project given in a `CITATIONS.cff` file of the CONTRIBUTING example.
     - https://github.com/johnlwhiteman/living-threat-models/blob/c027d4e319c715adce104b95f1e88623e02b0949/CITATION.cff
     - https://www.youtube.com/watch?v=TMlC_iAK3Rg&list=PLtzAOVTpO2jYt71umwc-ze6OmwwCIMnLw&index=5&t=2303
-    - https://github.com/intel/dffml/blob/9aeb7f19e541e66fc945c931801215560a8206d7/entities/alice/alice/please/contribute/recommended_community_standards/contributing.py#L48-L54
+    - https://github.com/dffml/dffml/blob/9aeb7f19e541e66fc945c931801215560a8206d7/entities/alice/alice/please/contribute/recommended_community_standards/contributing.py#L48-L54
   - [ ] Demo on stream how to write install and contribute a 1st/2nd party overlay, the same code just not third party, from start to finish.
   - [ ] `alice shouldi contribute`
     - [ ] Support caching / import / export dataflows
@@ -45,9 +45,9 @@
 - Metadata
   - Date: 2022-08-30 10:00 UTC -7
 - Docs we are following
-  - https://github.com/intel/dffml/blob/main/entities/alice/CONTRIBUTING.rst
-  - https://github.com/intel/dffml/tree/main/entities/alice#recommend-community-standards
-  - https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0002_our_open_source_guide.md
+  - https://github.com/dffml/dffml/blob/main/entities/alice/CONTRIBUTING.rst
+  - https://github.com/dffml/dffml/tree/main/entities/alice#recommend-community-standards
+  - https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0002_our_open_source_guide.md
 
 ### How to Contribute an Alice Overlay
 

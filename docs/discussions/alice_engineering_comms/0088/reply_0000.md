@@ -9,7 +9,7 @@
       engineer an HTTP based protocol to implement a similar server.
     - This becomes the base layer for communication in our decentralized CI/CD
       aka DFFML plugin land, aka poly repo land, aka the real world, aka Wonderland.
-      - https://github.com/intel/dffml/tree/main/docs/tutorials/rolling_alice/0000_architecting_alice#what-is-alice
+      - https://github.com/dffml/dffml/tree/main/docs/tutorials/rolling_alice/0000_architecting_alice#what-is-alice
       - [service: sw: src: change: notify: Service to facilitate poly repo pull model dev tooling #1315](https://github.com/intel/dffml/issues/1315#issuecomment-1066814280)
       - Vuln management is a MUST implement channel we can use for patch submission
         and comms for alignment between entities.
@@ -40,9 +40,9 @@ $ unxz -d < $(ls ~/asciinema/fedora-rec-* | tail -n 1) | dd if=/dev/stdin of=/de
 
 - Basic server seems to be working for v1 API
 - Added CLI command `alice threats vulns serve nvdstyle`
-  - https://github.com/intel/dffml/commit/cb2c09ead795ba0046cb5911bcd6e939419058d8
+  - https://github.com/dffml/dffml/commit/cb2c09ead795ba0046cb5911bcd6e939419058d8
 
-https://github.com/intel/dffml/blob/4101595a800e74f57cec5537ea2c65680135b71a/entities/alice/alice/threats/vulns/serve/nvdstyle.py#L1-L241
+https://github.com/dffml/dffml/blob/4101595a800e74f57cec5537ea2c65680135b71a/entities/alice/alice/threats/vulns/serve/nvdstyle.py#L1-L241
 
 - https://www.darkreading.com/dr-tech/cybersecurity-nutrition-labels-still-a-work-in-progress
   - https://www.whitehouse.gov/briefing-room/statements-releases/2022/10/20/statement-by-nsc-spokesperson-adrienne-watson-on-the-biden-harris-administrations-effort-to-secure-household-internet-enabled-devices/
@@ -66,7 +66,7 @@ https://github.com/intel/dffml/blob/4101595a800e74f57cec5537ea2c65680135b71a/ent
  - is the discipline of systematically engineering the data used to build an AI system
    - This is what we're doing with Alice
 - Possible alignment with Andrew's "The iterative process of ML development"
-  - https://github.com/intel/dffml/tree/main/docs/tutorials/rolling_alice/0000_architecting_alice#entity-analysis-trinity
+  - https://github.com/dffml/dffml/tree/main/docs/tutorials/rolling_alice/0000_architecting_alice#entity-analysis-trinity
   - Intent / Train model
     - Establish correlations between threat model intent and collected data / errors (telemetry or static analysis, policy, failures)
   - Dynamic analysis / Improve data

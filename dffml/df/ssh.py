@@ -501,7 +501,7 @@ class SSHOrchestrator(MemoryOrchestrator):
          <... output clipped ...>
          'full_name': 'intel/dffml',
          <... output clipped ...>
-         'html_url': 'https://github.com/intel/dffml',
+         'html_url': 'https://github.com/dffml/dffml',
          <... output clipped ...>
          'watchers_count': 135}
 
@@ -627,7 +627,7 @@ class SSHOrchestrator(MemoryOrchestrator):
             -orchestrator-prerun prerun.json \
             -record-def "github.repo.url" \
             -keys \
-              https://github.com/intel/dffml
+              https://github.com/dffml/dffml
 
     We can execute dataflow the from Python too
 
@@ -659,7 +659,7 @@ class SSHOrchestrator(MemoryOrchestrator):
                {
                    "dffml": [
                        dffml.Input(
-                           value="https://github.com/intel/dffml",
+                           value="https://github.com/dffml/dffml",
                            definition=dataflow.definitions["github.repo.url"],
                        ),
                    ],
@@ -747,7 +747,7 @@ class SSHOrchestrator(MemoryOrchestrator):
             -orchestrator-prerun prerun.json \
             -record-def "github.repo.url" \
             -keys \
-              https://github.com/intel/dffml
+              https://github.com/dffml/dffml
 
     """
     CONFIG = SSHOrchestratorConfig

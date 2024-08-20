@@ -24,10 +24,10 @@
     - First mention of the system context was almost immediately, although it wasn't until 2148e16f11a5b5941f19353924ca92e497f81b2a we realized we'd found it
   - 3c26ea48b
     - > With A/B field testing of new system contexts (changes, running dev branches against dev branches). We start to see a complete picture of the fully connected dev model. We can proactively pair changes from one system context with another system context, both overlayed over a base system context. This is when you have two devs working on two feature branches and both have active PRs. They can now effectively work together because they have this translation, this transparent overlay of their respective diffs to the upstream system context (data flow or program flow in this example).
-    - https://github.com/intel/dffml/blob/3c26ea48b9d3b66648ef3d676fd015ce171a8761/docs/arch/alice/discussion/0035/reply_0010.md
+    - https://github.com/dffml/dffml/blob/3c26ea48b9d3b66648ef3d676fd015ce171a8761/docs/arch/alice/discussion/0035/reply_0010.md
       - Hmmm, we may have stumbled onto the start of the OpenSSF use case doc
         - Hey, `git grep` is our friend, let's look for anything talking about CVEs, VEX, vulns, and see if we can scrape together a skeleton use case doc for https://github.com/ietf-scitt/use-cases/issues/14
   - A deal is made: 361555718b5ad589a9430efbd0ed88e7bc0582c3 & 4ef226e2ecd384560d635fa84036003b525ad399
   - Software supply chain
-    - https://github.com/intel/dffml/blob/main/docs/arch/alice/discussion/0036/reply_0062.md
+    - https://github.com/dffml/dffml/blob/main/docs/arch/alice/discussion/0036/reply_0062.md
     - 

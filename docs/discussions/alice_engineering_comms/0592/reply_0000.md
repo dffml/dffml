@@ -3,11 +3,11 @@
 - https://github.com/chkimes/image-attestation/blob/6f670412415746b70706fe851d5acc89f702089b/figures/attestation-chain.png
   - As images get built we run them once to find TPM/TDX values and produce the known measurements and logs those to TS with the BOM of the container / VM/ WASM. The relying party needs to be attested as well in the federation case.
   - > Producer issues VSA which says this TCB works for the Threat Model of your workload
-    - https://github.com/intel/dffml/blob/9b9353b3a4b87efdb8955f529405828308adafbd/docs/discussions/alice_engineering_comms/0572/reply_0000.md
-    - https://github.com/intel/dffml/blob/main/docs/discussions/alice_engineering_comms/0575/reply_0000.md
+    - https://github.com/dffml/dffml/blob/9b9353b3a4b87efdb8955f529405828308adafbd/docs/discussions/alice_engineering_comms/0572/reply_0000.md
+    - https://github.com/dffml/dffml/blob/main/docs/discussions/alice_engineering_comms/0575/reply_0000.md
   - > Between each these is the relying party attestation check.
     >
-    > ![attestation-chain](https://github.com/intel/dffml/assets/5950433/a02b2bf7-fbfe-4160-8e24-fe33d85030d4)
+    > ![attestation-chain](https://github.com/dffml/dffml/assets/5950433/a02b2bf7-fbfe-4160-8e24-fe33d85030d4)
 - https://github.com/in-toto/attestation/pull/341
   - Conflates policy with policy decision
   - Really should be more of a admission control attestation then a deployment attestation
@@ -164,7 +164,7 @@ $ docker run -it -u $(id -u):$(id -g) --rm -v $(pwd):$(pwd):z -w $(pwd) wasi-bui
   - Supports python WASM with asyncio
 - Federation via stream of COSE byte arrays https://github.com/globocom/m3u8
 - https://pygame-web.github.io/showroom/pygbag.html?cpython311
-- https://github.com/intel/dffml/blob/9b9353b3a4b87efdb8955f529405828308adafbd/dffml/util/testing/manifest/shim.py#L3
+- https://github.com/dffml/dffml/blob/9b9353b3a4b87efdb8955f529405828308adafbd/dffml/util/testing/manifest/shim.py#L3
   - Annnnnnnnd we're back folks
 - https://github.com/ccc-certifier-framework/certifier-framework-for-confidential-computing/pull/228
 - https://www.redhat.com/en/blog/all-you-need-know-about-kvm-userspace

@@ -22,7 +22,7 @@
 - #1315
   - Alice is fundamentally about closing the feedback loop within a decentralized supply chain.
     - Ensuring that it's a secure feedback loop
-    - [2020-12-08: examples: swportal: Add example (in 0.4.0)](https://github.com/intel/dffml/commit/2e42032e0a0872ef75a0920578746d0880b9cb70)
+    - [2020-12-08: examples: swportal: Add example (in 0.4.0)](https://github.com/dffml/dffml/commit/2e42032e0a0872ef75a0920578746d0880b9cb70)
       - This frontend effectively becomes feed by the same graphs that feed Alice's Analysis which happens at the center of the Entity Analysis Trinity
         - This is our mental model, our UI
           - This UI becomes integrated as needed

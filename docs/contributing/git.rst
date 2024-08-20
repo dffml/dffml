@@ -26,7 +26,7 @@ to do your work on.
     $ git checkout -b my_new_thing origin/main
 
 You need to have your own version of DFFML to track your work. Log in to your
-Github account and go to `DFFML <https://github.com/intel/dffml>`_ repository.
+Github account and go to `DFFML <https://github.com/dffml/dffml>`_ repository.
 There is a ``Fork`` tab at the top right of the page. Click on the button to
 fork a copy into your Github account.
 
@@ -206,6 +206,6 @@ For the tests in the various plugins:
 
     The last place to check to see if the CI job is failing because of your
     changes or because of something outside of your control is the
-    `kind/ci/failing <https://github.com/intel/dffml/labels/kind%2Fci%2Ffailing>`_
+    `kind/ci/failing <https://github.com/dffml/dffml/labels/kind%2Fci%2Ffailing>`_
     label. If it's not there it's likely something in your pull request that
     caused the issue.

@@ -7,10 +7,10 @@
       - `payload`: The relevant data which the LLM is being asked to generate
   - COSE - CBOR (base64 encoded)
     - dito but use CDL markdown or mermaid and LLM generated schema for definition of pycose calls and their arguments which are serializeable to JSON.
-      - Have the LLM generate the code we need to add to the [manifest `shim.py`](https://github.com/intel/dffml/blob/474478442ad7293d84c387be094b70881ec2165b/dffml/util/testing/manifest/shim.py). This code will parse the top level object and use the JSON schema to codegen or dynamically define classes and interfaces (types python module, protobufs as well? Should we put a recommended format section as an array of objects at the top level.
+      - Have the LLM generate the code we need to add to the [manifest `shim.py`](https://github.com/dffml/dffml/blob/474478442ad7293d84c387be094b70881ec2165b/dffml/util/testing/manifest/shim.py). This code will parse the top level object and use the JSON schema to codegen or dynamically define classes and interfaces (types python module, protobufs as well? Should we put a recommended format section as an array of objects at the top level.
         - `@lice`: PPlease think step by step and write me a program which captures all audio on fedora linux and streams it via standard web elements using an HTTP server which streams it's machines audio and serves an HTML page using only standard elements and no javascript at the root of the site. Write all these steps as a bash script which uses the tee command to write the various files. Please incudle the execution of a python script which uses subprocess to execute ffmpeg and avoid the use of `subprocess.PIPE`, instead, pass `self.wfile` as the fileobj to Popen's stdin kwarg on request to the root path. Please ensure that ffmpeg is terminated in the event of any errors.
           - Generic: Given a repo, clone it and attach files to Alice with retrieval enabled. Optionally create a fork of the repo. Create a new branch which is under 200 characters and describes the user provided modification request (json schema for this stuff). 
-    - https://github.com/intel/dffml/commit/5da7864deac143c900ddcf2d02ab524894b60b23
+    - https://github.com/dffml/dffml/commit/5da7864deac143c900ddcf2d02ab524894b60b23
     - https://github.com/intel/dffml/pull/1454
     - https://github.com/intel/dffml/pull/1450
     - https://github.com/intel/dffml/pull/1273

@@ -1,4 +1,4 @@
-# [Rolling Alice](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/)
+# [Rolling Alice](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/)
 
 > This is Alice's plan. We are building her as a community, reach out
 > if you want to get involved. The plan is fairly abstract, as our goals are to
@@ -33,7 +33,7 @@ how to be human. Her thought process is a methodology for problem
 solving which is based off a mental model of how the human mind
 interacts with the world. Alice the architecture is just the
 existing best known architecture, what use everyday, all the time.
-Alice is the [Open Architecture](https://github.com/intel/dffml/blob/main/docs/arch/0009-Open-Architecture.rst),
+Alice is the [Open Architecture](https://github.com/dffml/dffml/blob/main/docs/arch/0009-Open-Architecture.rst),
 she is the architecture of us all.
 We'll learn from Alice, and Alice will learn from us as she comes
 into our time.
@@ -42,7 +42,7 @@ Roll Alice with us, for humanity, enter the machine.
 
 ### Table Of Contents
 
-- [Upstream](https://github.com/intel/dffml/tree/main/entities/alice)
+- [Upstream](https://github.com/dffml/dffml/tree/main/entities/alice)
 - [Rolling Alice](./)
 - [Forward](0000_forward.md)
 - [Preface](0000_preface.md)

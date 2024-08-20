@@ -1,6 +1,6 @@
 ## 2023-03-23 @pdxjohnny Engineering Logs
 
-https://github.com/intel/dffml/blob/4dae1a3e6b6d37b81f71659599d1ddef800ac176/scripts/dump_discussion.py#L217-L247
+https://github.com/dffml/dffml/blob/4dae1a3e6b6d37b81f71659599d1ddef800ac176/scripts/dump_discussion.py#L217-L247
 
 - https://github.com/intel/compile-time-init-build
 - https://codeql.github.com/docs/codeql-cli/manual/database-create/

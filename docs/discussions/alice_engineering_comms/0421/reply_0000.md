@@ -5,7 +5,7 @@
 - https://codeberg.org/bovine/bovine/src/branch/main/bovine_herd/FEDERATION.md
   - https://www.darkreading.com/cloud/-cattle-not-pets-the-rise-of-security-as-code
   - https://zitadel.com/docs/blog/treat-clusters-as-cattle
-    - > ![clusters-are-cattle-not-pets](https://github.com/intel/dffml/assets/5950433/77d2673f-ed5f-4202-bb44-25f76060f45f)
+    - > ![clusters-are-cattle-not-pets](https://github.com/dffml/dffml/assets/5950433/77d2673f-ed5f-4202-bb44-25f76060f45f)
 - https://codeberg.org/bovine/bovine
   - Most of the tools need to be run from the directory with the SQLite database in them (`bovine.sqlite3`)
 - https://bovine-herd.readthedocs.io/en/latest/deployment.html

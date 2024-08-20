@@ -2,7 +2,7 @@
 
 - Current focus is around leveraging threat model and architecture information to engage in automated context informed proactive, reactive, or periodic (tech debt cleanup) mitigation activities. This is in pursuit of enabling decentralized gamification / continuous improvement of the security lifecycle / posture of open source projects. Enabling them to overlay their custom logic on upstream OSS analysis and policy evaluation will ideally increase helpfulness of static and dynamic analysis and automated remediation.
   - https://gist.github.com/pdxjohnny/07b8c7b4a9e05579921aa3cc8aed4866
-  - https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/README.md#rolling-alice-volume-0-introduction-and-context
+  - https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/README.md#rolling-alice-volume-0-introduction-and-context
     - "Snapshot of System Context" here is content addressable execution
       - [2022-11-08 @pdxjohnny Engineering Logs](https://github.com/intel/dffml/discussions/1406?sort=new#discussioncomment-4086860)
 - https://github.com/TimothyClaeys/pycose
@@ -16,7 +16,7 @@
     - System Context
       - Stumbled upon "valid system context" stuff (I/O must existing / be mapped)
         - https://youtu.be/m0TO9IOqRfQ?t=3812&list=PLtzAOVTpO2jaHsS4o-sDzDyHEug-1KRbK
-        - https://github.com/intel/dffml/blob/1d4d6b2f817cd987ceff94b4984ce909b7aa3c7f/dffml/df/system_context/system_context.py#L101-L103
+        - https://github.com/dffml/dffml/blob/1d4d6b2f817cd987ceff94b4984ce909b7aa3c7f/dffml/df/system_context/system_context.py#L101-L103
 - https://github.com/CycloneDX/bom-examples/tree/master/VEX/CISA-Use-Cases
 - https://github.com/hadolint/hadolint
 - https://github.com/sahlberg/fuse-nfs

@@ -46,5 +46,5 @@ RuntimeError: ['kubectl', '--context', 'kind-kind', 'apply', '-o=json', '-k', '.
 
 - TODO
   - [ ] Update Job based Kubernetes Orchestrator to add a note that sometimes a `preapply` is needed to set the limits (required to be set by the namespace?)
-    - https://github.com/intel/dffml/blob/3e157b391ffc36b6073288d0fe7a21a6a82b55a4/dffml/df/kubernetes.py#L1048-L1108
+    - https://github.com/dffml/dffml/blob/3e157b391ffc36b6073288d0fe7a21a6a82b55a4/dffml/df/kubernetes.py#L1048-L1108
 ```

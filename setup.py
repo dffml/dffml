@@ -56,7 +56,7 @@ setup(
     author_email="john.s.andersen@intel.com",
     maintainer="John Andersen",
     maintainer_email="john.s.andersen@intel.com",
-    url="https://github.com/intel/dffml",
+    url="https://github.com/dffml/dffml",
     license="MIT",
     keywords=[""],
     classifiers=[

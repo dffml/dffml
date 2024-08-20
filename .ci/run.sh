@@ -262,7 +262,7 @@ function run_docs() {
   alice_branch_repo="$(mktemp -d)"
   alice_docs="$(mktemp -d)"
   TEMP_DIRS+=("${main_docs}")
-  git clone --depth=1 https://github.com/intel/dffml -b alice "${alice_branch_repo}"
+  git clone --depth=1 https://github.com/dffml/dffml -b alice "${alice_branch_repo}"
   rm -rf pages
   dffml service dev docs -no-strict || ./scripts/docs.sh
   # Check to see if docs built successfully
@@ -294,7 +294,7 @@ function run_docs() {
   fi
   mv pages "${release_docs}/html"
 
-  git clone https://github.com/intel/dffml -b gh-pages \
+  git clone https://github.com/dffml/dffml -b gh-pages \
     "${release_docs}/old-gh-pages-branch"
 
   mv "${release_docs}/old-gh-pages-branch/.git" "${release_docs}/html/"

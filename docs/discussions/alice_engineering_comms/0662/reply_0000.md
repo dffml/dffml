@@ -17,6 +17,6 @@ class EntryPoint(importlib.metadata.EntryPoint):
 
 - TODO
   - [x] https://github.com/intel/cve-bin-tool/pull/4200
-  - [ ] [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/intel/dffml/badge)](https://scorecard.dev/viewer/?uri=github.com/intel/dffml)
+  - [ ] [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/dffml/dffml/badge)](https://scorecard.dev/viewer/?uri=github.com/dffml/dffml)
     - [ ] https://github.com/intel/dffml/issues/1583
     - [x] `gh pr list --json url,author --jq '[.[] | select(.author.login == "app/dependabot")]`

@@ -79,7 +79,7 @@ Write a manifest
 $schema: https://intel.github.io/dffml/manifest-format-name.0.0.2.schema.json
 pipeline_runs:
   - git:
-      repo: https://github.com/intel/dffml.git
+      repo: https://github.com/dffml/dffml.git
       file: dffml/__init__.py
       branch: main
 ```

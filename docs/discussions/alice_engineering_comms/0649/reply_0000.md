@@ -51,7 +51,7 @@ docker run \
       - Will have to implement in API, basing off org create APIs since that form in similar
 - What is federation with forgejo? Peer to peer pull requests. CI/CD on host and in shared pools. Works on my machine should also be works in CI because we have a runner on our machine.
 
-![image](https://github.com/intel/dffml/assets/5950433/a109e68b-ca8b-486c-887c-588fdbe0b883)
+![image](https://github.com/dffml/dffml/assets/5950433/a109e68b-ca8b-486c-887c-588fdbe0b883)
 
 - OIDC confidential client flow
 

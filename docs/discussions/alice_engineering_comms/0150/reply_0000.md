@@ -40,10 +40,10 @@
 ```
 
 - Example overlay of running actions validator
-  - https://github.com/intel/dffml/blob/12e862924a85c4ec36499c869406d411bb07c9fb/operations/innersource/dffml_operations_innersource/actions_validator.py#L56-L76
+  - https://github.com/dffml/dffml/blob/12e862924a85c4ec36499c869406d411bb07c9fb/operations/innersource/dffml_operations_innersource/actions_validator.py#L56-L76
 - Example of enabling that for `alice shouldi contribute`
-  - https://github.com/intel/dffml/blob/12e862924a85c4ec36499c869406d411bb07c9fb/entities/alice/entry_points.txt#L29
+  - https://github.com/dffml/dffml/blob/12e862924a85c4ec36499c869406d411bb07c9fb/entities/alice/entry_points.txt#L29
 - Example of ensuring binary available for testing
-  - https://github.com/intel/dffml/blob/12e862924a85c4ec36499c869406d411bb07c9fb/entities/alice/alice_test/shouldi/contribute/actions_validator.py#L62-L83
-  - https://github.com/intel/dffml/blob/12e862924a85c4ec36499c869406d411bb07c9fb/entities/alice/entry_points.txt#L35
+  - https://github.com/dffml/dffml/blob/12e862924a85c4ec36499c869406d411bb07c9fb/entities/alice/alice_test/shouldi/contribute/actions_validator.py#L62-L83
+  - https://github.com/dffml/dffml/blob/12e862924a85c4ec36499c869406d411bb07c9fb/entities/alice/entry_points.txt#L35
     - **TODO** Command to enable overlays by creating blank package and installing

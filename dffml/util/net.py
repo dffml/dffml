@@ -194,7 +194,7 @@ async def cached_download(
 
     .. code-block:: console
 
-        $ curl -sSL 'https://github.com/intel/dffml/raw/152c2b92535fac6beec419236f8639b0d75d707d/MANIFEST.in' | sha384sum
+        $ curl -sSL 'https://github.com/dffml/dffml/raw/152c2b92535fac6beec419236f8639b0d75d707d/MANIFEST.in' | sha384sum
         f7aadf5cdcf39f161a779b4fa77ec56a49630cf7680e21fb3dc6c36ce2d8c6fae0d03d5d3094a6aec4fea1561393c14c  -
 
     Parameters
@@ -218,7 +218,7 @@ async def cached_download(
     >>>
     >>> cached_manifest = asyncio.run(
     ...     cached_download(
-    ...         "https://github.com/intel/dffml/raw/152c2b92535fac6beec419236f8639b0d75d707d/MANIFEST.in",
+    ...         "https://github.com/dffml/dffml/raw/152c2b92535fac6beec419236f8639b0d75d707d/MANIFEST.in",
     ...         "MANIFEST.in",
     ...         "f7aadf5cdcf39f161a779b4fa77ec56a49630cf7680e21fb3dc6c36ce2d8c6fae0d03d5d3094a6aec4fea1561393c14c",
     ...     )
@@ -284,7 +284,7 @@ async def cached_download_unpack_archive(
     >>>
     >>> dffml_dir = asyncio.run(
     ...     cached_download_unpack_archive(
-    ...         "https://github.com/intel/dffml/archive/c4469abfe6007a50144858d485537324046ff229.tar.gz",
+    ...         "https://github.com/dffml/dffml/archive/c4469abfe6007a50144858d485537324046ff229.tar.gz",
     ...         "dffml.tar.gz",
     ...         "dffml",
     ...         "bb9bb47c4e6e4c6b7147bb3c000bc4069d69c0c77a3e560b69f476a78e6b5084adf5467ee83cbbcc47ba5a4a0696fdfc",

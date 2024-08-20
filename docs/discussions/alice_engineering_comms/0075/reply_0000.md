@@ -197,7 +197,7 @@ end
 $ alice please log todos -log debug -repos https://github.com/pdxjohnny/testaaa
 ```
 
-- Got `alice please log todos` (slimmed down version of `alice please contribute`) working https://github.com/intel/dffml/commit/adf32b4e80ad916de7749fc0b6e99485fb4107b7
+- Got `alice please log todos` (slimmed down version of `alice please contribute`) working https://github.com/dffml/dffml/commit/adf32b4e80ad916de7749fc0b6e99485fb4107b7
   - This will allow us to not deal with the pull request code unless triggered.
   - Without the overlay infra complete it's harder to remove ops / modify flows than it is to add to them (static overlay application is what we have and is easy, it's just auto flow the definitions together)
 - TODO

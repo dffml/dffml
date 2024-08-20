@@ -189,7 +189,7 @@ class GetMulti(OperationImplementationContext):
     >>> async def main():
     ...     async for ctx, results in MemoryOrchestrator.run(dataflow, [
     ...         Input(
-    ...             value="https://github.com/intel/dffml",
+    ...             value="https://github.com/dffml/dffml",
     ...             definition=URL
     ...         ),
     ...         Input(
@@ -200,7 +200,7 @@ class GetMulti(OperationImplementationContext):
     ...         print(results)
     ...
     >>> asyncio.run(main())
-    {'URL': ['https://github.com/intel/dffml', 'https://github.com/intel/cve-bin-tool']}
+    {'URL': ['https://github.com/dffml/dffml', 'https://github.com/intel/cve-bin-tool']}
     """
 
     async def run(self, inputs: Dict[str, Any]) -> Dict[str, Any]:
@@ -306,7 +306,7 @@ class GetSingle(GetMulti):
     >>> async def main():
     ...     async for ctx, results in MemoryOrchestrator.run(dataflow, [
     ...         Input(
-    ...             value="https://github.com/intel/dffml",
+    ...             value="https://github.com/dffml/dffml",
     ...             definition=URL
     ...         ),
     ...         Input(
@@ -317,7 +317,7 @@ class GetSingle(GetMulti):
     ...         print(results)
     ...
     >>> asyncio.run(main())
-    {'ORG': 'Intel', 'Repo Link': 'https://github.com/intel/dffml'}
+    {'ORG': 'Intel', 'Repo Link': 'https://github.com/dffml/dffml'}
     """
 
     async def run(self, inputs: Dict[str, Any]) -> Dict[str, Any]:

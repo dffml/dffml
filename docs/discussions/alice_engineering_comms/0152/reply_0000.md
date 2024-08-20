@@ -3,11 +3,11 @@
 - Ask terri if cve-bin-tool got integrated into [Trivy](https://github.com/aquasecurity/trivy)
 - Soon we'll be able to talk to Alice like a ⁠[rubber duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging) @mepsheehan
   - https://github.com/enhuiz/vall-e
-  - https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0004_writing_the_wave.md
+  - https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0004_writing_the_wave.md
 - https://github.com/facebookresearch/esm#quickstart
   - For our software DNA
 - https://learn.microsoft.com/en-us/windows/wsl/wsl-config#systemd-support
-- https://github.com/intel/dffml/commit/73f13854a637a505a4dde3b82a0399192a8563cd
+- https://github.com/dffml/dffml/commit/73f13854a637a505a4dde3b82a0399192a8563cd
 - Need a way to trigger downstream on container pushed
   - https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#create-a-repository-dispatch-event
   - https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#repository_dispatch

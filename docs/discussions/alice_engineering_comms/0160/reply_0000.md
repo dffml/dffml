@@ -212,7 +212,7 @@ type: OrderedCollection
 
 ```json
 {
-    "$id": "https://github.com/intel/dffml/raw/alice/schema/alice/shouldi/contribute/0.0.0.schema.json",
+    "$id": "https://github.com/dffml/dffml/raw/alice/schema/alice/shouldi/contribute/0.0.0.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "description": "Schema for Alice Should I Contribute? Gatekeeper",
     "properties": {
@@ -381,8 +381,8 @@ $ jq '.[].features | {repo_url: .git_repository_checked_out[0].URL, community_he
 ]
 ```
 
-- https://github.com/intel/dffml/blob/main/docs/arch/0008-Manifest.md
-- https://github.com/intel/dffml/blob/main/docs/arch/0010-Schema.rst
+- https://github.com/dffml/dffml/blob/main/docs/arch/0008-Manifest.md
+- https://github.com/dffml/dffml/blob/main/docs/arch/0010-Schema.rst
 
 ```console
 $ jsonschema --instance <(jq '.[].features | {repo_url: .git_repository_checked_out[0].URL, community_health_check: {has_support: (if .FileSupportPresent then .FileSupportPresent[0] else false end)}}' dffml_list_records_stdout.json | jq -s | jq '.[0]') 0.0.0.schema.json
@@ -393,7 +393,7 @@ False: False is not one of [True]
 
 - We can leverage the GitHub CLI webhook proxy to bypass static registration
   - We can have periodically scheduled jobs on runners we add which just sit and translate
-  - [![hack-the-planet](https://img.shields.io/badge/hack%20the-planet-blue)](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_easter_eggs.md#hack-the-planet-)
+  - [![hack-the-planet](https://img.shields.io/badge/hack%20the-planet-blue)](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_easter_eggs.md#hack-the-planet-)
 - https://stackoverflow.com/questions/22429744/how-to-setup-route-for-websocket-server-in-express
   - Looking to decouple listening for events via websocket
   - https://github.com/vi/websocat
@@ -608,7 +608,7 @@ $ curl -s http://localhost:8000/alice | jq -r
     - In the event that the contact URL is resolve to an ActivityPub `Person`
       - https://example.social/@security-contact-handle
     - In the event that the `summary` field for that `Person` is a manifest
-      - https://github.com/intel/dffml/raw/alice/schema/security/vulnerability-disclosure-program/0.0.0.schema.json
+      - https://github.com/dffml/dffml/raw/alice/schema/security/vulnerability-disclosure-program/0.0.0.schema.json
     - Fulfill the manifest in alignment with it's ADR as needed within context
       - Possible fields in sketch below
         - Later option of DIDs instead of ActivityPub
@@ -618,7 +618,7 @@ $ curl -s http://localhost:8000/alice | jq -r
 **schema/security/vulnerability-disclosure-program/example-pass.yaml**
 
 ```yaml
-$schema: "https://github.com/intel/dffml/raw/alice/schema/security/vulnerability-disclosure-program/0.0.0.schema.json"
+$schema: "https://github.com/dffml/dffml/raw/alice/schema/security/vulnerability-disclosure-program/0.0.0.schema.json"
 sbom_feed:
 - "https://example.social/@security-contact-handle-sbom-feed"
 vex_feed:

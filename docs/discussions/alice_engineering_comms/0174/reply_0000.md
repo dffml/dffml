@@ -21,7 +21,7 @@ $ rm -f db/database.sqjlite3; ssh -R 80:localhost:8000 nokey@localhost.run 2>&1 
 - https://github.com/testifysec/archivista
 
 ```console
-$ gh api --jq .content https://api.github.com/repos/intel/dffml/contents/scripts/alice_shouldi_contribute.Dockerfile | base64 -d | docker build --build-arg=GH_ACCESS_TOKEN=$(grep oauth_token < ~/.config/gh/hosts.yml | sed -e 's/    oauth_token: //g') --build-arg=REPO_URL=https://github.com/intel/dffml -f - -t scan-results-of-intel-dffml /dev/null
+$ gh api --jq .content https://api.github.com/repos/intel/dffml/contents/scripts/alice_shouldi_contribute.Dockerfile | base64 -d | docker build --build-arg=GH_ACCESS_TOKEN=$(grep oauth_token < ~/.config/gh/hosts.yml | sed -e 's/    oauth_token: //g') --build-arg=REPO_URL=https://github.com/dffml/dffml -f - -t scan-results-of-intel-dffml /dev/null
 $ docker save scan-results-of-intel-dffml | tar --extract --to-stdout --wildcards --no-anchored 'layer.tar' | tar --extract --to-stdout  --wildcards --no-anchored 'result.yaml'
 ```
 

@@ -10,4 +10,4 @@
 - https://github.com/openvex/spec/issues/43
 - https://github.com/opencontainers/distribution-spec/issues/459
 
-![image](https://github.com/intel/dffml/assets/5950433/91165c0a-0b81-4304-9d4e-e02cf20eeb61)
+![image](https://github.com/dffml/dffml/assets/5950433/91165c0a-0b81-4304-9d4e-e02cf20eeb61)

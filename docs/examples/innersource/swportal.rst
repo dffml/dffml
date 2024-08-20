@@ -8,7 +8,7 @@ software development workflow that makes is easy for a large group of developers
 to collaborate quickly and effectively.
 
 All the code for this example project is located under the
-`examples/innersource/swportal <https://github.com/intel/dffml/blob/main/examples/innersource/swportal/>`_
+`examples/innersource/swportal <https://github.com/dffml/dffml/blob/main/examples/innersource/swportal/>`_
 directory of the DFFML source code.
 
 History
@@ -103,7 +103,7 @@ We have a number of constraints for this example.
 
 - The repos we are interested in displaying are all hosted in GitHub. We can
   find the information we need stored on the file system. (See the
-  `orgs <https://github.com/intel/dffml/blob/main/examples/innersource/swportal/orgs/>`_
+  `orgs <https://github.com/dffml/dffml/blob/main/examples/innersource/swportal/orgs/>`_
   directory to see what this looks like).
 
  - The structure is such that GitHub orgs are directories. Each directory
@@ -246,7 +246,7 @@ entry point path to the class we just implemented
                     "johnandersenpdx@gmail.com"
                 ]
             },
-            "key": "https://github.com/intel/dffml"
+            "key": "https://github.com/dffml/dffml"
         },
         {
             "extra": {},
@@ -477,7 +477,7 @@ and more.
      <... output clipped ...>
      'full_name': 'intel/dffml',
      <... output clipped ...>
-     'html_url': 'https://github.com/intel/dffml',
+     'html_url': 'https://github.com/dffml/dffml',
      <... output clipped ...>
      'watchers_count': 135}
 
@@ -561,7 +561,7 @@ repos.json file, you can do it as follows.
         -source-portal-readwrite \
         -update \
         -keys \
-          https://github.com/intel/dffml
+          https://github.com/dffml/dffml
 
 If you want to run the dataflow on a single repo, without updating the source,
 you can do it as follows, by omiting the source related arguments.
@@ -573,4 +573,4 @@ you can do it as follows, by omiting the source related arguments.
         -dataflow dataflow.json \
         -record-def "github.repo.url" \
         -keys \
-          https://github.com/intel/dffml
+          https://github.com/dffml/dffml

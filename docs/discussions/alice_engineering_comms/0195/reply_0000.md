@@ -53,7 +53,7 @@
         - The shim already supports validation so we could actually just serialize the would be HTTP requests to files (same as staged when offline)
           - https://github.com/intel/dffml/pull/1273/files#r794027710
           - Could add activity style using this operation (function) as upstream, just copy paste and push to shim
-            - https://github.com/intel/dffml/blob/e1914f794c7ccc3a7483fa490cfbe5170bf65972/dffml/util/testing/manifest/shim.py#L744-L757
+            - https://github.com/dffml/dffml/blob/e1914f794c7ccc3a7483fa490cfbe5170bf65972/dffml/util/testing/manifest/shim.py#L744-L757
     - https://github.com/tern-tools/tern#report-cyclonedxjson
       - Upload resulting SBOM to registry `FROM scratch` style or via
         - https://github.com/opencontainers/image-spec/blob/819aa940cae7c067a8bf89b1745d3255ddaaba1d/artifact.md
@@ -85,7 +85,7 @@
   - :)
 
 ```console
-$ gh pr -R https://github.com/intel/dffml merge --rebase --auto 1406
+$ gh pr -R https://github.com/dffml/dffml merge --rebase --auto 1406
 ```
 
 - https://github.com/ietf-scitt/cose-merkle-tree-proofs/pull/12

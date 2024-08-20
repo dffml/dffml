@@ -22,11 +22,11 @@
         scitt-url: https://scitt.unstable.chadig.com
 ```
 
-![chaos-for-the-chaos-god](https://github.com/intel/dffml/assets/5950433/636969a1-1f0f-4c96-8812-f10fa403e79c)
+![chaos-for-the-chaos-god](https://github.com/dffml/dffml/assets/5950433/636969a1-1f0f-4c96-8812-f10fa403e79c)
 
 - https://loop.online/claw
 - TODO
   - [x] Submit OpenVEX to SCITT
     - https://github.com/openvex/generate-vex/pull/1
-    - https://github.com/intel/dffml/actions/runs/7225714933/job/19689765921
+    - https://github.com/dffml/dffml/actions/runs/7225714933/job/19689765921
     - https://view.scitt.unstable.chadig.com/entry/sha384:c6b4005b1442fd02c825b50ebbb83dc4e4a245f9b3504461c7a3c6a88c61b6eae1d0733d41f70bc99c7ff34a09de8c40/

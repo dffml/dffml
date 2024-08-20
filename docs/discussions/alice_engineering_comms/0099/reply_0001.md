@@ -20,4 +20,4 @@
     > - Updated Transfer Learning Jupyter notebooks
 - TODO
   - [ ] Alice, wrap and distributed as PyPi packages all pretrained models from IntelAI/models
-    - Automated package creation code for on demand packages: https://github.com/intel/dffml/blob/1513484a4bf829b86675dfb654408674495687d3/dffml/operation/stackstorm.py
+    - Automated package creation code for on demand packages: https://github.com/dffml/dffml/blob/1513484a4bf829b86675dfb654408674495687d3/dffml/operation/stackstorm.py

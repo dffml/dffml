@@ -1,4 +1,4 @@
-# [Volume 0: Chapter 5: Stream of Consciousness](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0005_stream_of_consciousness.md)
+# [Volume 0: Chapter 5: Stream of Consciousness](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0005_stream_of_consciousness.md)
 
 In this tutorial we use dataflow as class to build Input, Redundancy,
 Lock, Operation, and Operation Implementation Networks which interact
@@ -103,10 +103,10 @@ graph TD
 **WARNING: THIS IS A WORK IN PROGRESS AND PROVIDES NO SECURITY GUARANTEES**
 
 - References
-  - [`docker-compose.yml`](https://github.com/intel/dffml/tree/main/examples/tutorials/rolling_alice/federated_forge/alice_and_bob)
+  - [`docker-compose.yml`](https://github.com/dffml/dffml/tree/main/examples/tutorials/rolling_alice/federated_forge/alice_and_bob)
 
 ```console
-$ git clone https://github.com/intel/dffml -b alice
+$ git clone https://github.com/dffml/dffml -b alice
 $ cd examples/tutorials/rolling_alice/federated_forge/alice_and_bob/
 $ docker-compose up
 ```
@@ -353,7 +353,7 @@ dependencies. Registration involves plugin based configurable callbacks.
        - At 07:34 -7 UTC @pdxjohnny started drafting the tutorial: `Rolling Alice: Coach Alice: You are what you EAT!`
          - Others with the GitHub discussions thread loaded in their browser (at least on desktop) will see updates soon after he edits comments and replies in the thread.
          - https://github.com/intel/dffml/discussions/1406?sort=new#discussioncomment-3883683
-      - We will combine GitHub Actions on discussion edit trigger with [`scripts/dump_discussion.py`](https://github.com/intel/dffml/blob/ed4d806cf2988793745905578a0adc1b02e7eeb6/scripts/dump_discussion.py)
+      - We will combine GitHub Actions on discussion edit trigger with [`scripts/dump_discussion.py`](https://github.com/dffml/dffml/blob/ed4d806cf2988793745905578a0adc1b02e7eeb6/scripts/dump_discussion.py)
       - We will replicate this data to DIDs and run DWN `serviceEndpoint` s as needed.
         - system context as service endpoint or executed locally if sandboxing / orchestrator policy permits.
           - See early architecting Alice Engineering Log lossy cached streams of consciousness for more detail
@@ -364,7 +364,7 @@ dependencies. Registration involves plugin based configurable callbacks.
        - We will write orchestration operations / data flows / overlays and use data flow as class to leverage them via double context entry pattern (or some other way to do that).
        - We will see the same effect, but in a more DID based way with abstract implementation / infra
          - This will be mentioned as being a follow on to the tutorial: `Rolling Alice: Architecting Alice: Stream of Consciousness`
-           - https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0005_stream_of_consciousness.md
+           - https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0005_stream_of_consciousness.md
          - Alice will filter by updates relevant to the downstream receiver of events based on their current state, context, etc.
            - https://twitter.com/SergioRocks/status/1580545209678454784
              - > !["Because Jade had more uninterrupted Deep Work time than Brayan. Those 4 interruptions that Brayan suffered amounted for an actual loss of 3 hours of productive work on the tasks assigned to him." Sergio Pereira](https://pbs.twimg.com/media/Fe85fdaXgAEhe4_?format=png)
@@ -382,6 +382,6 @@ dependencies. Registration involves plugin based configurable callbacks.
              alignment with your strategic principles / values. She's a trustworthy
              messenger, the Ghost in the shell.
            - See discussion thread (or the thread dump in `docs/arch/alice/discussion`)
-             - https://github.com/intel/dffml/tree/main/docs/arch/alice/discussion
+             - https://github.com/dffml/dffml/tree/main/docs/arch/alice/discussion
                - `$ git log -p --reverse -p -- docs/arch/alice/discussion`
              - https://github.com/intel/dffml/discussions/1369

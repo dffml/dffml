@@ -136,7 +136,7 @@ if __name__ == '__main__':
     asyncio.run(main(REPOS, FILE_PATH))
 ```
 
-![image](https://github.com/intel/dffml/assets/5950433/0ac22f17-d8e0-4e29-80b9-8423af4497e6)
+![image](https://github.com/dffml/dffml/assets/5950433/0ac22f17-d8e0-4e29-80b9-8423af4497e6)
 
 - TODO
   - [ ] Think about federation from the CBOR API perspective

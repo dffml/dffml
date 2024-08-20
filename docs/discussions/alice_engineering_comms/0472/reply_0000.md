@@ -10,8 +10,8 @@
 - What to expect
   - Alice ready for contribution
     - Completed: 2022-07-29
-    - [Coach Alice Our Open Source Guide](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0002_our_open_source_guide.md)
-    - [General Alice Contribution Docs](https://github.com/intel/dffml/blob/main/entities/alice/CONTRIBUTING.rst#tutorials)
+    - [Coach Alice Our Open Source Guide](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0002_our_open_source_guide.md)
+    - [General Alice Contribution Docs](https://github.com/dffml/dffml/blob/main/entities/alice/CONTRIBUTING.rst#tutorials)
   - We'll be rebasing this branch into main once the CI for 2ndparty plugin support passes (see closed PR with ADR, only closed because of branch rewrite to remove images, will be reopened asap).
     - ETA: 2023-06-01
   - We'll then rewrite history again, splitting the plugins out into their respective 2ndparty maintenance locations (dffml or builtree org or possibly other option on stay with 2ndparty within intel org, weâ€™ll see how it goes pending governance review).
@@ -20,7 +20,7 @@
     - ETA: 2024-11-30
 - Code
   - Alice
-    - https://github.com/intel/dffml/tree/main/entities/alice
+    - https://github.com/dffml/dffml/tree/main/entities/alice
 - Documentation
   - [Status Updates](https://www.youtube.com/playlist?list=PLtzAOVTpO2jZltVwl3dSEeQllKWZ0YU39)
   - Engineering Logs
@@ -31,57 +31,57 @@
   - Contributing
     - [Google Doc: Alice Community any and all Miscellaneous Thoughts](https://docs.google.com/document/d/1-98h1NWagbQbRYEkRHA7Kb-TuanmackGwtcvKIMqB0c/edit)
       - For those less comfortable with GitHub.
-    - [Writing Alice Overlays](https://github.com/intel/dffml/blob/main/entities/alice/CONTRIBUTING.rst)
+    - [Writing Alice Overlays](https://github.com/dffml/dffml/blob/main/entities/alice/CONTRIBUTING.rst)
   - Tutorials
-    - [ ] [Rolling Alice](https://github.com/intel/dffml/tree/main/docs/tutorials/rolling_alice)
-      - [ ] [Forward](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_forward.md)
-      - [ ] [Preface](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_preface.md)
-      - [ ] [Easter Eggs](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_easter_eggs.md)
-      - [ ] [Architecting Alice: Introduction and Context](https://github.com/intel/dffml/tree/main/docs/tutorials/rolling_alice/0000_architecting_alice)
-        - [x] [Peace at Last](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0001_peace_at_last.md)
-        - [ ] [Sheâ€™s Arriving When?](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0002_shes_ariving_when.md)
-        - [ ] [A Shell for a Ghost](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0003_a_shell_for_a_ghost.md)
-        - [ ] [Writing the Wave](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0004_writing_the_wave.md)
-        - [ ] [Stream of Consciousness](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0005_stream_of_consciousness.md)
-        - [ ] [OS DecentrAlice](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0006_os_decentralice.md)
-        - [ ] [An Image](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0007_an_image.md)
-      - [ ] [Coach Alice](https://github.com/intel/dffml/tree/main/docs/tutorials/rolling_alice/0001_coach_alice)
-        - [x] [Introduction](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0000_introduction.md)
-        - [ ] [Down the Dependency Rabbit-Hole Again](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0001_down_the_dependency_rabbit_hole_again.md)
-        - [x] [Our Open Source Guide](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0002_our_open_source_guide.md)
-        - [ ] [Strategic Principles as Game Plan](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0003_strategic_principles_as_game_plan.md)
-        - [ ] [You are what you EAT!](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0004_you_are_what_you_EAT.md)
-        - [ ] [In the Lab](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0004_in_the_lab.md)
-        - [ ] [An Open Book](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0005_ask_alice.md)
-        - [ ] [Cartographer Extraordinaire](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0007_cartographer_extraordinaire.md)
+    - [ ] [Rolling Alice](https://github.com/dffml/dffml/tree/main/docs/tutorials/rolling_alice)
+      - [ ] [Forward](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_forward.md)
+      - [ ] [Preface](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_preface.md)
+      - [ ] [Easter Eggs](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_easter_eggs.md)
+      - [ ] [Architecting Alice: Introduction and Context](https://github.com/dffml/dffml/tree/main/docs/tutorials/rolling_alice/0000_architecting_alice)
+        - [x] [Peace at Last](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0001_peace_at_last.md)
+        - [ ] [Sheâ€™s Arriving When?](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0002_shes_ariving_when.md)
+        - [ ] [A Shell for a Ghost](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0003_a_shell_for_a_ghost.md)
+        - [ ] [Writing the Wave](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0004_writing_the_wave.md)
+        - [ ] [Stream of Consciousness](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0005_stream_of_consciousness.md)
+        - [ ] [OS DecentrAlice](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0006_os_decentralice.md)
+        - [ ] [An Image](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0007_an_image.md)
+      - [ ] [Coach Alice](https://github.com/dffml/dffml/tree/main/docs/tutorials/rolling_alice/0001_coach_alice)
+        - [x] [Introduction](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0000_introduction.md)
+        - [ ] [Down the Dependency Rabbit-Hole Again](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0001_down_the_dependency_rabbit_hole_again.md)
+        - [x] [Our Open Source Guide](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0002_our_open_source_guide.md)
+        - [ ] [Strategic Principles as Game Plan](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0003_strategic_principles_as_game_plan.md)
+        - [ ] [You are what you EAT!](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0004_you_are_what_you_EAT.md)
+        - [ ] [In the Lab](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0004_in_the_lab.md)
+        - [ ] [An Open Book](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0005_ask_alice.md)
+        - [ ] [Cartographer Extraordinaire](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0007_cartographer_extraordinaire.md)
   - ADRs
-    - [Manifest](https://github.com/intel/dffml/tree/main/docs/arch/0008-Manifest.md)
-    - [Open Architecture](https://github.com/intel/dffml/tree/main/docs/arch/0009-Open-Architecture.rst)
-    - [DID + HSM Supply Chain Security Mitigation Option](https://github.com/intel/dffml/tree/main/docs/arch/0007-A-GitHub-Public-Bey-and-TPM-Based-Supply-Chain-Security-Mitigation-Option.rst)
+    - [Manifest](https://github.com/dffml/dffml/tree/main/docs/arch/0008-Manifest.md)
+    - [Open Architecture](https://github.com/dffml/dffml/tree/main/docs/arch/0009-Open-Architecture.rst)
+    - [DID + HSM Supply Chain Security Mitigation Option](https://github.com/dffml/dffml/tree/main/docs/arch/0007-A-GitHub-Public-Bey-and-TPM-Based-Supply-Chain-Security-Mitigation-Option.rst)
   - Work which lives with other groups
     - [SCITT OpenSSF Use Case](https://github.com/pdxjohnny/use-cases/blob/openssf_metrics/openssf_metrics.md)
       - This serves as security for our stream of consciousness.
     - https://github.com/w3c/cogai/pull/47
 - Tagged RFCs
-  - RFCv3: https://github.com/intel/dffml/tree/516d9276cd8795e8bb188fadbea10e801a4cf745/docs/tutorials/rolling_alice
-  - RFCv2: https://github.com/intel/dffml/tree/2331ba7a7e433d8fcb6698ada92be48fdc225c3e/docs/tutorials/rolling_alice
-  - RFCv1.1:  https://github.com/intel/dffml/tree/69df6036c25f61c31af21b1db9b7f14327147a9e/docs/tutorials/rolling_alice
-  - RFCv1: https://github.com/intel/dffml/tree/291cfbe5153414932afe446aa4f6c2e298069914/docs/tutorials/rolling_alice
+  - RFCv3: https://github.com/dffml/dffml/tree/516d9276cd8795e8bb188fadbea10e801a4cf745/docs/tutorials/rolling_alice
+  - RFCv2: https://github.com/dffml/dffml/tree/2331ba7a7e433d8fcb6698ada92be48fdc225c3e/docs/tutorials/rolling_alice
+  - RFCv1.1:  https://github.com/dffml/dffml/tree/69df6036c25f61c31af21b1db9b7f14327147a9e/docs/tutorials/rolling_alice
+  - RFCv1: https://github.com/dffml/dffml/tree/291cfbe5153414932afe446aa4f6c2e298069914/docs/tutorials/rolling_alice
     - Began by exploring how we should write clean dataflow docs in https://github.com/intel/dffml/issues/1279
     - Converted to discussion in https://github.com/intel/dffml/discussions/1369
-    - Issue converted to discussion converted to files within https://github.com/intel/dffml/blob/main/docs/arch/alice/discussion/
+    - Issue converted to discussion converted to files within https://github.com/dffml/dffml/blob/main/docs/arch/alice/discussion/
     - Pulled out existing ADRs and tutorials in their current states into
       - Tutorials
-        - [Rolling Alice](https://github.com/intel/dffml/tree/main/docs/tutorials/rolling_alice)
+        - [Rolling Alice](https://github.com/dffml/dffml/tree/main/docs/tutorials/rolling_alice)
       - ADRs
-        - [Manifest](https://github.com/intel/dffml/tree/main/docs/arch/0008-Manifest.md)
-        - [Open Architecture](https://github.com/intel/dffml/tree/main/docs/arch/0009-Open-Architecture.rst)
-        - [DID + HSM Supply Chain Security Mitigation Option](https://github.com/intel/dffml/tree/main/docs/arch/0007-A-GitHub-Public-Bey-and-TPM-Based-Supply-Chain-Security-Mitigation-Option.rst)
-    - Cross linked tutorials with their usage examples within README within alice entity directory https://github.com/intel/dffml/tree/main/entities/alice
+        - [Manifest](https://github.com/dffml/dffml/tree/main/docs/arch/0008-Manifest.md)
+        - [Open Architecture](https://github.com/dffml/dffml/tree/main/docs/arch/0009-Open-Architecture.rst)
+        - [DID + HSM Supply Chain Security Mitigation Option](https://github.com/dffml/dffml/tree/main/docs/arch/0007-A-GitHub-Public-Bey-and-TPM-Based-Supply-Chain-Security-Mitigation-Option.rst)
+    - Cross linked tutorials with their usage examples within README within alice entity directory https://github.com/dffml/dffml/tree/main/entities/alice
 - TODO (extra todos: https://github.com/intel/dffml/pull/1401#issuecomment-1168023959)
   - [x] Clean up tutorial docs that currently exist
     - [x] Find home for them in tree
-      - https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/
+      - https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/
     - [x] Tentative chapter name for Question and Answering model
       - Volume 1: Coach Alice: Chapter 5: Question Everything
         - https://github.com/programmer290399/IT-710-Project-Video-QnA-System
@@ -94,7 +94,7 @@
   - [ ] Cloud development environment options
     - Public
       - [ ] GitPod
-        - https://gitpod.io/#github.com/intel/dffml/tree/main
+        - https://gitpod.io/#github.com/dffml/dffml/tree/main
         - TODO
           - `mv dffml/operations/python.py operations/innersource/dffml_operations_innersource/python_ast.py`
           - Add Alice CONTRIBUTING setup to the `.gitpod.yml` auto start setup
@@ -103,7 +103,7 @@
       - [ ] Coder
         - https://coder.com/docs/coder-oss/latest/install
   - [x] Alice contributing documentation
-    - https://github.com/intel/dffml/blob/main/entities/alice/CONTRIBUTING.rst
+    - https://github.com/dffml/dffml/blob/main/entities/alice/CONTRIBUTING.rst
       - [x] How to extend recommended community standards command with overlays
         - Basic tutorial where we grab the name from a configuration file
       - [ ] Show me a security overlay.

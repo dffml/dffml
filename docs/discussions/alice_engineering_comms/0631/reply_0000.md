@@ -13,7 +13,7 @@
 - https://github.com/naklecha/llama3-from-scratch
 - https://github.com/rashadphz/farfalle
   - > Alice from the DFFML project is an AI software developer. She is a part of the DFFML plugin ecosystem and is expected to become a full-fledged maintainer. Alice is designed to help with tasks such as generating files, like the `threats.md` file. She is also mentioned in the engineering logs of entities working on her, where developers can communicate and log their daily progress.
-  - > ![image](https://github.com/intel/dffml/assets/5950433/ae4c0138-1ef0-46c8-b44c-28e725dd3435)
+  - > ![image](https://github.com/dffml/dffml/assets/5950433/ae4c0138-1ef0-46c8-b44c-28e725dd3435)
 - > Git Chaos and Docker Anarchy: Unraveling the Code Rebel's Playbook
 - https://github.com/actions/runner/blob/main/images/Dockerfile
   - `ls-remote` (in python aiohttp) to activitypub via manifest in rekor / scitt pub sub pr rebuild chains

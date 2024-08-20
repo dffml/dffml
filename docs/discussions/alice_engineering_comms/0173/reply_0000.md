@@ -25,10 +25,10 @@
 - https://cs.github.com/GoogleContainerTools/kaniko?q=config.json
 - https://github.com/GoogleContainerTools/kaniko/blob/fe2413e6e3c8caf943d50cf1d233a561943df1d6/integration/images.go#L240-L243
 - https://github.com/slowy07/mary
-- https://github.com/intel/dffml/blob/657aed2c05941f4e9e513f6a6e2356df36008609/docs/news/0_4_0_alpha_release.rst
+- https://github.com/dffml/dffml/blob/657aed2c05941f4e9e513f6a6e2356df36008609/docs/news/0_4_0_alpha_release.rst
   - Continuous deployment tutorials
     - *We will expand the tutorials released with 0.4.0 to include deployment behind reverse proxies for multiple projects, including how to setup encryption and authentication in a painless and maintainable way.*
-  - https://github.com/intel/dffml/blob/main/docs/examples/webhook/webhook.rst
+  - https://github.com/dffml/dffml/blob/main/docs/examples/webhook/webhook.rst
 - https://mermaid-js.github.io/mermaid-live-editor/
 - https://github.com/ietf-scitt/use-cases/blob/de2b016b37d6762fba9f5b1bcde96324c67ce25e/openssf_metrics.md#activitypub-extensions-for-securitytxt
   - Have been playing with ActivityPub to facilitate handoffs between pipelines across project trust boundaries by consuming the ActivityPub graph and feeding it into caching view databases (mysql, mongo) as appropriate. This should help us ensure we have a stream of lifecycle events from all dependencies via communication of VEX. Chainguard's folks might have another similar way of communicated BOM, VEX + transparency logs receipts coming out in the next few weeks (Ariadne's Rapunzel). Decentralized Identifiers will likely be helpful for facilitating mappings across walled gardens. The referenced doc currently is WIP to the SCITT use case repo.

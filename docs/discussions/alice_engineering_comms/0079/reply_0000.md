@@ -10,13 +10,13 @@
     > - Cardinality of destinations: A source object may propagate to many thousands of destinations. ​ 
   - Released 3-4 days ago? Chaos smiles on us again :)
   - Perfect for EDEN (vol 0: traveler of the edge)
-  - https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_preface.md#volume-0-architecting-alice
+  - https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_preface.md#volume-0-architecting-alice
   - We want to bridge KCP edge-mc with 
 - https://sohl-dickstein.github.io/2022/11/06/strong-Goodhart.html
 - System Context
   - Stumbled upon "valid system context" stuff (I/O must existing / be mapped)
     - https://youtu.be/m0TO9IOqRfQ?t=3812&list=PLtzAOVTpO2jaHsS4o-sDzDyHEug-1KRbK
-    - https://github.com/intel/dffml/blob/1d4d6b2f817cd987ceff94b4984ce909b7aa3c7f/dffml/df/system_context/system_context.py#L101-L103
+    - https://github.com/dffml/dffml/blob/1d4d6b2f817cd987ceff94b4984ce909b7aa3c7f/dffml/df/system_context/system_context.py#L101-L103
 - https://atproto.com/guides/data-repos
   - We will serialize to ATP when available / more Python
    support / obvious what is happening there.

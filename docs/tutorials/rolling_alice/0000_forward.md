@@ -1,10 +1,10 @@
-# [Rolling Alice: Forward](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_forward.md)
+# [Rolling Alice: Forward](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_forward.md)
 
 > Copy pastable bits for getting others involved in the project.
 
 ### Table Of Contents
 
-- [Upstream](https://github.com/intel/dffml/tree/main/entities/alice)
+- [Upstream](https://github.com/dffml/dffml/tree/main/entities/alice)
 - [Rolling Alice](./)
 - [Forward](0000_forward.md)
 - [Preface](0000_preface.md)
@@ -27,7 +27,7 @@ Alice is a methodology for secureing rolling releases.
 
 ## Elevator Pitch
 
-We are writing a tutorial for an open source project on how we build an AI to work on the open source project as if she were a remote developer. Bit of a self fulfilling prophecy, but who doesn't love an infinite loop now and again. These are the draft plans: https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/ ~~first draft: https://github.com/intel/dffml/discussions/1369#discussioncomment-2603280~~
+We are writing a tutorial for an open source project on how we build an AI to work on the open source project as if she were a remote developer. Bit of a self fulfilling prophecy, but who doesn't love an infinite loop now and again. These are the draft plans: https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/ ~~first draft: https://github.com/intel/dffml/discussions/1369#discussioncomment-2603280~~
 
 Essentially we are going to be using web3 (DID, DWN), KCP (kubernetes API server), provenance and attestation, and automl with feature engineering for a distributed data, analysis, control loop. We'll grow contributors into mentors, and mentors into maintainers, and Alice will grow along with us.
 
@@ -35,14 +35,14 @@ The tutorial is how you use the open architecture entity analysis trinity proble
 
 ## Alice is Here and Ready for Contribution! Gitter Announcement
 
-- [Alice code](https://github.com/intel/dffml/tree/main/entities/alice)
+- [Alice code](https://github.com/dffml/dffml/tree/main/entities/alice)
 - [Rolling Alice: 2022 Progress Reports: July Activities Recap and Alice contribution setup](https://www.youtube.com/watch?v=JDh2DARl8os&list=PLtzAOVTpO2jYt71umwc-ze6OmwwCIMnLw&index=1)
 
 ## Initial Gitter Announcement
 
 > Alice, send the content within this section without this comment to Gitter 2022-05-11 09:00 PDT
 
-We're [DFFML community] building a tutorial series where we as a community collaboratively build an AI software architect (named Alice). These docs https://github.com/intel/dffml/tree/main/docs/tutorials/rolling_alice/ are us trying to get some initial thoughts down so we can rework from there, maybe even re-write everything. We want to make sure we all start looking at the same picture of the future, consolidate all our efforts thus far and thoughts across efforts and individuals.
+We're [DFFML community] building a tutorial series where we as a community collaboratively build an AI software architect (named Alice). These docs https://github.com/dffml/dffml/tree/main/docs/tutorials/rolling_alice/ are us trying to get some initial thoughts down so we can rework from there, maybe even re-write everything. We want to make sure we all start looking at the same picture of the future, consolidate all our efforts thus far and thoughts across efforts and individuals.
 
 We have new GsoC mentors joining us and will soon have new students as well! We will publicize plan documents here for all to see, provide feedback on and review. We want to build these documents collaboratively as a team. Those who provide concrete feedback will be listed as reviewers via `Reviewed-by-tags`. Those who submit pull requests to edit the documents will be listed via `Co-authored-by` tags. We will map GSoC projects into this long term effort.
 
@@ -72,7 +72,7 @@ We have been publicizing our work over technical channels and on twitter and gav
 
 ## Security Folks
 
-Ready to bring security to the mind? https://github.com/intel/dffml/tree/main/docs/tutorials/rolling_alice
+Ready to bring security to the mind? https://github.com/dffml/dffml/tree/main/docs/tutorials/rolling_alice
 
 Securing the software supply chain is becoming about securing the supply chain of the mind, the developer mind. We need to teach developers, and we'll be teaching developers in a language they understand, code. We'll teach them by teaching Alice how to teach them, along the way we'll build Alice, who will be a developer herself one day.
 
@@ -91,7 +91,7 @@ Anything accessible via the Open Architecture methodology as a proxy can be used
 
 Holistic context aware risk analysis requires an understanding of a system's architecture, behavoir, and deployment relavent policy.
 
-The [Open Architecture](https://github.com/intel/dffml/blob/main/docs/arch/0009-Open-Architecture.rst) effort is looking at software description via manifests and data flows (DAGs) with additional metadata added for deployment threat modeling. Dynamic context aware overlays are then used to enable deployment specific analysis, synthesis, and runtime evaluation.
+The [Open Architecture](https://github.com/dffml/dffml/blob/main/docs/arch/0009-Open-Architecture.rst) effort is looking at software description via manifests and data flows (DAGs) with additional metadata added for deployment threat modeling. Dynamic context aware overlays are then used to enable deployment specific analysis, synthesis, and runtime evaluation.
 
 Leveraging the Open Architecture methodology we decouple the description of the system from the underlying execution environment. In the context of discussion around distributed compute we leverage holsitic risk analaysis during compute contract proposal and negotiation.
 
@@ -105,7 +105,7 @@ When one runs code there is a deployment context within that code runs. That dep
 
 ## RFCv1 Announcement
 
-Here is the first version of Alice aka the Open Architecture and this pull request is a Request For Comments https://github.com/intel/dffml/tree/main/docs/tutorials/rolling_alice Please Review and provide any and all technical or conceptual feedback! This is also a call for participation if anyone would like to get involved and contribute please comment in the linked pull request or reach out to me directly. Looking forward to working with you all!
+Here is the first version of Alice aka the Open Architecture and this pull request is a Request For Comments https://github.com/dffml/dffml/tree/main/docs/tutorials/rolling_alice Please Review and provide any and all technical or conceptual feedback! This is also a call for participation if anyone would like to get involved and contribute please comment in the linked pull request or reach out to me directly. Looking forward to working with you all!
 
 ## Alignment
 

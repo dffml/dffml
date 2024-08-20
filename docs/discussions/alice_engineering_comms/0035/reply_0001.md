@@ -1,6 +1,6 @@
 # Architecting Alice: OS DecentrAlice
 
-> Moved to: https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0006_os_decentralice.md
+> Moved to: https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0006_os_decentralice.md
 
 Let's build an Operating System!
 
@@ -123,12 +123,12 @@ RUN rm /sbin/init \
 # ARG ALICE_STATE_OF_ART=0c4b8191b13465980ced3fd1ddfbea30af3d1104
 # RUN python3 -m pip install -U setuptools pip wheel
 # RUN python3 -m pip install \
-#     "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml" \
-#     "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-feature-git&subdirectory=feature/git" \
-#     "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=shouldi&subdirectory=examples/shouldi" \
-#     "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-config-yaml&subdirectory=configloader/yaml" \
-#     "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-operations-innersource&subdirectory=operations/innersource" \
-#     "https://github.com/intel/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=alice&subdirectory=entities/alice"
+#     "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml" \
+#     "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-feature-git&subdirectory=feature/git" \
+#     "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=shouldi&subdirectory=examples/shouldi" \
+#     "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-config-yaml&subdirectory=configloader/yaml" \
+#     "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=dffml-operations-innersource&subdirectory=operations/innersource" \
+#     "https://github.com/dffml/dffml/archive/${ALICE_STATE_OF_ART}.zip#egg=alice&subdirectory=entities/alice"
 
 ENTRYPOINT bash
 ```

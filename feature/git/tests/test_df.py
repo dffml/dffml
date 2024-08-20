@@ -38,7 +38,7 @@ class TestRunner(AsyncTestCase):
             )
         if not repos:
             repos = [
-                "https://github.com/intel/dffml",
+                "https://github.com/dffml/dffml",
                 "https://github.com/pdxjohnny/dffml",
             ]
         repos = repos[:2]

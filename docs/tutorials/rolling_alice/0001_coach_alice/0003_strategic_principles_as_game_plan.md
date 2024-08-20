@@ -66,7 +66,7 @@ graph LR
 
 | Repo                           | Report URL                                         |
 |--------------------------------|----------------------------------------------------|
-| https://github.com/intel/dffml | https://chadig.com/did/repo/github.com/intel/dffml |
-| https://github.com/intel/dffml | https://nahdig.com/did/repo/github.com/intel/dffml |
+| https://github.com/dffml/dffml | https://chadig.com/did/repo/github.com/dffml/dffml |
+| https://github.com/dffml/dffml | https://nahdig.com/did/repo/github.com/dffml/dffml |
 
 </details>

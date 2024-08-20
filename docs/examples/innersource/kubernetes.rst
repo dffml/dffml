@@ -90,7 +90,7 @@ and more.
      <... output clipped ...>
      'full_name': 'intel/dffml',
      <... output clipped ...>
-     'html_url': 'https://github.com/intel/dffml',
+     'html_url': 'https://github.com/dffml/dffml',
      <... output clipped ...>
      'watchers_count': 135}
 
@@ -157,7 +157,7 @@ If you want to run the dataflow on a single repo, you can do it as follows.
         -dataflow metrics.json \
         -record-def "github.repo.url" \
         -keys \
-          https://github.com/intel/dffml
+          https://github.com/dffml/dffml
 
 kind
 ----

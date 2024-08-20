@@ -140,7 +140,7 @@ export FORGEJO_FQDN="git.pdxjohnny.chadig.com" \
 
 - https://gist.github.com/pdxjohnny/d9c9a4e5b4dc2804be6bb0a93d524b3f
 
-![image](https://github.com/intel/dffml/assets/5950433/791d873c-fccb-410c-acb0-4b1626bf27d1)
+![image](https://github.com/dffml/dffml/assets/5950433/791d873c-fccb-410c-acb0-4b1626bf27d1)
 
 [![asciicast](https://asciinema.org/a/663082.svg)](https://asciinema.org/a/663082)
 

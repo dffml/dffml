@@ -4,7 +4,7 @@
 - https://docs.rs/reqwest/latest/reqwest/struct.Response.html
 - https://en.wikipedia.org/wiki/Holacracy
 - Advanced patterns for GitHub's GraphQL API - https://www.youtube.com/watch?v=i5pIszu9MeM&t=719s
-  - https://github.com/intel/dffml/blob/main/scripts/dump_discussion.py
+  - https://github.com/dffml/dffml/blob/main/scripts/dump_discussion.py
   - https://github.com/toast-ninja/github-analytics-starter
 - https://github.com/openvex/generate-vex/pull/1
 

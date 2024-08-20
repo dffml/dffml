@@ -1,4 +1,4 @@
-# [Volume 1: Chapter 1: Down the Dependency Rabbit-Hole Again](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0001_down_the_dependency_rabbit_hole_again.md)
+# [Volume 1: Chapter 1: Down the Dependency Rabbit-Hole Again](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0001_down_the_dependency_rabbit_hole_again.md)
 
 > 2022 tutorials. This tutorial is TODO
 > Related:
@@ -6,7 +6,7 @@
 
 ### Table Of Contents
 
-- [Upstream](https://github.com/intel/dffml/tree/main/entities/alice)
+- [Upstream](https://github.com/dffml/dffml/tree/main/entities/alice)
 
 #### Volume 0: Architecting Alice
 

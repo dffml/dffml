@@ -4,7 +4,7 @@ Git features scrape data from Git repositories.
 
 ## Demo
 
-![Demo](https://github.com/intel/dffml/raw/main/docs/images/commits_demo.gif)
+![Demo](https://github.com/dffml/dffml/raw/main/docs/images/commits_demo.gif)
 
 ## Usage
 
@@ -16,7 +16,7 @@ repo.
 export OPIMPS="group_by quarters_back_to_date check_if_valid_git_repository_URL clone_git_repo git_repo_default_branch git_repo_checkout git_repo_commit_from_date git_repo_author_lines_for_dates work git_repo_release lines_of_code_by_language lines_of_code_to_comments git_commits count_authors cleanup_git_repo"
 dffml operations repo \
   -log debug \
-  -keys https://github.com/intel/dffml \
+  -keys https://github.com/dffml/dffml \
   -repo-def URL \
   -remap \
     group_by.cloc=cloc \

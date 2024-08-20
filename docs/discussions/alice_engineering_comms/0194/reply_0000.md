@@ -9,7 +9,7 @@
   - TPM (most widely deployed)
     - https://www.tomsguide.com/news/billions-of-pcs-and-other-devices-vulnerable-to-newly-discovered-tpm-20-flaws
   - TXT
-    - We frequently skip talking about this in this thread to avoid too much acronym soup, but TPMs are only good for https://github.com/intel/dffml/tree/main/docs/arch/0007-A-GitHub-Public-Bey-and-TPM-Based-Supply-Chain-Security-Mitigation-Option.rst, aka tying keys into known hardware, without TXT (at least as we've been talking about them here). We just usually either talk about TPMs or TDX in this thread to illustrate the ends of the spectrum.
+    - We frequently skip talking about this in this thread to avoid too much acronym soup, but TPMs are only good for https://github.com/dffml/dffml/tree/main/docs/arch/0007-A-GitHub-Public-Bey-and-TPM-Based-Supply-Chain-Security-Mitigation-Option.rst, aka tying keys into known hardware, without TXT (at least as we've been talking about them here). We just usually either talk about TPMs or TDX in this thread to illustrate the ends of the spectrum.
     - Trusted eXecution exTensions and Boot Guard combined with also a TPM (or a virtual equivalent) enables attested compute (by way of Secure Boot)
       - https://edk2-docs.gitbook.io/understanding-the-uefi-secure-boot-chain/secure_boot_chain_in_uefi/intel_boot_guard
       - https://www.chromium.org/developers/design-documents/tpm-usage/#attesting-device-mode
@@ -51,7 +51,7 @@ $ jq -r '.orderedItems[] | [{(.id): (.object.content)}] | .[] | add' < outbox\@p
   created_at: '2023-03-03T03:58:07Z'
   head_branch: main
   head_sha: 4241b49975cf364b540fc0ad961cde58e2c89623
-  html_url: https://github.com/intel/dffml/actions/runs/4320093439/jobs/7539975999
+  html_url: https://github.com/dffml/dffml/actions/runs/4320093439/jobs/7539975999
   id: 11733499326
   labels:
   - ubuntu-latest
@@ -169,7 +169,7 @@ $ jq -r '.orderedItems[] | [{(.id): (.object.content)}] | .[] | add' < outbox\@p
 - https://github.com/sapcc/keppel/blob/master/docs/example-policy.yaml
 - We can take one manifest and make it into another one for execution via a different mechanism
   - Similar to the CLI overlays
-    - https://github.com/intel/dffml/blob/c82f7ddd29a00d24217c50370907c281c4b5b54d/entities/alice/alice/please/contribute/recommended_community_standards/cli.py#L60-L72
+    - https://github.com/dffml/dffml/blob/c82f7ddd29a00d24217c50370907c281c4b5b54d/entities/alice/alice/please/contribute/recommended_community_standards/cli.py#L60-L72
   - This is also similar to how we can decouple TODO logging from content for `alice please log todos`
     - Operation to generate TODO body
     - Operation for logging the TODO (write to GitHub)
@@ -182,7 +182,7 @@ $ jq -r '.orderedItems[] | [{(.id): (.object.content)}] | .[] | add' < outbox\@p
 
 ```json
 {
-    "@context": "https://github.com/intel/dffml/raw/alice/schema/schema/alice/shouldi/contribute/0.0.0.schema.json",
+    "@context": "https://github.com/dffml/dffml/raw/alice/schema/schema/alice/shouldi/contribute/0.0.0.schema.json",
     "repo_url": "https://github.com/omnilib/aiosqlite"
 }
 ```
@@ -193,7 +193,7 @@ $ jq -r '.orderedItems[] | [{(.id): (.object.content)}] | .[] | add' < outbox\@p
 
 ```json
 {
-    "@context": "https://github.com/intel/dffml/raw/alice/schema/github/actions/build/images/containers/0.0.0.schema.json",
+    "@context": "https://github.com/dffml/dffml/raw/alice/schema/github/actions/build/images/containers/0.0.0.schema.json",
     "include": [
         {
             "branch": "alice",
@@ -218,10 +218,10 @@ $ jq -r '.orderedItems[] | [{(.id): (.object.content)}] | .[] | add' < outbox\@p
         inReplyTo: activitypub extensions for security.txt post URL for content `https://github.com/opencontainers/image-spec/raw/v1.0.1/schema/image-manifest-schema.json`
   - Downstream listener (aka delve into [config dict](https://intel.github.io/dffml/main/contributing/codebase.html?highlight=config+dict#config))
     - Federation event (send to follower /inbox)
-      - content: `https://github.com/intel/dffml/raw/alice/schema/github/actions/build/images/containers/0.0.0.schema.json`
+      - content: `https://github.com/dffml/dffml/raw/alice/schema/github/actions/build/images/containers/0.0.0.schema.json`
         inReplyTo: activitypub extensions for security.txt post URL for content `activitypubsecuritytxt`
       - content: `<extracted content(?)>`
-        inReplyTo: activitypub extensions for security.txt post URL for content `https://github.com/intel/dffml/raw/alice/schema/github/actions/build/images/containers/0.0.0.schema.json`
+        inReplyTo: activitypub extensions for security.txt post URL for content `https://github.com/dffml/dffml/raw/alice/schema/github/actions/build/images/containers/0.0.0.schema.json`
   - Downstream listener
     - Republish watched `inReplyTo` schema into job/message queue
       - RabbitMQ
@@ -241,7 +241,7 @@ $ jq -r '.orderedItems[] | [{(.id): (.object.content)}] | .[] | add' < outbox\@p
     - https://github.com/aurae-runtime/aurae/blob/3bb6d4c391ec6945436f941299a46c9a83168729/examples/pods-cri-nginx.ts#L57
     - https://github.com/aurae-runtime/aurae/blob/42972181b624a76b6888d1b0079a7f21c34bfb31/api/cri/v1/release-1.26.proto#L1086-L1096
     - https://github.com/aurae-runtime/aurae/commit/47dabf1414678626bd8a432fdf20fdbc6bdf49dc
-- https://github.com/intel/dffml/blob/80e773712897a2fa2fb93e6abd4f852302adb79f/docs/tutorials/rolling_alice/0001_coach_alice/0001_down_the_dependency_rabbit_hole_again.md#checklist
+- https://github.com/dffml/dffml/blob/80e773712897a2fa2fb93e6abd4f852302adb79f/docs/tutorials/rolling_alice/0001_coach_alice/0001_down_the_dependency_rabbit_hole_again.md#checklist
 - https://github.com/cloudfoundry/korifi/blob/63fece8d987b09744ea435bccf9af08813bc0611/HACKING.md#deploying-locally
 - https://carvel.dev/blog/getting-started-with-ytt/
 - Need helm and kubectl and etc.
@@ -305,7 +305,7 @@ $ (cd $(mktemp -d); curl -sfL "https://packages.cloudfoundry.org/stable?release=
   - [ ] Example of `alice threats listen activitypub -stdin`
     - Base flow just helps us take file representations of 
   - [x] Respond to Carina
-  - [ ] https://github.com/intel/dffml/blob/80e773712897a2fa2fb93e6abd4f852302adb79f/docs/tutorials/rolling_alice/0001_coach_alice/0001_down_the_dependency_rabbit_hole_again.md#checklist
+  - [ ] https://github.com/dffml/dffml/blob/80e773712897a2fa2fb93e6abd4f852302adb79f/docs/tutorials/rolling_alice/0001_coach_alice/0001_down_the_dependency_rabbit_hole_again.md#checklist
     - Still a good checklist
   - [ ] https://socialhub.activitypub.rocks/t/fep-5624-per-object-reply-control-policies/2723
     - Bingo!

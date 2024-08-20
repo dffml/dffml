@@ -35,28 +35,28 @@ Project Ideas
 
 We currently have the following project ideas:
 
-- `Save and Load Models to ONNX format <https://github.com/intel/dffml/blob/main/docs/contributing/gsoc/2022/onnx_save_load.md>`_
+- `Save and Load Models to ONNX format <https://github.com/dffml/dffml/blob/main/docs/contributing/gsoc/2022/onnx_save_load.md>`_
 
   - Allow for DFFML to save trained models in the Open Neural Network Exchange
     format. This will help users easily deploy models.
   - Beginner
   - 175 hours
 
-- `Time-Series Forecasting and Anomaly Detection <https://github.com/intel/dffml/blob/main/docs/contributing/gsoc/2022/forecasting.md>`_
+- `Time-Series Forecasting and Anomaly Detection <https://github.com/dffml/dffml/blob/main/docs/contributing/gsoc/2022/forecasting.md>`_
 
   - Give users of DFFML forecasting capabilties. Allow them to predict the
     future! Work with time stamped data to train models and make predictions.
   - Beginner
   - 350 hours
 
-- `Implementing AutoML <https://github.com/intel/dffml/blob/main/docs/contributing/gsoc/2022/automl.md>`_
+- `Implementing AutoML <https://github.com/dffml/dffml/blob/main/docs/contributing/gsoc/2022/automl.md>`_
 
   - Implement hyperparameter tuners, best model selection via grid search and
     or other means, automated feature engineering by modifying dataflows.
   - Intermediate to Difficult
   - 350 hours
 
-- `Refactor of DataFlows to Include Event Type <https://github.com/intel/dffml/blob/main/docs/contributing/gsoc/2022/dataflow_event_types.md>`_
+- `Refactor of DataFlows to Include Event Type <https://github.com/dffml/dffml/blob/main/docs/contributing/gsoc/2022/dataflow_event_types.md>`_
 
   - Refactor the :py:func:`dffml.high_level.run` API (and others) to make
     running Data Flows as dynamic as their event based content. This will let us
@@ -86,7 +86,7 @@ Getting Started
 
   - Run the examples for the various models found on the model plugins page
 
-- `Run the tests <https://github.com/intel/dffml/tree/main/tests>`_. DFFML has
+- `Run the tests <https://github.com/dffml/dffml/tree/main/tests>`_. DFFML has
   unit tests and we track coverage (amount of lines of code tested).
   Make sure you know how to run them, and if you've never done Python unittests
   before you might want to
@@ -150,7 +150,7 @@ Deadlines
 ---------
 
 See the milestones prefixed with "GSoC 2022"
-https://github.com/intel/dffml/milestones?direction=desc&sort=due_date&state=open
+https://github.com/dffml/dffml/milestones?direction=desc&sort=due_date&state=open
 
 Please see the :doc:`/contributing/gsoc/rubric` page for the project
 proposal grading rubric.

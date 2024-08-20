@@ -76,7 +76,7 @@ the :doc:`/examples/shouldi` example.
     :test:
     :replace: cmds[0] = ["ln", "-s", ctx["root"], "dffml"]; cmds[-1].append("dffml-feature-git")
 
-    $ git clone --depth=1 https://github.com/intel/dffml dffml
+    $ git clone --depth=1 https://github.com/dffml/dffml dffml
     $ cd dffml
     $ cd examples/shouldi
     $ python -m pip install -e .[dev]

@@ -17,7 +17,7 @@ cd $(mktemp -d)  \
 
 ![image](https://user-images.githubusercontent.com/5950433/236342187-b65e7336-9c0a-4080-8a0b-b485604e9e62.png)
 
-- https://github.com/intel/dffml/blob/0c188d6dce3a8b953df32bd6fc8560323b89633e/.github/workflows/pin_downstream.yml
+- https://github.com/dffml/dffml/blob/0c188d6dce3a8b953df32bd6fc8560323b89633e/.github/workflows/pin_downstream.yml
 - https://git.juici.ly/consensual/federated-auth-network/src/branch/master/SPEC.md
   - Cross ref next SCITT meeting topic on DIDs
 - TODO

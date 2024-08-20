@@ -34,7 +34,7 @@ start playing around and writing code immediatly.
 **NOTE** Not sure what state gitpod is in, pretty sure there
 was some sort of issue we need to move a file around or something.
 
-https://gitpod.io/#github.com/intel/dffml/tree/main
+https://gitpod.io/#github.com/dffml/dffml/tree/main
 
 Cloning the Repo
 ****************
@@ -44,7 +44,7 @@ https://github.com/intel/dffml/pull/1401 for more details.
 
 .. code-block:: console
 
-    $ git clone -b alice https://github.com/intel/dffml
+    $ git clone -b alice https://github.com/dffml/dffml
 
 Now open or change directory to the directory containing Alice's
 source code within the DFFML project: ``entities/alice``.
@@ -133,7 +133,7 @@ Tutorials
 These are tutorials on how to extend parts of Alice, they are backlinked from
 her README.
 
-- `Coach Alice Our Open Source Guide <https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0002_our_open_source_guide.md>`_
+- `Coach Alice Our Open Source Guide <https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0001_coach_alice/0002_our_open_source_guide.md>`_
 
 Data Flow Programming
 *********************
@@ -153,7 +153,7 @@ altough a distinct concept itself.
   
 - Concuptual docs on data flow execution
 
-  - https://github.com/intel/dffml/blob/main/docs/about.rst#what-is-key-objective-of-dataflows
+  - https://github.com/dffml/dffml/blob/main/docs/about.rst#what-is-key-objective-of-dataflows
   - https://intel.github.io/dffml/main/concepts/dataflow.html
   
 - Misc. References
@@ -222,7 +222,7 @@ We want to enable collection of the ``name`` field within the JSON file
 
     References:
 
-    - https://github.com/intel/dffml/blob/main/docs/concepts/dataflow.rst
+    - https://github.com/dffml/dffml/blob/main/docs/concepts/dataflow.rst
     - https://github.com/intel/dffml/issues/51
 
 Writing Operations

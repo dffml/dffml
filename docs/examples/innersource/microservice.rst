@@ -149,7 +149,7 @@ and more.
      <... output clipped ...>
      'full_name': 'intel/dffml',
      <... output clipped ...>
-     'html_url': 'https://github.com/intel/dffml',
+     'html_url': 'https://github.com/dffml/dffml',
      <... output clipped ...>
      'watchers_count': 135}
 
@@ -216,7 +216,7 @@ If you want to run the dataflow on a single repo, you can do it as follows.
         -dataflow df/metrics.json \
         -record-def "github.repo.url" \
         -keys \
-          https://github.com/intel/dffml
+          https://github.com/dffml/dffml
 
 Serving the DataFlow
 --------------------
@@ -246,7 +246,7 @@ items that you want evaluated.
     $ curl -sf \
       --header "Content-Type: application/json" \
       --request POST \
-      --data '{"https://github.com/intel/dffml": [{"value":"https://github.com/intel/dffml","definition":"github.repo.url"}]}' \
+      --data '{"https://github.com/dffml/dffml": [{"value":"https://github.com/dffml/dffml","definition":"github.repo.url"}]}' \
       http://localhost:8080/metrics | python -m json.tool
 		[
         {
@@ -257,7 +257,7 @@ items that you want evaluated.
                 "description": "The easiest way to use Machine Learning. Mix and match underlying ML libraries and data set sources. Generate new datasets or modify existing ones with ease.",
                 "forks_count": 118,
                 "full_name": "intel/dffml",
-                "html_url": "https://github.com/intel/dffml",
+                "html_url": "https://github.com/dffml/dffml",
                 "id": 149512216,
                 "language": "Python",
                 "license": {
@@ -294,7 +294,7 @@ items that you want evaluated.
                 "updated_at": "2021-08-31T16:20:16Z",
                 "watchers_count": 143
             },
-            "key": "https://github.com/intel/dffml",
+            "key": "https://github.com/dffml/dffml",
             "last_updated": "2021-09-17T09:39:30Z"
         }
     ]

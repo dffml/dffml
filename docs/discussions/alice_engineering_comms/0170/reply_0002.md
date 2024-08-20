@@ -46,6 +46,6 @@ graph LR
     - https://github.com/intel/dffml/pull/1432
   - [x] Merge PR
   - [x] Rebuild container
-    - https://github.com/intel/dffml/blob/main/.github/workflows/dffml_build_images_containers.yml
+    - https://github.com/dffml/dffml/blob/main/.github/workflows/dffml_build_images_containers.yml
   - [x] Kick off run single
     - `alice shouldi contribute -keys https://github.com/jenkinsci/kubernetes-plugin`

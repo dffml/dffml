@@ -169,10 +169,10 @@ class AlicePleaseContributeCLI(dffml.CMD):
         # auto populate the input required to the base repo dataflow.
         content_should_be = textwrap.dedent(
             """
-            - [] [README](https://github.com/intel/dffml/blob/main/README.md)
+            - [] [README](https://github.com/dffml/dffml/blob/main/README.md)
             - [] Code of conduct
-            - [] [Contributing](https://github.com/intel/dffml/blob/main/CONTRIBUTING.md)
-            - [] [License](https://github.com/intel/dffml/blob/main/LICENSE)
+            - [] [Contributing](https://github.com/dffml/dffml/blob/main/CONTRIBUTING.md)
+            - [] [License](https://github.com/dffml/dffml/blob/main/LICENSE)
             - [] Security
             """
         ).lstrip()
@@ -198,10 +198,10 @@ class AlicePleaseContributeCLI(dffml.CMD):
 
         content_was = textwrap.dedent(
             """
-            - [] [README](https://github.com/intel/dffml/blob/main/README.md)
+            - [] [README](https://github.com/dffml/dffml/blob/main/README.md)
             - [] Code of conduct
-            - [] [Contributing](https://github.com/intel/dffml/blob/main/CONTRIBUTING.md)
-            - [] [License](https://github.com/intel/dffml/blob/main/LICENSE)
+            - [] [Contributing](https://github.com/dffml/dffml/blob/main/CONTRIBUTING.md)
+            - [] [License](https://github.com/dffml/dffml/blob/main/LICENSE)
             - [] Security
             """
         ).lstrip()
@@ -298,9 +298,9 @@ class AliceCLI(dffml.CMD):
 
              Dynamic Analysis          Static Analysis
 
-    Alice's source code: https://github.com/intel/dffml/tree/main/entities/alice
-    How we built Alice: https://github.com/intel/dffml/tree/main/docs/tutorials/rolling_alice
-    How to extend Alice: https://github.com/intel/dffml/blob/main/entities/alice/CONTRIBUTING.rst
+    Alice's source code: https://github.com/dffml/dffml/tree/main/entities/alice
+    How we built Alice: https://github.com/dffml/dffml/tree/main/docs/tutorials/rolling_alice
+    How to extend Alice: https://github.com/dffml/dffml/blob/main/entities/alice/CONTRIBUTING.rst
     Comment to get involved: https://github.com/intel/dffml/discussions/1406
     """
     CLI_FORMATTER_CLASS = argparse.RawDescriptionHelpFormatter

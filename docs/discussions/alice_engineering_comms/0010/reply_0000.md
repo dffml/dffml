@@ -926,7 +926,7 @@ export REPO_URL="https://github.com/$USER/my-new-python-project"
 
 cd $(mktemp -d)
 
-git clone --depth=1 -b alice https://github.com/intel/dffml dffml
+git clone --depth=1 -b alice https://github.com/dffml/dffml dffml
 cd dffml/entities/alice
 python -m venv .venv
 . .venv/bin/activate

@@ -40,10 +40,10 @@ class OverlayMetaIssue:
         ...     repo=AliceGitRepo(
         ...     ),
         ... )
-        - [] [README](https://github.com/intel/dffml/blob/main/README.md)
+        - [] [README](https://github.com/dffml/dffml/blob/main/README.md)
         - [] Code of conduct
-        - [] [Contributing](https://github.com/intel/dffml/blob/main/CONTRIBUTING.md)
-        - [] [License](https://github.com/intel/dffml/blob/main/LICENSE)
+        - [] [Contributing](https://github.com/dffml/dffml/blob/main/CONTRIBUTING.md)
+        - [] [License](https://github.com/dffml/dffml/blob/main/LICENSE)
         - [] Security
         """
         return "\n".join(

@@ -31,5 +31,5 @@
     - Cant assume users have hosted endpoints
     - No `.well-known` paths exist yet for three party, SD-JWT VC oauth IETF WG has one in draft.
 
-![IMG_1463](https://github.com/intel/dffml/assets/5950433/5473b3c4-3a8d-43c4-9bb6-9fa7bd4fd064)
-![IMG_1464](https://github.com/intel/dffml/assets/5950433/3f676c00-4eed-4acc-8451-7e1101cfa161)
+![IMG_1463](https://github.com/dffml/dffml/assets/5950433/5473b3c4-3a8d-43c4-9bb6-9fa7bd4fd064)
+![IMG_1464](https://github.com/dffml/dffml/assets/5950433/3f676c00-4eed-4acc-8451-7e1101cfa161)

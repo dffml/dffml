@@ -11,15 +11,15 @@
 - https://www.w3.org/People/Raggett/
   - > My current focus is on how to build **AI systems that mimic human reasoning** inspired by decades of advances in the cognitive sciences, and hundreds of millions of years of evolution of the brain. This is a major paradigm shift compared to the Semantic Web which is steeped in the Aristotelian tradition of mathematical logic and formal semantics. This will enable the **Sentient Web** as the combination of sensing, actuation and cognition federated across the Web in support of markets of services based upon open standards.
     - **ALIGNED**
-      - https://github.com/intel/dffml/tree/main/docs/tutorials/rolling_alice/0000_architecting_alice
+      - https://github.com/dffml/dffml/tree/main/docs/tutorials/rolling_alice/0000_architecting_alice
   - > The [W3C Cognitive AI Community Group](https://www.w3.org/community/cogai/) is seeking to incubate ideas that combine symbolic information (graphs) with sub-symbolic information (statistics), rules and high performance graph algorithms. This combination enables machine learning and reasoning in the presence of uncertainty, incompleteness and inconsistencies. The starting point has been the development of the [chunks and rules format](https://github.com/w3c/cogai/blob/master/chunks-and-rules.md) as an amalgam of RDF and Property Graphs. A [series of demos](https://github.com/w3c/cogai/blob/master/demos/README.md) are being developed to explore different aspects, using an open source JavaScript library.
     - **ALIGNED**
-      - https://github.com/intel/dffml/blob/main/docs/arch/0009-Open-Architecture.rst
+      - https://github.com/dffml/dffml/blob/main/docs/arch/0009-Open-Architecture.rst
 - https://www.w3.org/2002/mmi/
 - https://www.w3.org/WAI/APA/
 - https://web.archive.org/web/20200926173320/http://webinos.org/2011/06/09/webinos-whitepaper/
   - > webinos is: a collective project to make the web work for applications. webinos has a vision to build a multi-device, applications platform based on web technology that: – allows web apps to run seamlessly across multiple devices and to use resources across devices – allows web applications to communicate with other web applications and (non web components) over multiple device – links the application experience with the social network – achieves all of the above in a security preserving manner – explicitly targets the four distinct “screens”: the mobile, the PC, the in-car (automotive) and the home media (TV) devices. The intent in webinos is to translate the success of the web as a distributed document publishing system into a successful, distributed applications platform. The webinos platform should be built upon and move forward the required open standards. This platform should have a concrete implementation that is accessible to all as an open source asset. Technically, all of this should be achieved reusing the core development technologies that have already proven themselves on the Web (HTML and JavaScript), affording the benefits of speed of development and access to a large developer talent pool. The innovation webinos brings shall not just be technical; by embracing an open web culture, we hope to create an application framework that does not favour any particular corporation, and on which may parties can collaborate, and from which many companies benefit.
-    - https://github.com/intel/dffml/blob/3530ee0d20d1062605f82d1f5055f455f8c2c68f/docs/about.rst#philosophy
+    - https://github.com/dffml/dffml/blob/3530ee0d20d1062605f82d1f5055f455f8c2c68f/docs/about.rst#philosophy
 - https://en.wikipedia.org/wiki/Cognitive_tutor
 - https://en.wikipedia.org/wiki/Intelligent_tutoring_system
 - TODO

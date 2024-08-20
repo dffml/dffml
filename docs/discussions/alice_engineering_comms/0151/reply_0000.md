@@ -16,7 +16,7 @@
 
 ```json
 {
-    "$schema": "https://github.com/intel/dffml/raw/main/schema/image/container/build/0.0.1.schema.json",
+    "$schema": "https://github.com/dffml/dffml/raw/main/schema/image/container/build/0.0.1.schema.json",
     "include": [
         {
             "branch": "main",

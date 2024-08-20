@@ -51,7 +51,7 @@ Error: Invalid request signature.
 POST /push/inbox 401 12 - 616.413 ms
 ```
 
-[![use-the-source](https://img.shields.io/badge/use%20the-source-blueviolet)](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_easter_eggs.md#use-the-source-)
+[![use-the-source](https://img.shields.io/badge/use%20the-source-blueviolet)](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_easter_eggs.md#use-the-source-)
 
 ```console
 $ git grep FDQN
@@ -223,7 +223,7 @@ Error: Received 503 fetching actor. Body: no ssh tunnel here :(
 ```
 
 - MOTHERFUCKER FUCK YES FUCK YES FUCK YES FUCK YES!!!!!!!
-  - [![hack-the-planet](https://img.shields.io/badge/hack%20the-planet-blue)](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_easter_eggs.md#hack-the-planet-)
+  - [![hack-the-planet](https://img.shields.io/badge/hack%20the-planet-blue)](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_easter_eggs.md#hack-the-planet-)
 
 ![hack-the-planet-hackers-gif](https://user-images.githubusercontent.com/5950433/191852910-73787361-b00c-4618-bc5e-f32d656bbf0f.gif)
 
@@ -231,7 +231,7 @@ Error: Received 503 fetching actor. Body: no ssh tunnel here :(
 
 ![Alice-playing-croquet](https://user-images.githubusercontent.com/5950433/218513641-f32f8793-37f7-4490-b258-639689acb89c.png)
 
-https://github.com/intel/dffml/blob/d1283f6564423ed1a08713deffbd6ab38a4cdcee/operations/innersource/dffml_operations_innersource/operations.py#L244-L265
+https://github.com/dffml/dffml/blob/d1283f6564423ed1a08713deffbd6ab38a4cdcee/operations/innersource/dffml_operations_innersource/operations.py#L244-L265
 
 - https://docs.github.com/en/rest/actions/workflow-runs?apiVersion=2022-11-28
 - **TODO** Modify below example from the other day to explain how Entities can share data, such as vuln data sharing (OpenSSF Stream 8) data to facilitate software lifecycle data via the [Agora Protocol](https://anagora.org/agora-pkg-chapter)
@@ -279,7 +279,7 @@ $ export IMAGE="registry.example.org/dffml"; export NEW_HASH=""; sed -i -r -e "s
   - [ ] Disable server stop on any exceptions, just keep on serving
   - [ ] `websocat --exit-on-eof --basic-auth alice:$(cat ../password) ws://localhost:8000/listen/websocket | tee staging_tempfile_for_testing | alice threats listen stdin activitypub`
     - We're about to start rolling very slowly (eventually we'll gain enough acceleration that the answer to Alice are you Rolling? will be YES!, however what we currently have is just the tippy top of the iceburg of what's needed for that, which is why that's volume 6)
-      - Ref Entity Analysis Trinity: https://github.com/intel/dffml/tree/main/docs/tutorials/rolling_alice/0000_architecting_alice#entity-analysis-trinity
+      - Ref Entity Analysis Trinity: https://github.com/dffml/dffml/tree/main/docs/tutorials/rolling_alice/0000_architecting_alice#entity-analysis-trinity
   - [x] Make it through the day
 - Future
   - [ ] Put `/webhook` should be `/admin/webhook`

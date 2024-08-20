@@ -11,7 +11,7 @@
 - https://v8.dev/blog/sandbox
   - Policy engine is already python, can embed V8, just missing docker actions
 
-![chaos-for-the-chaos-god](https://github.com/intel/dffml/assets/5950433/636969a1-1f0f-4c96-8812-f10fa403e79c)
+![chaos-for-the-chaos-god](https://github.com/dffml/dffml/assets/5950433/636969a1-1f0f-4c96-8812-f10fa403e79c)
 
 - https://python.langchain.com/docs/langgraph/
   - https://python.langchain.com/docs/langgraph/#define-the-graph

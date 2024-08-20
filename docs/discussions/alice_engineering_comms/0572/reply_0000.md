@@ -72,7 +72,7 @@ $ curl -H "Authorization: Bearer $(cat token.jwt)" -v https://llmproxy.svc
   - Stream of Consciousness
 - Transport Acquisition is about how we know we can trust the potential compute we have available to us and what claims for JWTs we issue based off SCITT receipts.
 
-![Sketch of Transport Acquisition](https://github.com/intel/dffml/assets/5950433/1e586f25-083f-49d4-b239-f0f18baf5805)
+![Sketch of Transport Acquisition](https://github.com/dffml/dffml/assets/5950433/1e586f25-083f-49d4-b239-f0f18baf5805)
 
 - https://radicle.xyz/guides/user
   - SCITT federation via `workspace/storage/*.cbor` as git repo heartwood federated
@@ -84,7 +84,7 @@ $ curl -H "Authorization: Bearer $(cat token.jwt)" -v https://llmproxy.svc
     - Owner as handle, fqdn, string
     - Also owner each jwk of SCITT TS signing key it is root of trust for that TCB identity provider (our Rats relying party) 
       - Build service whoch consumes recipts on git pull and issues JWK. Send JWK to orchestrator to use for job. This can go in policy engine for now but abstract it into its own service later. Then integrate into kcp service account issuer
-- https://github.com/intel/dffml/blob/5897cd290e3facfa3739f5b9467a4a3363379d1d/docs/discussions/alice_engineering_comms/0223/reply_0000.md?plain=1#L164
+- https://github.com/dffml/dffml/blob/5897cd290e3facfa3739f5b9467a4a3363379d1d/docs/discussions/alice_engineering_comms/0223/reply_0000.md?plain=1#L164
   - Don't worry about federation yet. Just do one TCB with on disk repos.
   - Start with building the service for workload identity using `httptest.oidc` `/token` as a base. Take receipt as POST body.
   - SCITT service issues token

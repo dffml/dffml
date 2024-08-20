@@ -6,7 +6,7 @@
   - This is a tricky problem. I’ve seen success using link traversal and automated triage in the past. This is an open action item for the DFFML project as we hope to provide an open source implementation which assists with this mapping process. We had a pervious implementation for mapping CVEs to source URLs, but it’s since bitrotted.
   - We are hoping to restart work on this front in the coming months. I will respond here when we do. In the meantime, if you have any example SBOMs you want mapped, if you coupd please put them somewhere public (maybe a github gist?) then we can target filling for those examples first.
 
-https://github.com/intel/dffml/blob/830bf5af07ab9ada48f7c75a77a9ee1ef89c0964/examples/shouldi/shouldi/cvemap/cvemap/cvemap.py#L30-L199
+https://github.com/dffml/dffml/blob/830bf5af07ab9ada48f7c75a77a9ee1ef89c0964/examples/shouldi/shouldi/cvemap/cvemap/cvemap.py#L30-L199
 
 - https://blog.okfn.org/2023/03/16/updating-the-open-definition-to-meet-the-challenges-of-today/?ref=openml.fyi
 - https://mastodon.social/@helge@mymath.rocks/110065914387517965 

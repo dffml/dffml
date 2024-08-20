@@ -1,6 +1,6 @@
 # CONTRIBUTING
 
-> - Commit: https://github.com/intel/dffml/blob/573172cced0fe28ec45d0a85693837b44d4cb8b6/CONTRIBUTING.md#abstract
+> - Commit: https://github.com/dffml/dffml/blob/573172cced0fe28ec45d0a85693837b44d4cb8b6/CONTRIBUTING.md#abstract
 > - Pull-Request: #1660
 
 > **WARNING: SECURITY**
@@ -66,7 +66,7 @@ It defines actions taken by maintainers. Timelines for progression and example a
 - https://github.com/intel/dffml/issues/1273
 - https://github.com/intel/dffml/issues/1300
 - https://github.com/intel/dffml/issues/1657
-- https://github.com/intel/dffml/blob/f8377d07e181aaf69ba2fe168668dae4022bb436/docs/arch/alice/discussion/0036/reply_0067.md?plain=1#L14-L25
+- https://github.com/dffml/dffml/blob/f8377d07e181aaf69ba2fe168668dae4022bb436/docs/arch/alice/discussion/0036/reply_0067.md?plain=1#L14-L25
 
 ## Best Practices
 
@@ -117,7 +117,7 @@ This section covers the integration status of automated checks into the processe
   - https://github.com/intel/dffml/discussions/1415
   - https://github.com/builtree/builtree/blob/main/governance/STEERING-COMMITTEE.md
 
-https://thenewstack.io/what-are-the-next-steps-for-feature-flags and the following image sum up the motivations behind the [Entity Analysis Trinity](https://github.com/intel/dffml/tree/main/docs/tutorials/rolling_alice/0000_architecting_alice#entity-analysis-trinity), ThreatOps, and VCS+CI/CD a la https://github.com/scitt-community/scitt-api-emulator/pull/27#issuecomment-1528073552
+https://thenewstack.io/what-are-the-next-steps-for-feature-flags and the following image sum up the motivations behind the [Entity Analysis Trinity](https://github.com/dffml/dffml/tree/main/docs/tutorials/rolling_alice/0000_architecting_alice#entity-analysis-trinity), ThreatOps, and VCS+CI/CD a la https://github.com/scitt-community/scitt-api-emulator/pull/27#issuecomment-1528073552
 
 > ![thenewstack-deccc3f5-image4-me-trying-to-understand-the-benifits-of-clickops](https://user-images.githubusercontent.com/5950433/235471920-6f2228e1-76e4-4479-84c3-cb80326e80ce.png)
 
@@ -137,7 +137,7 @@ Virtual branch - shared context dependent trains of thought within a poly-repo e
 
 - TODO
   - [ ] [`THREATS.md`](https://gist.github.com/pdxjohnny/07b8c7b4a9e05579921aa3cc8aed4866#file-rolling_alice_progress_report_0006_living_threat_models_are_better_than_dead_threat_models-md) 
-  - [ ] https://github.com/intel/dffml/blob/f8377d07e181aaf69ba2fe168668dae4022bb436/docs/contributing/codebase.rst?plain=1#L1-L183
+  - [ ] https://github.com/dffml/dffml/blob/f8377d07e181aaf69ba2fe168668dae4022bb436/docs/contributing/codebase.rst?plain=1#L1-L183
   - [ ] Naming conventions
     - [ ] Dockerfile
     - [ ] CI/CD Workflows
@@ -277,7 +277,7 @@ and have worked hard to make that project better.
 
 ## Alice: Abstracted Lifecycle Instantiatation of Contributor Efectivo
 
-> Upstream: [Rolling Alice: Volume 0: Introduction and Context](https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice)
+> Upstream: [Rolling Alice: Volume 0: Introduction and Context](https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice)
 
 To think about how we think about editing this document and how it should be
 written, imagine an open source developer named Alice. Phrase things here so that
@@ -322,7 +322,7 @@ following as we analyze the softare / system / entity over it's lifecycle.
 - Open Architecture
   - Universal Blueprint
   - Standard architecture we use to describe anything. Provides the ability to use / reference domain specific architectures as needed to define architecture of whole.
-  - https://github.com/intel/dffml/blob/main/docs/arch/0009-Open-Architecture.rst
+  - https://github.com/dffml/dffml/blob/main/docs/arch/0009-Open-Architecture.rst
 - Think
   - Come up with new data flows and system context input
 - Thoughts
@@ -617,7 +617,7 @@ to switch from one underlying framework to another.
 Conceptually, DFFML is not just the Python implementation it is today. It’s a
 programming language agnostic architecture centered around the concept of
 DataFlows and the decoupling of definition from implementation. One goal of the
-project closely associated with this is to have an orchestrator (`Alice <https://github.com/intel/dffml/tree/main/entities/alice/>`_) capable of
+project closely associated with this is to have an orchestrator (`Alice <https://github.com/dffml/dffml/tree/main/entities/alice/>`_) capable of
 deploying and knitting together new or existing services without the need for
 those services to know anything about each other. This could be thought of as a
 level of abstraction beyond serverless architecture, which is where we're hoping

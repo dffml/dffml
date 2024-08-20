@@ -128,9 +128,9 @@ usage: alice [-h] [-log LOG] {please,shouldi,threats} ...
 
              Dynamic Analysis          Static Analysis
 
-    Alice's source code: https://github.com/intel/dffml/tree/main/entities/alice
-    How we built Alice: https://github.com/intel/dffml/tree/main/docs/tutorials/rolling_alice
-    How to extend Alice: https://github.com/intel/dffml/blob/main/entities/alice/CONTRIBUTING.rst
+    Alice's source code: https://github.com/dffml/dffml/tree/main/entities/alice
+    How we built Alice: https://github.com/dffml/dffml/tree/main/docs/tutorials/rolling_alice
+    How to extend Alice: https://github.com/dffml/dffml/blob/main/entities/alice/CONTRIBUTING.rst
     Comment to get involved: https://github.com/intel/dffml/discussions/1406
 
 
@@ -341,7 +341,7 @@ index 46d20c8c85..fff5d4928b 100644
          """
          >>> AlicePleaseContributeRecommendedCommunityStandardsGitHubIssueOverlay.meta_issue_body(
 @@ -98,6 +134,7 @@ class AlicePleaseContributeRecommendedCommunityStandardsOverlayGitHubIssue:
-         - [] [License](https://github.com/intel/dffml/blob/main/LICENSE)
+         - [] [License](https://github.com/dffml/dffml/blob/main/LICENSE)
          - [] Security
          """
 +        readme_issue, readme_path = recommended_community_standard_contributions[0]

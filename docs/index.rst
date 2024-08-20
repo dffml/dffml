@@ -1,8 +1,8 @@
 Welcome to DFFML!
 =================
 
-.. image:: https://github.com/intel/dffml/workflows/Tests/badge.svg?branch=main&event=push
-    :target: https://github.com/intel/dffml/actions
+.. image:: https://github.com/dffml/dffml/workflows/Tests/badge.svg?branch=main&event=push
+    :target: https://github.com/dffml/dffml/actions
     :alt: Test Status
 .. image:: https://codecov.io/gh/intel/dffml/branch/main/graph/badge.svg
     :target: https://codecov.io/gh/intel/dffml
@@ -78,7 +78,7 @@ branch can be found `here <main/index.html>`_.
     :maxdepth: 2
     :caption: Community
 
-    GitHub <https://github.com/intel/dffml>
+    GitHub <https://github.com/dffml/dffml>
     Master Branch Docs <https://intel.github.io/dffml/main/>
     publications
     contact

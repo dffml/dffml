@@ -1,6 +1,6 @@
 ## 2024-06-18 @pdxjohnny Engineering Logs
 
-- Poly repo virtual branches: https://github.com/intel/dffml/blob/main/docs/discussions/alice_engineering_comms/0090/reply_0001.md
+- Poly repo virtual branches: https://github.com/dffml/dffml/blob/main/docs/discussions/alice_engineering_comms/0090/reply_0001.md
 - https://security.apple.com/blog/private-cloud-compute/
   - https://www.rfc-editor.org/rfc/rfc9474.html
     - > This document specifies an RSA-based blind signature protocol. RSA blind signatures were first introduced by Chaum for untraceable payments. A signature that is output from this protocol can be verified as an RSA-PSS signature.

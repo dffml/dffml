@@ -19,7 +19,7 @@ Updates
 
 This file has been vendored into multiple locations. Please be sure to track
 progress as the format evolves upstream. Upstream URL:
-https://github.com/intel/dffml/blob/manifest/dffml/util/testing/manifest/shim.py
+https://github.com/dffml/dffml/blob/manifest/dffml/util/testing/manifest/shim.py
 
 Pull Request for discussion, questions, comments, concerns, review:
 https://github.com/intel/dffml/pull/1273/files
@@ -718,7 +718,7 @@ def shim(
         :test:
         :replace: import os; cmds[0] = ["cp", os.path.join(ctx["root"], "dffml", "util", "testing", "manifest", "shim.py"), "shim.py"]
 
-        $ curl -sfLO https://github.com/intel/dffml/raw/manifest/dffml/util/testing/manifest/shim.py
+        $ curl -sfLO https://github.com/dffml/dffml/raw/manifest/dffml/util/testing/manifest/shim.py
 
     Create a test manifest
 

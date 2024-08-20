@@ -42,7 +42,7 @@
       >   - [[Attacks on AI Models: Prompt Injection vs supply chain poisoning](https://blog.mithrilsecurity.io/attacks-on-ai-models-prompt-injection-vs-supply-chain-poisoning/)] a good overview of supply chain with pictures.
       >
       > To understand AI supply chain Security, it helps to understand Open Source Software Supply chain Security
-      > ![image](https://github.com/intel/dffml/assets/5950433/61a5e1eb-d604-42cb-96b0-2a668b148627)
+      > ![image](https://github.com/dffml/dffml/assets/5950433/61a5e1eb-d604-42cb-96b0-2a668b148627)
     - [The AI/ML Security Landscape](https://docs.google.com/document/d/1AyivzKsERoIZcyr4XrH6CrNeUoYHhpiswThHS0XrbSU/edit?pli=1#heading=h.g0d92hu77q5z)
       - Commented on Provenance & Legal Issues: Provenance section
         - https://docs.google.com/document/d/1J8M1F5ev9tXzMpA3dAFXqXYs2t-T10xt0_ObXnqNN04/edit: AI Security Telemetry: 12. Understanding the AI Supply Chain
@@ -54,7 +54,7 @@ In practice, SCITT provides information about artifacts, enabling a mesh of depe
       - Commented on OpenSSF Projects (reuse where applicable) section
         - https://github.com/ossf/OpenVEX might be helpful for declaring issues with datasets
           - Hoping to see events of new vulns (being issues with training data in this case) getting integrated to trigger re-deployment/build/train/test cycles of AI/ML workloads.
-          - [What Is Alice? Mermaid Diagram](https://github.com/intel/dffml/assets/5950433/1141b8b0-5384-4c28-bdca-895cf7af809b)
+          - [What Is Alice? Mermaid Diagram](https://github.com/dffml/dffml/assets/5950433/1141b8b0-5384-4c28-bdca-895cf7af809b)
           - [Entity Analysis Trinity v0.0.2](https://user-images.githubusercontent.com/5950433/188203911-3586e1af-a1f6-434a-8a9a-a1795d7a7ca3.svg)
 - https://tailscale.com/kb/1232/derp-servers/
   - https://github.com/tailscale/tailscale/issues/9787

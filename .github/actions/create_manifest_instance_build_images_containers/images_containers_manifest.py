@@ -49,7 +49,7 @@ def main():
     try:
         os.environ.update({
             "ROOT_PATH": str(pathlib.Path(subprocess.check_output(["git", "rev-parse", "--show-toplevel"]).decode().strip()).relative_to(os.getcwd())),
-            "SCHEMA": "https://github.com/intel/dffml/raw/c82f7ddd29a00d24217c50370907c281c4b5b54d/schema/github/actions/build/images/containers/0.0.0.schema.json",
+            "SCHEMA": "https://github.com/dffml/dffml/raw/c82f7ddd29a00d24217c50370907c281c4b5b54d/schema/github/actions/build/images/containers/0.0.0.schema.json",
             "OWNER_REPOSITORY": "/".join(subprocess.check_output(["git", "remote", "get-url", "origin"]).decode().strip().replace(".git", "").split("/")[-2:]),
             "BRANCH": subprocess.check_output(["git", "rev-parse", "--abbrev-ref", "HEAD"]).decode().strip(),
             "PREFIX": os.environ.get("PREFIX", json.dumps([

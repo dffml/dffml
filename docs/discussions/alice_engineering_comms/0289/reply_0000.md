@@ -7,5 +7,5 @@
 
 ```console
 $ cat valid.json | jq -r .untagged[].features.group_by.RepoURL[]
-https://github.com/intel/dffml
+https://github.com/dffml/dffml
 ```

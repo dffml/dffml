@@ -27,7 +27,7 @@
   - https://docs.github.com/en/actions/using-jobs/running-jobs-in-a-container
   - https://docs.github.com/en/actions/using-containerized-services/about-service-containers
   - docs: tutorials: rolling alice: forward: security: supply chain: Mention tie to distributed compute
-    - https://github.com/intel/dffml/commit/e9af134d07f104e6db89ac872a8c2249198261da
+    - https://github.com/dffml/dffml/commit/e9af134d07f104e6db89ac872a8c2249198261da
     - https://twitter.com/pdxjohnny/status/1575152364440657920
     - https://twitter.com/pdxjohnny/status/1574974594863472640
 - Open Architecture

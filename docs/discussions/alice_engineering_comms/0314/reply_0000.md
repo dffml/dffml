@@ -1,8 +1,8 @@
-- Roadmap recap - Stream of Consciousness - https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0005_stream_of_consciousness.md
+- Roadmap recap - Stream of Consciousness - https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0005_stream_of_consciousness.md
   - [ ] https://github.com/ietf-scitt/use-cases/pull/18
     - [x] https://github.com/scitt-community/scitt-api-emulator/pull/27
     - [ ] SCITT API Emulator Federation pull request
-  - [ ] SCITT DFFML [InputNetwork](https://github.com/intel/dffml/blob/7d381bf67a72fe1ecb1012393d5726085564cb0e/dffml/df/memory.py#L283-L765)
+  - [ ] SCITT DFFML [InputNetwork](https://github.com/dffml/dffml/blob/7d381bf67a72fe1ecb1012393d5726085564cb0e/dffml/df/memory.py#L283-L765)
     - [ ] https://github.com/chroma-core/chroma
     - [ ] https://huggingface.co/spaces/ludwigstumpp/llm-leaderboard
 - https://www.youtube.com/watch?v=1EL03Pl4oL4&list=RDEMwZ9tKHt9iT5CWajVqMu11w&index=12

@@ -11,12 +11,12 @@
     - `--save-config` has been removed
 - Docker
   - https://github.com/pdxjohnny/dockerfiles/blob/406f0b94838f7dcd1792c394061a2ee18c4f7487/sshd/Dockerfile
-- https://github.com/intel/dffml/blob/main/entities/alice/CONTRIBUTING.rst#cloning-the-repo
+- https://github.com/dffml/dffml/blob/main/entities/alice/CONTRIBUTING.rst#cloning-the-repo
 - Vim
   - Exit insert mode `Ctrl-[`
 
 ```console
-$ git clone -b alice https://github.com/intel/dffml
+$ git clone -b alice https://github.com/dffml/dffml
 $ cd dffml/entities/alice
 $ python -m pip install \
     -e .[dev] \

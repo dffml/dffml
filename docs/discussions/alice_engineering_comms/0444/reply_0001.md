@@ -72,7 +72,7 @@ python -m cbor2.tool claim.receipt.cbor
 ```
 
 - Example container build from `manifest.json`
-  - https://github.com/intel/dffml/blob/156e8a91a46cbe7e9467d5d93204065107f1469e/schema/github/actions/build/images/containers/0.0.0.schema.json
+  - https://github.com/dffml/dffml/blob/156e8a91a46cbe7e9467d5d93204065107f1469e/schema/github/actions/build/images/containers/0.0.0.schema.json
 
 **scitt-api-emulator.manifest.json**
 

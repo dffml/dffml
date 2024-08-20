@@ -30,9 +30,9 @@ operations/innersource/dffml_operations_innersource/npm_groovy_lint.py
     > ![Screenshot_20230208-054700_of_conclousion_of_paper_on_supply_chains](https://user-images.githubusercontent.com/5950433/217573307-c85cc3ef-c63f-4bb3-be42-ece63cb602fe.png)
   - They are in alignment that a general equilibrium model would be fun
 - https://universeodon.com/@georgetakei/109824609861703097
-  - https://github.com/intel/dffml/commit/4ef226e2ecd384560d635fa84036003b525ad399 [💊](https://pdxjohnny.github.io/redpill/)
+  - https://github.com/dffml/dffml/commit/4ef226e2ecd384560d635fa84036003b525ad399 [💊](https://pdxjohnny.github.io/redpill/)
   - https://mastodon.social/@pdxjohnny/109456014313438341
-  - https://github.com/intel/dffml/tree/main/docs/arch/alice/discussion/0001/reply_0006.md
+  - https://github.com/dffml/dffml/tree/main/docs/arch/alice/discussion/0001/reply_0006.md
   - > Someone asked ChapGPt to come up with 10 Commandments for the modern world. I could be guided by these principles. Perhaps a new religion is in order?
     > ![9e3ac5f3049ee319](https://user-images.githubusercontent.com/5950433/217577363-83e0bcc8-6886-4d01-bce5-dc48d8a31651.png)
 - https://intel.github.io/dffml/main/plugins/service/http/cli.html#sources

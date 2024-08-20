@@ -6,7 +6,7 @@
   - The Alice Initiative is all about scaling knowledge transfer!
 - For posterity: [screenshot-of-ories-stable-diffusion-cyberpunk-archiver-ethical-ml](https://user-images.githubusercontent.com/5950433/204817902-684a4385-5197-456a-8910-2b2b41a16c5b.jpg)
   - If time is relative then timing really is everything isn't it, it's all just a delta
-- https://github.com/intel/dffml/commit/7f6aa4a4155420b5354ba6384f128a2f7f8d6605
+- https://github.com/dffml/dffml/commit/7f6aa4a4155420b5354ba6384f128a2f7f8d6605
   - https://en.wikipedia.org/wiki/Jam_tomorrow
     - > "I'm sure I'll take you with pleasure!" the Queen said. "Two pence a week, and jam every other day."
       > Alice couldn't help laughing, as she said, "I don't want you to hire me – and I don't care for jam."
@@ -33,12 +33,12 @@
   - Recurse with no overlay or orchestrator
 - Overlay
   - Populate JSON Source with a record with a repo name and records
-    - [`alice shouldi contribute`](https://github.com/intel/dffml/tree/main/entities/alice/#contribute)
+    - [`alice shouldi contribute`](https://github.com/dffml/dffml/tree/main/entities/alice/#contribute)
     - Overlay
       - `-sources dev=json -source-dev-filename .tools/open-architecture/innersource/repos.json -source-dev-readwrite -source-dev-allowempty`
       - Dataflow to read project name and associated repos from config file
         - Upstream
-          - https://github.com/intel/dffml/blob/main/entities/alice/CONTRIBUTING.rst#writing-operations
+          - https://github.com/dffml/dffml/blob/main/entities/alice/CONTRIBUTING.rst#writing-operations
         - Overlay
           - Alice, please write an operation to read `repos` top level key similarly to how `name` was read.
       - Repo with `myconfig` in it compliant to allowlisted operation implementations which read `repos` and `name` keys
@@ -139,8 +139,8 @@ hello_python().then((result) => {
 - TODO
   - [x] Infra roll call
   - [ ] **PYCASCADES!!!**
-    - [x] Updated https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0002_shes_ariving_when.md
-        - https://github.com/intel/dffml/commit/408d0ef29f60d0289fc2f7b6097faf8da9e6a8af
+    - [x] Updated https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0002_shes_ariving_when.md
+        - https://github.com/dffml/dffml/commit/408d0ef29f60d0289fc2f7b6097faf8da9e6a8af
       - Sourced from ^
     - [x] Picture
       - [2022-11-30-profile-with-server-on-chain](https://user-images.githubusercontent.com/5950433/205323625-ddca2a42-f908-4e7b-936e-0d09d62af175.jpg)
@@ -168,7 +168,7 @@ hello_python().then((result) => {
         - https://github.com/opencontainers/distribution-spec/blob/main/spec.md
         - https://github.com/oras-project/oras-py
           - Upload metrics collected data via add hock package creation
-          - https://github.com/intel/dffml/blob/1513484a4bf829b86675dfb654408674495687d3/dffml/operation/stackstorm.py#L306-L368
+          - https://github.com/dffml/dffml/blob/1513484a4bf829b86675dfb654408674495687d3/dffml/operation/stackstorm.py#L306-L368
       - [ ] Proxy to PyPi registry format
       - [ ] Cross SCITT https://scitt.io/distributing-with-oci-scitt.html with NPM RFC and mention in OpenSSF Metrics Use Case https://github.com/npm/rfcs/pull/626/files?short_path=9e1f9e7#diff-9e1f9e7b9ebe7e135d084916f727db5183eddd9bf2d9be73ca45444b6d74bfc9 to produce reference env docs for OpenSSF and SCITT on how DFFML does inventory and manifests
         - #1207

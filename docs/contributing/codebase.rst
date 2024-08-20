@@ -12,7 +12,7 @@ might want to use in conjunction with it. For example, if you wanted to use the
 machine learning models based on scikit, you'd install ``dffml-model-scikit``.
 If you wanted to use machine learning models based on TensorFlow, you'd install
 ``dffml-model-tensorflow``. The source code for all *Official* plugins is within
-the same Git repo (https://github.com/intel/dffml).
+the same Git repo (https://github.com/dffml/dffml).
 
 A *Official* plugin is any plugin maintained within the main Git repo.
 

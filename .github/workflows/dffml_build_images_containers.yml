@@ -1,7 +1,7 @@
 # References:
 # - https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
 # - https://docs.github.com/en/actions/using-workflows/reusing-workflows#calling-a-reusable-workflow
-# - https://github.com/intel/dffml/blob/main/.github/workflows/dispatch_build_images_containers.yml
+# - https://github.com/dffml/dffml/blob/main/.github/workflows/dispatch_build_images_containers.yml
 name: "DFFML: Build: Images: Containers"
 
 on:

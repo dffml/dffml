@@ -44,7 +44,7 @@
 
 ```json
 {
-    "$schema": "https://github.com/intel/dffml/raw/alice/schema/image/container/build/0.0.0.schema.json",
+    "$schema": "https://github.com/dffml/dffml/raw/alice/schema/image/container/build/0.0.0.schema.json",
     "$format_name": "image.container.build",
     "include": [
         {

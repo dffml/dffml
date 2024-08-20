@@ -1,6 +1,6 @@
 # Rolling Alice: Volume 0: Chapter 11: Entering Wonderland
 
-> Moved to: https://github.com/intel/dffml/blob/4d054ce4a626145fac642122e46cd23aeed60abc/docs/tutorials/rolling_alice/0000_architecting_alice/0011_entering_wonderland.md#rolling-alice-volume-0-chapter-11-entering-wonderland
+> Moved to: https://github.com/dffml/dffml/blob/4d054ce4a626145fac642122e46cd23aeed60abc/docs/tutorials/rolling_alice/0000_architecting_alice/0011_entering_wonderland.md#rolling-alice-volume-0-chapter-11-entering-wonderland
 
 ## The Meaning of Meaningless Riddles
 

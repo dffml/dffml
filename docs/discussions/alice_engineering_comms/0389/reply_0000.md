@@ -5,8 +5,8 @@
     - https://zoom-lfx.platform.linuxfoundation.org/meeting/96297611656?password=f030337b-dc4d-43d4-ac55-26db510f3d1c
     - https://docs.google.com/document/d/1moVFPn5pLi-uGs840_YBCrwdpHajU0ptFmlL4F9GryQ/edit
   - https://github.com/ietf-scitt/use-cases/pull/18
-    - [Alice Engineering Comms: 2023-03-02 @pdxjohnny Engineering Logs](https://github.com/intel/dffml/tree/main/docs/discussions/alice_engineering_comms/0194/reply_0000.md)
-    - [Alice: 2022-05-25 UCAN Community Meeting](https://github.com/intel/dffml/tree/main/docs/arch/alice/discussion/0023/reply_0050.md)
+    - [Alice Engineering Comms: 2023-03-02 @pdxjohnny Engineering Logs](https://github.com/dffml/dffml/tree/main/docs/discussions/alice_engineering_comms/0194/reply_0000.md)
+    - [Alice: 2022-05-25 UCAN Community Meeting](https://github.com/dffml/dffml/tree/main/docs/arch/alice/discussion/0023/reply_0050.md)
 - Michael Liberman
   - S2C2F is a set of practices that as a consumer of an artifact can help you understand how to evaluate provenance. Helps you better understand provenance of things that don't have SLSA attestation and what you should do from a dependency evaluation and trust evaluation perspective to help you understand what you should be doing to satisfy your risk tolerance.
 - Isaac Hepworth
@@ -17,8 +17,8 @@
   - Looking at threat models of build environments
   - What if there is a temporary breach? How do we limit blast radius
   - Build environment
-    - > ![image](https://github.com/intel/dffml/assets/5950433/97620c92-8ad0-4ace-a452-f668cedfb084)
-    - > ![image](https://github.com/intel/dffml/assets/5950433/04a9140f-5a4e-474b-8f0a-73895537823b)
+    - > ![image](https://github.com/dffml/dffml/assets/5950433/97620c92-8ad0-4ace-a452-f668cedfb084)
+    - > ![image](https://github.com/dffml/dffml/assets/5950433/04a9140f-5a4e-474b-8f0a-73895537823b)
     - Attack vectors
       - Base images / VMs
       - Initialization of containers / VMs
@@ -33,15 +33,15 @@
 - Marcela Melara
   - Trusted Hardware
     - TEE techniques have different attestation capabilities
-      - > ![image](https://github.com/intel/dffml/assets/5950433/934bfa3b-5b53-42b5-b001-ddba818aef0c)
+      - > ![image](https://github.com/dffml/dffml/assets/5950433/934bfa3b-5b53-42b5-b001-ddba818aef0c)
     - IETF RATS
       - Protocol for remote attestation
       - Attestation flows for SGX and TDX follow RATS
     - Methods for providing integrety
-      - > ![image](https://github.com/intel/dffml/assets/5950433/d40788a8-248e-4457-bc01-22d4ddb54a2e)
+      - > ![image](https://github.com/dffml/dffml/assets/5950433/d40788a8-248e-4457-bc01-22d4ddb54a2e)
       - For Open Source supply chain integrity checks are usually more important than confidentiality
       - Provide hardening against control plane attacks
     - Proposal for new build environment integrety track
-      - > ![image](https://github.com/intel/dffml/assets/5950433/a174fe0b-89ca-4d79-8cf9-2c1e14d9ad25)
+      - > ![image](https://github.com/dffml/dffml/assets/5950433/a174fe0b-89ca-4d79-8cf9-2c1e14d9ad25)
   - Isaac Hepworth
     - This would help with measuring hermeticness

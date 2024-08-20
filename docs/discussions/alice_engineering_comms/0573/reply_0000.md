@@ -140,7 +140,7 @@ if __name__ == "__main__":
     - This looks like what we're looking for
 - Active branch roll call for current system context (train of thought)
   - https://github.com/ietf-scitt/use-cases/pull/18
-    - https://github.com/intel/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0005_stream_of_consciousness.md
+    - https://github.com/dffml/dffml/blob/main/docs/tutorials/rolling_alice/0000_architecting_alice/0005_stream_of_consciousness.md
   - https://github.com/pdxjohnny/scitt-api-emulator/tree/policy_engine
     - https://github.com/pdxjohnny/scitt-api-emulator/tree/policy_engine_cwt_rebase
       - This is most active branch, incorperates hopefully soon to be merged changed from https://github.com/scitt-community/scitt-api-emulator/pull/39

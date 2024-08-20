@@ -1,7 +1,7 @@
 - https://github.com/cardinalby/github-action-ts-run-api#test-js-action-in-a-child-node-process
 - https://try-quivr.streamlit.app/
   - Add knowledge
-    - https://github.com/intel/dffml/raw/alice/docs/tutorials/rolling_alice/0000_architecting_alice/README.md
+    - https://github.com/dffml/dffml/raw/alice/docs/tutorials/rolling_alice/0000_architecting_alice/README.md
     - https://raw.githubusercontent.com/intel/dffml/alice/docs/tutorials/rolling_alice/0000_architecting_alice/0005_stream_of_consciousness.md
   - Q&A
     - Who is Alice?

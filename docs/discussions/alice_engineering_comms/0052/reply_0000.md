@@ -13,15 +13,15 @@
 - https://github.com/dffml/dffml-pre-image-removal/commits/shouldi_dep_tree
 - https://github.com/chainguard-dev/melange/pull/128/files
   - Golang CLI library Cobra has docs generation
-- https://github.com/intel/dffml/actions/runs/3228504774/jobs/5284698480
+- https://github.com/dffml/dffml/actions/runs/3228504774/jobs/5284698480
   - Manifest consumption worked
-  - https://github.com/intel/dffml/commit/0ba6357165cfd69583a7564edf8ec6d77157fcfa
+  - https://github.com/dffml/dffml/commit/0ba6357165cfd69583a7564edf8ec6d77157fcfa
 
 ```
 Error response from daemon: failed to create shim: OCI runtime create failed: runc create failed: unable to start container process: exec: "tail": executable file not found in $PATH: unknown
 ```
 
-[Build: Images: Containers: .github#L1](https://github.com/intel/dffml/commit/74f80dd25577b4047429b00a880f06aaa74829bc#annotation_4889996315)
+[Build: Images: Containers: .github#L1](https://github.com/dffml/dffml/commit/74f80dd25577b4047429b00a880f06aaa74829bc#annotation_4889996315)
 ```
 Error when evaluating 'strategy' for job 'build'. intel/dffml/.github/workflows/build_images_containers.yml@74f80dd25577b4047429b00a880f06aaa74829bc (Line: 64, Col: 19): Error parsing fromJson,intel/dffml/.github/workflows/build_images_containers.yml@74f80dd25577b4047429b00a880f06aaa74829bc (Line: 64, Col: 19): Invalid property identifier character: \. Path '[0]', line 1, position 2.,intel/dffml/.github/workflows/build_images_containers.yml@74f80dd25577b4047429b00a880f06aaa74829bc (Line: 64, Col: 19): Unexpected type of value '', expected type: Sequence.
 ```

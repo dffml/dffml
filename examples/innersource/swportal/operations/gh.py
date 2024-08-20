@@ -24,7 +24,7 @@ def github_split_owner_project(url):
     Examples
     --------
 
-    >>> github_split_owner_project("https://github.com/intel/dffml")
+    >>> github_split_owner_project("https://github.com/dffml/dffml")
     ('intel', 'dffml')
     """
     return dict(

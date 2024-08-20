@@ -1,12 +1,12 @@
 ## 2023-12-13 @pdxjohnny Engineering Logs
 
-![image](https://github.com/intel/dffml/assets/5950433/0db2ba1b-776d-4ab5-8f5b-95e56c363da5)
+![image](https://github.com/dffml/dffml/assets/5950433/0db2ba1b-776d-4ab5-8f5b-95e56c363da5)
 
 - TODO
   - [x] DFFML testing CI build job submit SBOM to SCITT
     - public-keys branch for notary keys
-    - https://github.com/intel/dffml/actions/runs/7198235389/job/19607199178
-    - https://github.com/intel/dffml/blob/409880c54eb85bae5b79debaa23957008427c5a9/.github/workflows/testing.yml#L15-L135
+    - https://github.com/dffml/dffml/actions/runs/7198235389/job/19607199178
+    - https://github.com/dffml/dffml/blob/409880c54eb85bae5b79debaa23957008427c5a9/.github/workflows/testing.yml#L15-L135
   - [ ] Docker service for job running SCITT
     - [ ] SCITT private key in GitHub Actions secrets
     - [ ] Commit workspace storage to branch

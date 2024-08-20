@@ -55,7 +55,7 @@
   - #1388
     - Related: Gatekeeper/Prirotizer
 
-https://github.com/intel/dffml/blob/1d071ea82af93a15b6559639f223c64b7f356bf6/dffml/df/memory.py#L1976-L1979
+https://github.com/dffml/dffml/blob/1d071ea82af93a15b6559639f223c64b7f356bf6/dffml/df/memory.py#L1976-L1979
 
 - Fundamentally Alice is helping us with dependency review, that promotion, cross of trust boundary, from 3rd to 2nd party
   - She helps us decide if they are up to the level of requirements we have for running within the 2nd party https://en.wikipedia.org/wiki/Protection_ring, but since we're and open source project, the ring we are protecting is related to the downstream threat model

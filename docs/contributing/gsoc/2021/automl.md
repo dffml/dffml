@@ -47,7 +47,7 @@ Intermediate/Hard
 
 ## Related Readings
 
-- https://github.com/intel/dffml/blob/main/docs/contributing/gsoc/2021.md
+- https://github.com/dffml/dffml/blob/main/docs/contributing/gsoc/2021.md
 - https://scikit-learn.org/stable/model_selection.html#model-selection
 - https://www.automl.org/automl/
 

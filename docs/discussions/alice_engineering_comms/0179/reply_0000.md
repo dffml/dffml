@@ -18,7 +18,7 @@
 - Example MISALINGED https://simonwillison.net/2023/Feb/15/bing/
   - Add this to, the scary part bullet points
   - Put somewhere in the Alice docs that the point is the fourth eye, empathy
-    - https://github.com/intel/dffml/commit/4eaeccf103d29873c8f86873e25783612d9a93b7
+    - https://github.com/dffml/dffml/commit/4eaeccf103d29873c8f86873e25783612d9a93b7
       - Probably need to re-add this
 - https://mastodon.social/@kidehen/109869775109210989
 - Potential GitHub side issues with the TPM based SSH key ADR
@@ -34,14 +34,14 @@
   - Finally a decent nodemon replacement with less heavy deps?
 - Sketch of manifest instance for PR validation for #1207
   - ref todos: Need AcitivityPub Security based CD and PR based CD
-    - https://github.com/intel/dffml/blob/main/schema/github/actions/result/container/example-pull-request-validation.yaml
+    - https://github.com/dffml/dffml/blob/main/schema/github/actions/result/container/example-pull-request-validation.yaml
 
 **schema/github/actions/result/container/example-pull-request-validation.yaml**
 
 ```yaml
-$schema: "https://github.com/intel/dffml/raw/dffml/schema/github/actions/result/container/0.0.0.schema.json"
-commit_url: "https://github.com/intel/dffml/commit/1f347bc7f63f65041a571d9e3c174d8b9ead24aa"
-job_url: "https://github.com/intel/dffml/actions/runs/4185582030/jobs/7252852590"
+$schema: "https://github.com/dffml/dffml/raw/dffml/schema/github/actions/result/container/0.0.0.schema.json"
+commit_url: "https://github.com/dffml/dffml/commit/1f347bc7f63f65041a571d9e3c174d8b9ead24aa"
+job_url: "https://github.com/dffml/dffml/actions/runs/4185582030/jobs/7252852590"
 result: "docker.io/intelotc/dffml@sha256:ae636f72f96f499ff5206150ebcaafbd64ce30affa7560ce0a41f54e871da2"
 ```
 
@@ -52,9 +52,9 @@ result: "docker.io/intelotc/dffml@sha256:ae636f72f96f499ff5206150ebcaafbd64ce30a
 **schema/alice/shouldi/contribute/example-run-on-orsa-python-package.yaml**
 
 ```yaml
-$schema: "https://github.com/intel/dffml/raw/dffml/schema/alice/shouldi/contribute/0.0.0.schema.json"
+$schema: "https://github.com/dffml/dffml/raw/dffml/schema/alice/shouldi/contribute/0.0.0.schema.json"
 python_pacakge_oras_land: "docker.io/intelotc/dffml@sha256:ae636f72f96f499ff5206150ebcaafbd64ce30affa7560ce0a41f54e871da2"
-job_url: "https://github.com/intel/dffml/actions/runs/${WORKFLOW_ID}/jobs/${JOB_ID}"
+job_url: "https://github.com/dffml/dffml/actions/runs/${WORKFLOW_ID}/jobs/${JOB_ID}"
 result: "docker.io/intelotc/dffml@sha256:${OUTPUT_SCAN_HASH}"
 ```
 

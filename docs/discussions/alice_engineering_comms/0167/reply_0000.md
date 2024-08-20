@@ -95,7 +95,7 @@ def takes_repo_dir(
   - https://github.com/OpenLineage/OpenLineage/pull/1432/files#diff-c28f070ad0fa67a71f138b6c4b1302bfa0640bad2a44f1ca847b6170080d14fb
   - https://github.com/OpenLineage/OpenLineage/tree/main/integration
   - https://github.com/OpenLineage/OpenLineage/tree/main/integration/sql
-    - https://github.com/intel/dffml/tree/main/source/mysql
+    - https://github.com/dffml/dffml/tree/main/source/mysql
   - Just use mermaid
     - Flat files, markdown docs
 - Fixing webhook `vcs.push` to ActivityPub
@@ -302,7 +302,7 @@ repository:
   assignees_url: https://api.github.com/repos/intel/dffml/assignees{/user}
   blobs_url: https://api.github.com/repos/intel/dffml/git/blobs{/sha}
   branches_url: https://api.github.com/repos/intel/dffml/branches{/branch}
-  clone_url: https://github.com/intel/dffml.git
+  clone_url: https://github.com/dffml/dffml.git
   collaborators_url: https://api.github.com/repos/intel/dffml/collaborators{/collaborator}
   comments_url: https://api.github.com/repos/intel/dffml/comments{/number}
   commits_url: https://api.github.com/repos/intel/dffml/commits{/sha}
@@ -326,7 +326,7 @@ repository:
   git_commits_url: https://api.github.com/repos/intel/dffml/git/commits{/sha}
   git_refs_url: https://api.github.com/repos/intel/dffml/git/refs{/sha}
   git_tags_url: https://api.github.com/repos/intel/dffml/git/tags{/sha}
-  git_url: git://github.com/intel/dffml.git
+  git_url: git://github.com/dffml/dffml.git
   has_discussions: true
   has_downloads: true
   has_issues: true
@@ -335,7 +335,7 @@ repository:
   has_wiki: true
   homepage: https://intel.github.io/dffml/main/
   hooks_url: https://api.github.com/repos/intel/dffml/hooks
-  html_url: https://github.com/intel/dffml
+  html_url: https://github.com/dffml/dffml
   id: 149512216
   is_template: false
   issue_comment_url: https://api.github.com/repos/intel/dffml/issues/comments{/number}
@@ -389,7 +389,7 @@ repository:
   statuses_url: https://api.github.com/repos/intel/dffml/statuses/{sha}
   subscribers_url: https://api.github.com/repos/intel/dffml/subscribers
   subscription_url: https://api.github.com/repos/intel/dffml/subscription
-  svn_url: https://github.com/intel/dffml
+  svn_url: https://github.com/dffml/dffml
   tags_url: https://api.github.com/repos/intel/dffml/tags
   teams_url: https://api.github.com/repos/intel/dffml/teams
   topics:
@@ -515,7 +515,7 @@ $ curl -sfL https://vcs.activitypub.securitytxt.dffml.chadig.com/push/outbox | j
   "deleted": false,
   "forced": false,
   "base_ref": null,
-  "compare": "https://github.com/intel/dffml/compare/d77e2f697d80...a5e638884e56",
+  "compare": "https://github.com/dffml/dffml/compare/d77e2f697d80...a5e638884e56",
   "commits": [
     {
       "id": "a5e638884e565f727ae4fedf91a33b3ce68bcfa9",
@@ -523,7 +523,7 @@ $ curl -sfL https://vcs.activitypub.securitytxt.dffml.chadig.com/push/outbox | j
       "distinct": true,
       "message": "docs: tutorials: rolling alice: architecting alice: stream of consciousness: Link to activitypubsecuritytxt\n\nAlice Engineering Comms: 2023-02-03 Engineering Logs: https://github.com/intel/dffml/discussions/1406?sort=new#discussioncomment-4863663",
       "timestamp": "2023-02-03T12:53:47-08:00",
-      "url": "https://github.com/intel/dffml/commit/a5e638884e565f727ae4fedf91a33b3ce68bcfa9",
+      "url": "https://github.com/dffml/dffml/commit/a5e638884e565f727ae4fedf91a33b3ce68bcfa9",
       "author": {        "name": "John Andersen",        "email": "johnandersenpdx@gmail.com",
         "username": "pdxjohnny"      },      "committer": {        "name": "GitHub",
         "email": "noreply@github.com",
@@ -540,7 +540,7 @@ $ curl -sfL https://vcs.activitypub.securitytxt.dffml.chadig.com/push/outbox | j
     "tree_id": "9137977afec12d9f9bb3a76eac62158648f51d36",
     "distinct": true,
     "message": "docs: tutorials: rolling alice: architecting alice: stream of consciousness: Link to activitypubsecuritytxt\n\nAlice Engineering Comms: 2023-02-03 Engineering Logs: https://github.com/intel/dffml/discussions/1406?sort=new#discussioncomment-4863663",
-    "timestamp": "2023-02-03T12:53:47-08:00",    "url": "https://github.com/intel/dffml/commit/a5e638884e565f727ae4fedf91a33b3ce68bcfa9",    "author": {
+    "timestamp": "2023-02-03T12:53:47-08:00",    "url": "https://github.com/dffml/dffml/commit/a5e638884e565f727ae4fedf91a33b3ce68bcfa9",    "author": {
       "name": "John Andersen",
       "email": "johnandersenpdx@gmail.com",
       "username": "pdxjohnny"
@@ -584,9 +584,9 @@ docs/tutorials/rolling_alice/0000_architecting_alice/0005_stream_of_consciousnes
   - [ ] `dffml-model-transformers` as first example 2nd party
     - Rebuild upstream container when we get an VEX (via AcivityPub) from upstream saying that any of the files we want to watch have changed
       - At first we will just watch all files within the downstream container build workflow
-        - `on.workflow_dispatch && on.push.paths: ["https://github.com/intel/dffml.git#branch=main/*"]`
+        - `on.workflow_dispatch && on.push.paths: ["https://github.com/dffml/dffml.git#branch=main/*"]`
       - Later we will watch for the example container with the pinned version
-        - `on.workflow_dispatch && on.push.paths: ["https://github.com/intel/dffml.git#branch=main/dffml/util/skel/common/Dockerfile"]`
+        - `on.workflow_dispatch && on.push.paths: ["https://github.com/dffml/dffml.git#branch=main/dffml/util/skel/common/Dockerfile"]`
         - `dffml/util/skel/common/Dockerfile`
           - `FROM registry.dffml.org/dffml:sha256@babebabe`
 - Future

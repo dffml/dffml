@@ -96,7 +96,7 @@ class run_dataflow(OperationImplementationContext):
     ...                 value={
     ...                     "dffml": [
     ...                         {
-    ...                             "value": "https://github.com/intel/dffml",
+    ...                             "value": "https://github.com/dffml/dffml",
     ...                             "definition": URL.name
     ...                         }
     ...                     ]
@@ -108,7 +108,7 @@ class run_dataflow(OperationImplementationContext):
     ...         print(results)
     >>>
     >>> asyncio.run(main())
-    {'flow_results': {'dffml': {'URL': 'https://github.com/intel/dffml'}}}
+    {'flow_results': {'dffml': {'URL': 'https://github.com/dffml/dffml'}}}
 
     The following shows how to use run dataflow with custom inputs and outputs.
     This allows you to run a subflow as if it were an operation.
@@ -153,7 +153,7 @@ class run_dataflow(OperationImplementationContext):
     ...         dataflow,
     ...         {
     ...             "run_subflow": [
-    ...                 Input(value="https://github.com/intel/dffml", definition=URL)
+    ...                 Input(value="https://github.com/dffml/dffml", definition=URL)
     ...             ]
     ...         },
     ...     ):
