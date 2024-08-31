@@ -44,4 +44,12 @@
 References:
 - https://github.com/rcaloras/bash-preexec
 
+---
+
+- Basic Comms
+
 [![asciicast: 2024-08-29: A Shell for a Ghost](https://asciinema.org/a/674077.svg)](https://asciinema.org/a/674077)
+
+- JSON LLM Comms
+
+[![asciicast: 2024-08-31: A Shell for a Ghost: JSON LLM Comms](https://asciinema.org/a/674285.svg)](https://asciinema.org/a/674285)
