@@ -43,3 +43,5 @@
 
 References:
 - https://github.com/rcaloras/bash-preexec
+
+[![asciicast: 2024-08-29: A Shell for a Ghost](https://asciinema.org/a/674077.svg)](https://asciinema.org/a/674077)
