@@ -1,6 +1,6 @@
 # CONTRIBUTING
 
-This doc is work in progress as the project is ramping up again.
+This doc is work in progress as the project is ramping up again. The DFFML org will continue maintinance from here on out. All links to intel/ GitHub org are pre-hard fork. This project is unaffiliated with any companies in ang way. this project, much like a corperation in America, will eventually be viewed as it's own entity (Alice). The fingerprint of this entity will be it's deeds, feed by her stratigc plans and principles, which are outlined in this document.
 
 - Please see the [contributing docs page for DFFML 1st Party Contributing Docs](https://intel.github.io/dffml/main/contributing/).
 - The following document is about contribuing to the DFFML [poly-repo 1st, 2nd, and 3rd party ecosystems](https://github.com/intel/dffml/pull/1061/files#diff-c7d7828822f15922ed830bb6f3148edc97c291c809836b1a1808165d36bd8c9d)
