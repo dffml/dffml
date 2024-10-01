@@ -19,19 +19,19 @@ We broadly have two types of audience here, one is Citizen Data Scientists and M
 
 ## Documentation
 
-Documentation for the latest release is hosted at https://intel.github.io/dffml/
+Documentation for the latest release is hosted at https://dffml.github.io/dffml/
 
 Documentation for the main branch is hosted at
-https://intel.github.io/dffml/main/index.html
+https://dffml.github.io/dffml/main/index.html
 
 ## Contributing
 
-The [contributing page](https://intel.github.io/dffml/main/contributing/index.html)
+The [contributing doc](./CONTRIBUTING.md)
 will guide you through getting setup and contributing to DFFML.
 
 ## Help
 
-- Ask a question via an [issue](https://github.com/intel/dffml/issues/new?assignees=&labels=question&template=question.md&title=question%3A+)
+- Ask a question via an [issue](https://github.com/dffml/dffml/issues/new?assignees=&labels=question&template=question.md&title=question%3A+)
 - Send an email to dffml-users@lists.01.org
   - You can subscribe to the users mailing list here
     https://lists.01.org/postorius/lists/dffml-users.lists.01.org/
@@ -40,13 +40,3 @@ will guide you through getting setup and contributing to DFFML.
 ## License
 
 DFFML is distributed under the [MIT License](LICENSE).
-
-## Legal
-
-> This software is subject to the U.S. Export Administration Regulations and
-> other U.S. law, and may not be exported or re-exported to certain countries
-> (Cuba, Iran, Crimea Region of Ukraine, North Korea, Sudan, and Syria) or to
-> persons or entities prohibited from receiving U.S. exports (including
-> Denied Parties, Specially Designated Nationals, and entities on the Bureau
-> of Export Administration Entity List or involved with missile technology or
-> nuclear, chemical or biological weapons).
