@@ -50,7 +50,7 @@ One of goals is to have Alice help us bring us up to the speed of the fully conn
 
 ## Alice: Artificial Life Is Coming Eventually
 
-> Talk Abstract SKU 1
+> Talk Abstract SKU 1. Artificial Life: A term for what happens when the [design process](https://en.wikipedia.org/wiki/Hardware_description_language) and [fabs](https://en.wikipedia.org/wiki/Semiconductor_fabrication_plant) have fully integrated various AI/ML models. One must zoom out to see that the fully integrated system will be intelligent, self-aware, self-replicating, and arguably consciousness. The models we integrate will need to be [gated](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/) by human defined policy and their decisions fully traceable. This is necessary as models inherently have a nature of ["undefined behavior" (CWE-475)](https://cwe.mitre.org/data/definitions/475.html) to them.
 
 Given the inevitability of distributed AI we ask the question: How do we build it with intention? What would we find if we looked at it's threat model? What if it was it's own threat model? How does it defend against itself and other instances of itself? Most importantly, what would a system look like that we could cohabitate with?
 
