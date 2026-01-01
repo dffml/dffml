@@ -426,6 +426,8 @@ def op(
                     definition_name = param_annotation.__name__
                 if inspect.isclass(param_annotation) and hasattr(
                     param_annotation, "__qualname__"
+                ) and (
+                    param_annotation not in primitive_types
                 ):
                     definition_name = param_annotation.__qualname__
 
@@ -472,6 +474,8 @@ def op(
                     definition_name = param_annotation.__name__
                 if inspect.isclass(param_annotation) and hasattr(
                     param_annotation, "__qualname__"
+                ) and (
+                    param_annotation not in primitive_types
                 ):
                     definition_name = param_annotation.__qualname__
 
