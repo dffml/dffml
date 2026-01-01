@@ -1,7 +1,8 @@
 from typing import List
 
 # Command line utility helpers and DataFlow specific classes
-from dffml import CMD, DataFlow, GetSingle, Input, config, field, run
+from dffml import CMD, DataFlow, GetSingle, Input, config, field
+from dffml.high_level.dataflow import run
 
 # Import all the operations we wrote
 from .python.bandit import run_bandit
