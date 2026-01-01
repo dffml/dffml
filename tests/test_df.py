@@ -115,7 +115,7 @@ class TestMemoryOperationImplementationNetwork(AsyncTestCase):
 
     async def test_contains_true(self):
         async with self.operationsNetworkCtx() as ctx:
-            await ctx.instantiate(add.op, BaseConfig(), opimp=add.imp)
+            await ctx.instantiate(add.op, config=BaseConfig(), opimp=add.imp)
             self.assertTrue(await ctx.contains(add.op))
 
     async def test_contains_false(self):
@@ -124,7 +124,7 @@ class TestMemoryOperationImplementationNetwork(AsyncTestCase):
 
     async def test_run(self):
         async with self.operationsNetworkCtx() as ctx:
-            await ctx.instantiate(add.op, BaseConfig(), opimp=add.imp)
+            await ctx.instantiate(add.op, config=BaseConfig(), opimp=add.imp)
             # No input set context and input network context required to test
             # the add operation
             self.assertEqual(
