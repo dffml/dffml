@@ -211,30 +211,20 @@ class NotificationSetContext(object):
         self.logger = LOGGER.getChild(self.__class__.__qualname__)
 
     async def add(self, notification_item: Any):
-        async with self.parent.lock:
-            self.parent.notification_items.append(notification_item)
-            self.parent.event_added.set()
+        # asyncio.Queue is cancellation-safe and avoids deadlocks that can occur
+        # when serializing waiters with a lock while awaiting an Event.
+        await self.parent.queue.put(notification_item)
 
     async def added(self) -> Tuple[bool, List[Any]]:
         """
         Gets item from FIFO notification queue. Returns a bool for if there are
         more items to get and one of the items.
         """
-        more = True
-        # Make sure waiting on event_added is done by one coroutine at a time.
-        # Multiple might be waiting and if there is only one event in the queue
-        # they would all otherwise be triggered
-        async with self.parent.event_added_lock:
-            await self.parent.event_added.wait()
-            async with self.parent.lock:
-                notification_item = self.parent.notification_items.pop(0)
-                # If there are still more items that the added event hasn't
-                # processed then make sure we will return immediately if called
-                # again
-                if not self.parent.notification_items:
-                    more = False
-                    self.parent.event_added.clear()
-                return more, notification_item
+        notification_item = await self.parent.queue.get()
+        # Preserve prior API: "more" indicates whether another call would
+        # return immediately (i.e. more items are already enqueued).
+        more = not self.parent.queue.empty()
+        return more, notification_item
 
     async def __aenter__(self) -> "NotificationSetContext":
         return self
@@ -249,11 +239,9 @@ class NotificationSet(object):
     """
 
     def __init__(self) -> None:
-        # TODO audit use of memory (should be used sparingly)
-        self.lock = asyncio.Lock()
-        self.event_added = asyncio.Event()
-        self.event_added_lock = asyncio.Lock()
-        self.notification_items = []
+        # Use asyncio.Queue to avoid deadlocks/hangs under cancellation or
+        # multiple waiters.
+        self.queue: asyncio.Queue[Any] = asyncio.Queue()
 
     def __call__(self) -> NotificationSetContext:
         return NotificationSetContext(self)
