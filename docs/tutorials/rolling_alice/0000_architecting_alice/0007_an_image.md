@@ -15,6 +15,7 @@ transmitted over a multitude of existing channels.
   - We are going build off of didme.me v2
 - Future work
   - Videos and streams, Alice commited to a rolling release.
+    - Called it! https://github.com/memvid/memvid
   - Provenance via SCITT
 - References
   - This tutorial is covered in `TODO` **TODO** Update with link to recording once made.
