@@ -16,22 +16,10 @@ async def mnist_training(
     )
 ):
     """
-    Examples
-    --------
+    MNIST handwritten digits dataset (training set).
 
-    .. code-block:: console
-        :test:
-
-        $ dffml list records -sources training=mnist.training
-
-    >>> from dffml.noasync import load
-    >>> from dffml import mnist_training
-    >>>
-    >>> records = list(load(mnist_training.source()))
-    >>> print(len(records))
-    120
-    >>> records[0].export()
-    {'key': '0', 'features': {'SepalLength': 6.4, 'SepalWidth': 2.8, 'PetalLength': 5.6, 'PetalWidth': 2.2, 'classification': 2}, 'extra': {}}
+    Note: This requires network access to download the dataset from
+    http://yann.lecun.com/exdb/mnist/
     """
     # Download features
     features_path = await cached_download(

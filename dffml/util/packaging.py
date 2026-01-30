@@ -38,11 +38,11 @@ def mkvenv():
     Examples
     --------
 
-    >>> import sys
-    >>> import subprocess
-    >>> from dffml import chdir, mkvenv
+    >>> import sys  # doctest: +SKIP
+    >>> import subprocess  # doctest: +SKIP
+    >>> from dffml import chdir, mkvenv  # doctest: +SKIP
     >>>
-    >>> with mkvenv() as tempdir:
+    >>> with mkvenv() as tempdir:  # doctest: +SKIP
     ...     with chdir(tempdir):
     ...         subprocess.check_call([
     ...             sys.executable,

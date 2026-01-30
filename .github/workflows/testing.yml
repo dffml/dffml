@@ -177,3 +177,64 @@ jobs:
           cd "${{ matrix.plugin }}"
           python -m unittest discover -v
         fi
+
+  tutorials:
+    runs-on: ubuntu-latest
+    if: false
+    strategy:
+      fail-fast: false
+      max-parallel: 100
+      matrix:
+        python-version: ["3.12"]
+        docs:
+        - docs/cli.rst
+        - docs/examples/dataflows.rst
+        - docs/examples/integration.rst
+        - docs/examples/or_covid_data_by_county.rst
+        - docs/examples/shouldi.rst
+        - docs/examples/innersource/swportal.rst
+        - docs/examples/innersource/microservice.rst
+        - docs/examples/innersource/kubernetes.rst
+        - docs/examples/icecream_sales.rst
+        - docs/examples/data_cleanup/data_cleanup.rst
+        - docs/examples/data_cleanup/data_cleanup_classfication.rst
+        - docs/installation.rst
+        - docs/troubleshooting.rst
+        - docs/tutorials/accuracy/mse.rst
+        - docs/tutorials/dataflows/io.rst
+        - docs/tutorials/dataflows/nlp.rst
+        - docs/tutorials/models/iris.rst
+        - docs/tutorials/models/package.rst
+        - docs/tutorials/models/docs.rst
+        - docs/tutorials/models/slr.rst
+        - docs/tutorials/sources/complex.rst
+        - docs/tutorials/sources/file.rst
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: pip cache
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/setup.py') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    - name: Install dependencies
+      run: |
+        set -x
+        pip install -U pip setuptools wheel
+        pip install -e .[dev]
+    - name: Test
+      run: |
+        set -x
+        export GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+        export PYTHON=python${{ matrix.python-version }}
+        export LOGGING=debug
+        export PATH="${HOME}/.local/bin:${PATH}"
+        python -m dffml service dev run consoletest ${{ matrix.docs }}

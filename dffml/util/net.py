@@ -283,7 +283,7 @@ async def cached_download_unpack_archive(
     >>> import asyncio
     >>> from dffml import cached_download_unpack_archive
     >>>
-    >>> dffml_dir = asyncio.run(
+    >>> dffml_dir = asyncio.run(  # doctest: +SKIP
     ...     cached_download_unpack_archive(
     ...         "https://github.com/dffml/dffml/archive/c4469abfe6007a50144858d485537324046ff229.tar.gz",
     ...         "dffml.tar.gz",
@@ -291,7 +291,7 @@ async def cached_download_unpack_archive(
     ...         "bb9bb47c4e6e4c6b7147bb3c000bc4069d69c0c77a3e560b69f476a78e6b5084adf5467ee83cbbcc47ba5a4a0696fdfc",
     ...     )
     ... )
-    >>> print(len(list(dffml_dir.rglob("**/*"))))
+    >>> print(len(list(dffml_dir.rglob("**/*"))))  # doctest: +SKIP
     124
     """
 

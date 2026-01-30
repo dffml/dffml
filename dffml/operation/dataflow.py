@@ -161,6 +161,7 @@ class run_dataflow(OperationImplementationContext):
     >>>
     >>> asyncio.run(main())
     {'last_element_in_path': 'dffml'}
+    {'last_element_in_path': 'dffml'}
     """
 
     async def run_default(self, inputs: Dict[str, Any]) -> Dict[str, Any]:

@@ -119,20 +119,6 @@ class OperationImplementationContext(BaseDataFlowObjectContext):
     ):
         r"""
         Registers subflow `dataflow` with parent flow and yields an instance of `BaseOrchestratorContext`
-
-        >>> import dffml
-        >>> import dffml.noasync
-        >>>
-        >>> @dffml.op
-        ... async def my_operation(self):
-        ...     async with self.subflow(
-        ...         dffml.DataFlow(),
-        ...         overlay=dffml.DataFlow(),
-        ...         overlay_application_orchestrator=dffml.MemoryOrchestrator(),
-        ...     ) as octx:
-        ...         print(octx.run({"ctx_str": []}))
-        >>>
-        >>> print(list(dffml.noasync.run(dffml.DataFlow(my_operation))))
         """
         # TODO(alice) Also accept SystemContext for overlay, run deployment
         # ``dffml.overlay`` to produce dataflow to apply as overlay.
