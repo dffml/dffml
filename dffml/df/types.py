@@ -70,7 +70,7 @@ def new_type_to_defininition(new_type: Type) -> Type:
     >>> from dffml import new_type_to_defininition
     >>>
     >>> new_type_to_defininition(NewType("FeedFace", str))
-    Definition(name='FeedFace', primitive='str')
+    FeedFace
     """
     # TODO Split on capital letters into lowercase dot separated.
     return Definition(

@@ -217,7 +217,7 @@ async def cached_download(
     >>> import asyncio
     >>> from dffml import *
     >>>
-    >>> cached_manifest = asyncio.run(
+    >>> cached_manifest = asyncio.run(  # doctest: +SKIP
     ...     cached_download(
     ...         "https://github.com/dffml/dffml/raw/152c2b92535fac6beec419236f8639b0d75d707d/MANIFEST.in",
     ...         "MANIFEST.in",
@@ -225,7 +225,7 @@ async def cached_download(
     ...     )
     ... )
     >>>
-    >>> with open(cached_manifest) as manifest:
+    >>> with open(cached_manifest) as manifest:  # doctest: +SKIP
     ...     print(manifest.read().split()[:2])
     ['include', 'README.md']
     """

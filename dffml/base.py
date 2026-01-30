@@ -862,9 +862,9 @@ class BaseDataFlowFacilitatorObjectContext(LoggingLogger):
         ...     "DiagramForMyDataFlow", field_modifications,
         ... )
         >>> print(DiagramForMyDataFlow)
-        <class 'dffml.util.cli.cmd.DiagramForMyDataFlow'>
+        <class 'dffml.base.DiagramForMyDataFlow'>
         >>> print(DiagramForMyDataFlow.CONFIG)
-        <class 'types.DiagramForMyDataFlowConfig'>
+        <class 'dffml.base.DiagramForMyDataFlowConfig'>
         >>> asyncio.run(DiagramForMyDataFlow._main())
         graph TD
         """

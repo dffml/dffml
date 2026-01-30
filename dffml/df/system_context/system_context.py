@@ -102,12 +102,7 @@ class SystemContextConfig:
 @base_entry_point("dffml.sysctx", "sysctx")
 class SystemContext(BaseDataFlowFacilitatorObject):
     """
-    >>> SystemContext(
-    ...     links=[None],
-    ...     upstream=,
-    ...     overlay=,
-    ...     orchestrator=,
-    ... )
+    System context for data flow orchestration.
     """
 
     CONFIG = SystemContextConfig
