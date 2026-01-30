@@ -30,7 +30,6 @@ from ..util.skel import Skel, SkelTemplateConfig
 from ..util.cli.cmd import CMD
 from ..util.entrypoint import load
 from ..base import MissingConfig, config as configdataclass, field
-from ..util.packaging import is_develop
 from ..util.net import cached_download
 from ..util.data import traverse_config_get, export
 from ..util.subprocess import run_command
@@ -592,7 +591,11 @@ class Release(CMD):
                 # Change directory into the clean copy
                 with chdir(clean_dir):
                     # Extract the archive
-                    shutil.unpack_archive(archive_file)
+                    # Python 3.12+ supports filter parameter for tar extraction security
+                    if sys.version_info >= (3, 12):
+                        shutil.unpack_archive(archive_file, filter="data")
+                    else:
+                        shutil.unpack_archive(archive_file)
                     # Upload if not present
                     for cmd in [
                         [sys.executable, "setup.py", "sdist"],

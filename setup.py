@@ -17,7 +17,7 @@ class InstallException(Exception):
     pass
 
 
-if sys.version_info.major != 3 and sys.version_info.minor < 7:
+if sys.version_info.major != 3 or sys.version_info.minor < 7:
     raise InstallException("dffml is incompatible with Python version < 3.7!")
 
 with open(pathlib.Path("dffml", "version.py"), "r") as f:
@@ -67,6 +67,13 @@ setup(
         "Operating System :: OS Independent",
         "Programming Language :: Python :: 3 :: Only",
         "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: 3.14",
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
     ],

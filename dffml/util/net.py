@@ -1,4 +1,5 @@
 import os
+import sys
 import stat
 import shutil
 import pathlib
@@ -308,7 +309,13 @@ async def cached_download_unpack_archive(
 
     async def extractor(download_path):
         try:
-            shutil.unpack_archive(str(download_path), str(directory_path))
+            # Python 3.12+ supports filter parameter for tar extraction security
+            if sys.version_info >= (3, 12):
+                shutil.unpack_archive(
+                    str(download_path), str(directory_path), filter="data"
+                )
+            else:
+                shutil.unpack_archive(str(download_path), str(directory_path))
         except Exception as error:
             shutil.rmtree(directory_path, onerror=on_error)
             raise DirectoryNotExtractedError(directory_path) from error

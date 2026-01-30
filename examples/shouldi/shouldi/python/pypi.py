@@ -1,3 +1,4 @@
+import sys
 import shutil
 import tempfile
 
@@ -26,7 +27,13 @@ async def pypi_package_contents(self, url: str) -> str:
             prefix="pypi-", suffix=".tar.gz"
         ) as package_src_file:
             package_src_file.write(await resp.read())
-            shutil.unpack_archive(package_src_file.name, package_src_dir)
+            # Python 3.12+ supports filter parameter for tar extraction security
+            if sys.version_info >= (3, 12):
+                shutil.unpack_archive(
+                    package_src_file.name, package_src_dir, filter="data"
+                )
+            else:
+                shutil.unpack_archive(package_src_file.name, package_src_dir)
             return {"directory": package_src_dir}
 
 

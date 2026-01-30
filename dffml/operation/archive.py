@@ -138,5 +138,5 @@ async def extract_tar_archive(
         Path to the directory where the archive has been extracted
     """
     with tarfile.open(input_file_path, "r") as tar:
-        tar.extractall(output_directory_path)
+        tar.extractall(output_directory_path, filter="data")
     return {"output_path": output_directory_path}

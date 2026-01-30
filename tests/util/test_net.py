@@ -80,7 +80,11 @@ class TestNet(AsyncTestCase):
             extracted = pathlib.Path(tempdir, "extracted")
 
             # Unpack the archive
-            shutil.unpack_archive(filename, extracted)
+            # Python 3.12+ supports filter parameter for tar extraction security
+            if sys.version_info >= (3, 12):
+                shutil.unpack_archive(filename, extracted, filter="data")
+            else:
+                shutil.unpack_archive(filename, extracted)
 
             self.verify_extracted_contents(extracted)
 
