@@ -1068,7 +1068,7 @@ class MakeDocs(CMD):
         await cached_download(
             "https://raw.githubusercontent.com/python/python-docs-theme/master/python_docs_theme/static/copybutton.js",
             copybutton_path,
-            "061b550f64fb65ccb73fbe61ce15f49c17bc5f30737f42bf3c9481c89f7996d0004a11bf283d6bd26cf0b65130fc1d4b",
+            "737ff62fc7fe3a00450035fe0538d86cb5839b92d5065bf13239dc0f9b053b8dadefa20e8334bf068f5c2e89fcce94f3",
         )
 
         nojekyll_path = pages_path / ".nojekyll"

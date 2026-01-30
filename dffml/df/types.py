@@ -1030,7 +1030,8 @@ class DataFlow:
         # Import seed inputs
         if "seed" in kwargs:
             kwargs["seed"] = [
-                Input._fromdict(**input_data) for input_data in kwargs["seed"]
+                input_data if isinstance(input_data, Input) else Input._fromdict(**input_data)
+                for input_data in kwargs["seed"]
             ]
         # Import input flows
         if "flow" in kwargs:
