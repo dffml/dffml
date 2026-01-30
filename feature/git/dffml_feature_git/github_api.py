@@ -412,9 +412,9 @@ async def old_main(repos, file_path):
 
 import aiohttp
 import contextlib
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from gidgethub.aiohttp import GitHubAPI
-from typing import Any, Dict, List
+from typing import List
 
 
 class GitHubQuery(BaseModel):

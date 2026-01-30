@@ -6,7 +6,6 @@ import sys
 import asyncio
 import pathlib
 import http.server
-from typing import List
 
 import dffml
 import aiohttp

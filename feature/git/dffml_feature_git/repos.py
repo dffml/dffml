@@ -46,8 +46,6 @@ https://mermaid-js.github.io/mermaid-live-editor/edit
           https://github.com/pdxjohnny/httptest \
           /home/pdxjohnny/Documents/python/active-directory-verifiable-credentials-python
 """
-import shutil
-import pathlib
 
 import dffml
 from dffml_feature_git.feature.definitions import (

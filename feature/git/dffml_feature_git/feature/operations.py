@@ -1,6 +1,5 @@
 import os
 import copy
-import shutil
 import asyncio
 import tempfile
 import contextlib
@@ -524,7 +523,7 @@ from typing import List, Dict
 
 
 async def git_ls_remote(session, repo_url):
-    import aiohttp
+    pass
 
     async with session.get(
         f"{repo_url}/info/refs?service=git-upload-pack",

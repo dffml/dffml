@@ -119,7 +119,13 @@ class ContextManagedWrapperSource(WrapperSource):
         Examples
         --------
 
+        >>> from dffml.source.wrapper import ContextManagedWrapperSource
+        >>> from dffml import config
+        >>> @config
+        ... class MyConextManagedSourceConfig:
+        ...     pass
         >>> class MyConextManagedSource(ContextManagedWrapperSource):
+        ...     CONFIG = MyConextManagedSourceConfig
         ...     def arg_zero_is_self_with_remove(*args):
         ...         args = MyConextManagedSource.remove_self_from_args(args)
         ...         return isinstance(args[0], MyConextManagedSource)
@@ -127,7 +133,7 @@ class ContextManagedWrapperSource(WrapperSource):
         ...     def arg_zero_is_self(*args):
         ...         return isinstance(args[0], MyConextManagedSource)
         >>>
-        >>> source = MyConextManagedSource()
+        >>> source = MyConextManagedSource(MyConextManagedSourceConfig())
         >>> print(source.arg_zero_is_self("feedface"))
         True
         >>> print(source.arg_zero_is_self_with_remove("feedface"))

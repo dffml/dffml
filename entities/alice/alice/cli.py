@@ -1,16 +1,9 @@
-import os
 import sys
-import copy
-import pathlib
-import inspect
 import argparse
 import textwrap
 import unittest
-import platform
 import itertools
-import contextlib
-import dataclasses
-from typing import Dict, List, Optional, AsyncIterator, NamedTuple, NewType
+from typing import List
 
 
 import dffml
@@ -18,7 +11,7 @@ import shouldi.cli
 import dffml_operations_innersource.cli
 
 
-from .system_context import Alice, alice_version
+from .system_context import alice_version
 
 # from .threats_md import THREATS_MD_DATAFLOW
 THREATS_MD_DATAFLOW = dffml.DataFlow()

@@ -1,11 +1,7 @@
-import pathlib
-import textwrap
-import itertools
-from typing import NamedTuple, NewType, Optional, Type
+from typing import NewType, Optional
 
 
 import dffml
-import dffml_feature_git.feature.definitions
 
 from .recommended_community_standards import *
 

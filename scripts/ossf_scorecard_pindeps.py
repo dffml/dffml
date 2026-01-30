@@ -7,16 +7,13 @@ import json
 import copy
 import shlex
 import shutil
-import tarfile
 import zipfile
 import pathlib
-import textwrap
 import tempfile
 import functools
 import subprocess
-import dataclasses
 import urllib.request
-from typing import List, Optional
+from typing import List
 
 import tomli_w
 import cachier

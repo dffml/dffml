@@ -18,7 +18,7 @@ from typing import (
     Optional,
     Set,
 )
-from dataclasses import dataclass, is_dataclass, replace
+from dataclasses import dataclass, replace
 from contextlib import asynccontextmanager
 
 from .exceptions import NotOpImp
@@ -28,11 +28,8 @@ from .types import (
     Parameter,
     Stage,
     Definition,
-    NO_DEFAULT,
     primitive_types,
-    primitive_convert,
     resolve_if_forward_ref,
-    new_type_to_defininition,
     create_definition,
     DataFlow,
     APPLY_INSTALLED_OVERLAYS,

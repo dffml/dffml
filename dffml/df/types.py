@@ -19,7 +19,6 @@ from typing import (
     Callable,
     Tuple,
     Type,
-    NewType,
     ForwardRef,
 )
 

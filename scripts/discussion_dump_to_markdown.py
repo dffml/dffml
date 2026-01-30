@@ -99,13 +99,11 @@ After removing the first chapter of Alice's Adventures in Wonderland:
     $ python3 -u dump_discussion.py | wc
        2499   40571  273084
 """
-import os
 import sys
 import json
 import asyncio
 import pathlib
-import tempfile
-from typing import Callable, Type, Union, NewType, Dict
+from typing import Dict
 
 sys.path.append(str(pathlib.Path(__file__).parent.resolve()))
 

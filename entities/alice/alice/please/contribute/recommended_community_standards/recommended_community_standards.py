@@ -1,7 +1,5 @@
 import pathlib
-import textwrap
-import itertools
-from typing import NamedTuple, NewType, Optional, Type
+from typing import NamedTuple, NewType, Optional
 
 
 import dffml

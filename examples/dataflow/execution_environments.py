@@ -19,7 +19,6 @@ TODO
 import asyncio
 import itertools
 
-import httptest
 
 import dffml
 

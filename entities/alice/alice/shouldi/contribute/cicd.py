@@ -2,7 +2,6 @@ from typing import NewType
 
 import dffml
 import dffml_operations_innersource.operations
-import pathlib
 
 
 IsCICDJenkinsLibrary = NewType("IsCICDJenkinsLibrary", bool)
