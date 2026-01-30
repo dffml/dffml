@@ -47,6 +47,8 @@ class TestCachedDownloadServer(httptest.Handler):
 ARCHIVE_HASH = "cd538a17ce51458e3315639eba0650e96740d3d6abadbf174209ee7c5cae000ac739e99d9f32c9c2ba417b0cf67e69b8"
 if sys.version_info.major == 3 and sys.version_info.minor >= 8:
     ARCHIVE_HASH = "28f82a69e04fa2dfb6e09c94082d6c6100c546e23d2331c78f307601ccc0265374c3c8abedff60ad0caccb6e8fc3995a"
+if sys.version_info.major == 3 and sys.version_info.minor >= 12:
+    ARCHIVE_HASH = "9e848802d7a2e129866547af644c6e615b76b6cc56da6c048dac7fbd49bbde0dff8726cf4cdba32a36f9fdc6969c0117"
 
 
 @unittest.skipIf(

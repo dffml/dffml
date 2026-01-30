@@ -481,7 +481,7 @@ class CreateVirtualEnvCommand(ConsoleCommand):
                 self.directory,
             ]
         else:
-            self.cmd = ["python", "-m", "venv", self.directory]
+            self.cmd = [sys.executable, "-m", "venv", self.directory]
         await super().run(ctx)
 
 
@@ -746,7 +746,7 @@ def call_compare_output(func, stdout, *, imports: Optional[str] = None):
         fileobj.seek(0)
         stdin.write(stdout.encode() if isinstance(stdout, str) else stdout)
         stdin.seek(0)
-        return_code = subprocess.call(["python", fileobj.name], stdin=stdin)
+        return_code = subprocess.call([sys.executable, fileobj.name], stdin=stdin)
         return bool(return_code == 0)
 
 
@@ -790,7 +790,7 @@ def call_replace(
         return json.loads(
             subprocess.check_output(
                 [
-                    "python",
+                    sys.executable,
                     python_fileobj.name,
                     cmd_fileobj.name,
                     ctx_fileobj.name,

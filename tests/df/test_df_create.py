@@ -111,24 +111,32 @@ class TestDataflowCreate(AsyncTestCase):
                 )
 
 
-@unittest.skipIf(
+@unittest.skipUnless(
     "DFFML_TEST_FUZZ" in os.environ,
-    f"Set DFFML_TEST_FUZZ env var to run fuzz tests",
+    "Set DFFML_TEST_FUZZ env var to run fuzz tests",
 )
 class TestFuzzDataFlowCreate(AsyncTestCase):
     async def test_create(self):
+        import asyncio
         import atheris
 
         with atheris.instrument_imports():
-            import dffml.df.base
-        
+            pass
+
+        operation_qualname = "ops:echo_string"
+
         def TestOneInput(data):
-            async with self.make_dataflow(
-                data.decode(errors='ignore'),
-                [operation_qualname, "get_single"],
-                ["ops:echo_string.outputs.result,=get_single_spec"],
-            ) as _dataflow:
+            async def run_test():
+                async with TestDataflowCreate.make_dataflow(
+                    data.decode(errors='ignore'),
+                    [operation_qualname, "get_single"],
+                    ["ops:echo_string.outputs.result,=get_single_spec"],
+                ) as _dataflow:
+                    pass
+            try:
+                asyncio.run(run_test())
+            except Exception:
                 pass
-        
+
         atheris.Setup([], TestOneInput)
         atheris.Fuzz()

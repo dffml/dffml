@@ -54,6 +54,12 @@ class TestFileSource(AsyncTestCase):
                                     "plugin": Arg(type=str),
                                     "config": {},
                                 },
+                                "tag": {
+                                    "plugin": Arg(
+                                        type=str, default="untagged"
+                                    ),
+                                    "config": {},
+                                },
                                 "readwrite": {
                                     "plugin": Arg(
                                         action="store_true", default=False,
@@ -66,9 +72,9 @@ class TestFileSource(AsyncTestCase):
                                     ),
                                     "config": {},
                                 },
-                                "tag": {
+                                "mkdirs": {
                                     "plugin": Arg(
-                                        type=str, default="untagged"
+                                        action="store_true", default=False,
                                     ),
                                     "config": {},
                                 },
