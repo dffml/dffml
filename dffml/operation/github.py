@@ -1,4 +1,6 @@
+import os
 import sys
+import unittest
 import dataclasses
 import importlib.util
 
@@ -7,6 +9,7 @@ from ..util.config.inspect import make_config_inspect
 
 
 class TestGitHubOperations(AsyncTestCase):
+    @unittest.skip("Test requires local PyGithub installation path")
     async def test_create_status(self):
         file_path = "~/Documents/python/dffml/.venv/lib/python3.7/site-packages/github/Commit.py"
         module_name = "github.commit"
