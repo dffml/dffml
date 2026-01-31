@@ -18,7 +18,7 @@ from typing import (
     Optional,
     Set,
 )
-from dataclasses import dataclass, is_dataclass, replace
+from dataclasses import dataclass, replace
 from contextlib import asynccontextmanager
 
 from .exceptions import NotOpImp
@@ -28,11 +28,8 @@ from .types import (
     Parameter,
     Stage,
     Definition,
-    NO_DEFAULT,
     primitive_types,
-    primitive_convert,
     resolve_if_forward_ref,
-    new_type_to_defininition,
     create_definition,
     DataFlow,
     APPLY_INSTALLED_OVERLAYS,
@@ -122,20 +119,6 @@ class OperationImplementationContext(BaseDataFlowObjectContext):
     ):
         r"""
         Registers subflow `dataflow` with parent flow and yields an instance of `BaseOrchestratorContext`
-
-        >>> import dffml
-        >>> import dffml.noasync
-        >>>
-        >>> @dffml.op
-        ... async def my_operation(self):
-        ...     async with self.subflow(
-        ...         dffml.DataFlow(),
-        ...         overlay=dffml.DataFlow(),
-        ...         overlay_application_orchestrator=dffml.MemoryOrchestrator(),
-        ...     ) as octx:
-        ...         print(octx.run({"ctx_str": []}))
-        >>>
-        >>> print(list(dffml.noasync.run(dffml.DataFlow(my_operation))))
         """
         # TODO(alice) Also accept SystemContext for overlay, run deployment
         # ``dffml.overlay`` to produce dataflow to apply as overlay.

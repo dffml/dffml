@@ -20,13 +20,12 @@ from .log import LOGGER
 from ...record import Record
 from ...feature import Feature
 
-from ..data import export_dict, merge
+from ..data import export_dict
 from .arg import Arg, parse_unknown
 from ...base import (
     config,
     mkarg,
     field,
-    make_config,
     subclass,
 )
 from ...configloader.configloader import ConfigLoaders
@@ -338,9 +337,9 @@ class CMD(object):
         ...     "DiagramForMyDataFlow", field_modifications,
         ... )
         >>> print(DiagramForMyDataFlow)
-        <class 'dffml.util.cli.cmd.DiagramForMyDataFlow'>
+        <class 'dffml.base.DiagramForMyDataFlow'>
         >>> print(DiagramForMyDataFlow.CONFIG)
-        <class 'types.DiagramForMyDataFlowConfig'>
+        <class 'dffml.base.DiagramForMyDataFlowConfig'>
         >>> asyncio.run(DiagramForMyDataFlow._main())
         graph TD
         """

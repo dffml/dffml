@@ -30,7 +30,6 @@ from ..util.skel import Skel, SkelTemplateConfig
 from ..util.cli.cmd import CMD
 from ..util.entrypoint import load
 from ..base import MissingConfig, config as configdataclass, field
-from ..util.packaging import is_develop
 from ..util.net import cached_download
 from ..util.data import traverse_config_get, export
 from ..util.subprocess import run_command
@@ -592,7 +591,11 @@ class Release(CMD):
                 # Change directory into the clean copy
                 with chdir(clean_dir):
                     # Extract the archive
-                    shutil.unpack_archive(archive_file)
+                    # Python 3.12+ supports filter parameter for tar extraction security
+                    if sys.version_info >= (3, 12):
+                        shutil.unpack_archive(archive_file, filter="data")
+                    else:
+                        shutil.unpack_archive(archive_file)
                     # Upload if not present
                     for cmd in [
                         [sys.executable, "setup.py", "sdist"],
@@ -1065,7 +1068,7 @@ class MakeDocs(CMD):
         await cached_download(
             "https://raw.githubusercontent.com/python/python-docs-theme/master/python_docs_theme/static/copybutton.js",
             copybutton_path,
-            "061b550f64fb65ccb73fbe61ce15f49c17bc5f30737f42bf3c9481c89f7996d0004a11bf283d6bd26cf0b65130fc1d4b",
+            "737ff62fc7fe3a00450035fe0538d86cb5839b92d5065bf13239dc0f9b053b8dadefa20e8334bf068f5c2e89fcce94f3",
         )
 
         nojekyll_path = pages_path / ".nojekyll"

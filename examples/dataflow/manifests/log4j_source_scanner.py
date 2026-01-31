@@ -7,23 +7,16 @@ This is to supplement.
 """
 import os
 import re
-import sys
 import json
-import copy
 import pprint
 import asyncio
 import pathlib
 import logging
 import datetime
 import textwrap
-import unittest
-import itertools
-import importlib
 import contextlib
-import subprocess
-from typing import List, AsyncIterator, Tuple, Any, NamedTuple, Dict
+from typing import List
 
-import dffml.cli.dataflow
 from dffml import *
 
 import dffml_feature_git.feature.operations

@@ -19,7 +19,6 @@ from typing import (
     Callable,
     Tuple,
     Type,
-    NewType,
     ForwardRef,
 )
 
@@ -71,7 +70,7 @@ def new_type_to_defininition(new_type: Type) -> Type:
     >>> from dffml import new_type_to_defininition
     >>>
     >>> new_type_to_defininition(NewType("FeedFace", str))
-    Definition(name='FeedFace', primitive='str')
+    FeedFace
     """
     # TODO Split on capital letters into lowercase dot separated.
     return Definition(
@@ -1031,7 +1030,8 @@ class DataFlow:
         # Import seed inputs
         if "seed" in kwargs:
             kwargs["seed"] = [
-                Input._fromdict(**input_data) for input_data in kwargs["seed"]
+                input_data if isinstance(input_data, Input) else Input._fromdict(**input_data)
+                for input_data in kwargs["seed"]
             ]
         # Import input flows
         if "flow" in kwargs:

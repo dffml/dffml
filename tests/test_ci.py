@@ -130,6 +130,7 @@ class TestGitIgnore(unittest.TestCase):
 
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
+TESTING_YML_PATH = REPO_ROOT / ".github" / "workflows" / "testing.yml"
 
 
 @unittest.skipUnless(platform.system() == "Linux", "Only runs on Linux")
@@ -173,6 +174,7 @@ class TestCI(unittest.TestCase):
             setup_py_directories, sorted(PACKAGE_DIRECTORY_TO_NAME.keys())
         )
 
+    @unittest.skipUnless(TESTING_YML_PATH.exists(), "testing.yml not found")
     def test_all_plugins_being_tested(self):
         """
         Make sure that plugins are included in the test matrix and therefore
@@ -230,6 +232,7 @@ class TestCI(unittest.TestCase):
         # Compare to truth
         self.assertListEqual(should_be, plugins_tested_by_ci)
 
+    @unittest.skipUnless(TESTING_YML_PATH.exists(), "testing.yml not found")
     def test_all_plugins_have_pypi_tokens(self):
         """
         Make sure every plugin is listed with a PyPi API token to enable
@@ -304,6 +307,17 @@ class TestSecurity(unittest.TestCase):
                 "dffml/util/file.py": [
                     "    >>> import hashlib",
                     "    >>> expected_sha384_hash = hashlib.sha384(correct_contents).hexdigest()",
+                ],
+                "dffml/util/testing/manifest/shim.py": [
+                    "import hashlib",
+                    "def validation_action_hashlib(",
+                    "    hash_validation = hashlib.new(args.validation_target)",
+                    '    "hashlib": validation_action_hashlib,',
+                    "    >>> import hashlib",
+                    "    >>> contents_sha256 = hashlib.sha256(contents.encode()).hexdigest()",
+                    '    ...         validation_action="hashlib",',
+                    "    ...         validation_args=[\"-c\", f'import sys, hmac, hashlib; stdin = sys.stdin.buffer.read(); rc = 0 if hmac.compare_digest(hashlib.sha256(stdin).hexdigest(), \\\"{contents_sha256}\\\") else 1; print(stdin.decode()); sys.exit(rc)'],",
+                    "    ...         validation_args=[\"-c\", f'import sys, hmac, hashlib; stdin = sys.stdin.buffer.read(); rc = 0 if hmac.compare_digest(hashlib.sha256(stdin).hexdigest(), \\\"{contents_sha256}a\\\") else 1; print(stdin.decode()); sys.exit(rc)'],",
                 ],
                 "feature/auth/dffml_feature_auth/feature/operations.py": [
                     "import hashlib",

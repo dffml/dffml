@@ -319,11 +319,11 @@ class TestBumpPackages(AsyncTestCase):
         )
 
     async def test_bump_version_original_violates_semantic(self):
-        with self.assertRaisesRegex(RCMissingHyphen, "original.*1\.2\.3rc1"):
+        with self.assertRaisesRegex(RCMissingHyphen, r"original.*1\.2\.3rc1"):
             BumpPackages.bump_version("1.2.3rc1", "0.0.0")
 
     async def test_bump_version_increment_violates_semantic(self):
-        with self.assertRaisesRegex(RCMissingHyphen, "increment.*5\.6\.7rc2"):
+        with self.assertRaisesRegex(RCMissingHyphen, r"increment.*5\.6\.7rc2"):
             BumpPackages.bump_version("1.2.3-rc1", "5.6.7rc2")
 
 

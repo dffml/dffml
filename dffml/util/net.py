@@ -1,4 +1,5 @@
 import os
+import sys
 import stat
 import shutil
 import pathlib
@@ -216,7 +217,7 @@ async def cached_download(
     >>> import asyncio
     >>> from dffml import *
     >>>
-    >>> cached_manifest = asyncio.run(
+    >>> cached_manifest = asyncio.run(  # doctest: +SKIP
     ...     cached_download(
     ...         "https://github.com/dffml/dffml/raw/152c2b92535fac6beec419236f8639b0d75d707d/MANIFEST.in",
     ...         "MANIFEST.in",
@@ -224,7 +225,7 @@ async def cached_download(
     ...     )
     ... )
     >>>
-    >>> with open(cached_manifest) as manifest:
+    >>> with open(cached_manifest) as manifest:  # doctest: +SKIP
     ...     print(manifest.read().split()[:2])
     ['include', 'README.md']
     """
@@ -282,7 +283,7 @@ async def cached_download_unpack_archive(
     >>> import asyncio
     >>> from dffml import cached_download_unpack_archive
     >>>
-    >>> dffml_dir = asyncio.run(
+    >>> dffml_dir = asyncio.run(  # doctest: +SKIP
     ...     cached_download_unpack_archive(
     ...         "https://github.com/dffml/dffml/archive/c4469abfe6007a50144858d485537324046ff229.tar.gz",
     ...         "dffml.tar.gz",
@@ -290,7 +291,7 @@ async def cached_download_unpack_archive(
     ...         "bb9bb47c4e6e4c6b7147bb3c000bc4069d69c0c77a3e560b69f476a78e6b5084adf5467ee83cbbcc47ba5a4a0696fdfc",
     ...     )
     ... )
-    >>> print(len(list(dffml_dir.rglob("**/*"))))
+    >>> print(len(list(dffml_dir.rglob("**/*"))))  # doctest: +SKIP
     124
     """
 
@@ -308,7 +309,13 @@ async def cached_download_unpack_archive(
 
     async def extractor(download_path):
         try:
-            shutil.unpack_archive(str(download_path), str(directory_path))
+            # Python 3.12+ supports filter parameter for tar extraction security
+            if sys.version_info >= (3, 12):
+                shutil.unpack_archive(
+                    str(download_path), str(directory_path), filter="data"
+                )
+            else:
+                shutil.unpack_archive(str(download_path), str(directory_path))
         except Exception as error:
             shutil.rmtree(directory_path, onerror=on_error)
             raise DirectoryNotExtractedError(directory_path) from error

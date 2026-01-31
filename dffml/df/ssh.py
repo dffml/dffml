@@ -32,7 +32,7 @@ For Windows
 
 .. code-block:: console
 
-    $ python -m zipapp -p 'C:\Python36\python.exe' myapp
+    $ python -m zipapp -p 'C:\\Python36\\python.exe' myapp
 
 Running
 
@@ -46,24 +46,17 @@ Workaround for issue with importlib.resources.open_binary and ``.pyz`` files.
 
     $ tar -C ~/.cache/dffml/df/ssh/myapp/ -c --sort=name --mtime="2015-10-21 00:00Z" --owner=0 --group=0 --numeric-owner --pax-option=exthdr.name=%d/PaxHeaders/%f,delete=atime,delete=ctime . | ssh "$USER@$HOST" python -uc "io,os,sys,json,tempfile,atexit,functools,shutil,subprocess,pathlib,tarfile,operator=list(map(__import__,'io,os,sys,json,tempfile,atexit,functools,shutil,subprocess,pathlib,tarfile,operator'.split(',')));tempdir=tempfile.mkdtemp();atexit.register(functools.partial(shutil.rmtree,tempdir));tarfile_obj=tarfile.open(fileobj=io.BytesIO(sys.stdin.buffer.read()),mode='r');env_tarinfo=tarfile_obj.getmember('./env.json');env=json.loads(tarfile_obj.extractfile(env_tarinfo).read().decode());members=list(filter(functools.partial(operator.ne,env_tarinfo),tarfile_obj.getmembers()));tarfile_obj.extractall(path=tempdir,members=members);subprocess.check_call([sys.executable,'-u','-m','myapp'],cwd=tempdir,env={**os.environ,**env})"
 """
-import os
 import sys
-import enum
 import json
-import uuid
 import pathlib
 import tarfile
 import tempfile
-import textwrap
 import contextlib
-import dataclasses
 import asyncio.subprocess
-from typing import AsyncIterator, Tuple, Dict, Any, List, Callable
+from typing import AsyncIterator, Tuple, Dict, Any, List
 
-from ..high_level.dataflow import run
-from .types import DataFlow, Definition, Input
+from .types import DataFlow, Input
 from .base import (
-    BaseOrchestrator,
     BaseContextHandle,
     BaseInputNetwork,
     BaseOperationNetwork,
@@ -72,7 +65,6 @@ from .base import (
     BaseRedundancyChecker,
 )
 from .memory import (
-    MemoryOrchestratorConfig,
     MemoryOrchestratorContext,
     MemoryOrchestrator,
     MemoryInputNetwork,
@@ -83,9 +75,7 @@ from .memory import (
     MEMORYORCHESTRATORCONFIG_MAX_CTXS,
 )
 from .kubernetes_output_server import server_socket_unix_stream, read_messages, PYTHON_CODE, OUTPUT_SERVER
-from ..operation.output import GetSingle, get_single_spec
 from ..base import config, field
-from ..util.crypto import secure_hash
 from ..util.data import export
 from ..util.os import chdir
 from ..util.entrypoint import entrypoint
@@ -93,7 +83,6 @@ from ..util.asynchelper import concurrently
 from ..util.subprocess import (
     run_command,
     run_command_events,
-    exec_subprocess,
     Subprocess,
 )
 from ..util.internal import load_dataflow_from_configloader

@@ -3,7 +3,6 @@ import sys
 import json
 import asyncio
 import pathlib
-import platform
 import textwrap
 import contextlib
 from typing import Dict, List, Any, NewType
@@ -13,7 +12,6 @@ import dffml
 import dffml.cli.dataflow
 import dffml.service.dev
 
-import dffml_config_yaml.configloader
 
 
 # Our data types

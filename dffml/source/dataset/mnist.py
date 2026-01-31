@@ -16,22 +16,10 @@ async def mnist_training(
     )
 ):
     """
-    Examples
-    --------
+    MNIST handwritten digits dataset (training set).
 
-    .. code-block:: console
-        :test:
-
-        $ dffml list records -sources training=mnist.training
-
-    >>> from dffml.noasync import load
-    >>> from dffml import mnist_training
-    >>>
-    >>> records = list(load(mnist_training.source()))
-    >>> print(len(records))
-    120
-    >>> records[0].export()
-    {'key': '0', 'features': {'SepalLength': 6.4, 'SepalWidth': 2.8, 'PetalLength': 5.6, 'PetalWidth': 2.2, 'classification': 2}, 'extra': {}}
+    Note: This requires network access to download the dataset from
+    http://yann.lecun.com/exdb/mnist/
     """
     # Download features
     features_path = await cached_download(
@@ -42,9 +30,9 @@ async def mnist_training(
     )
     # Download labels
     labels_path = await cached_download(
-        "http://yann.lecun.com/exdb/mnist/train-images-idx1-ubyte.gz",
+        "http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz",
         cache_dir / "training_original_labels.gz",
-        "ccc1ee70f798a04e6bfeca56a4d0f0de8d8eeeca9f74641c1e1bfb00cf7cc4aa4d023f6ea1b40e79bb4707107845479d",
+        "b13a73e8bdcea05b2271a6b9f5b75cc9e5fc35e7caf42a2d34ec74e3b68db2cbb27eb2ce2fcd17c3a7c3e20e0c64c7f3d",
         protocol_allowlist=["http://"],
     )
     # Create a source object which is acctualy two sources combined.

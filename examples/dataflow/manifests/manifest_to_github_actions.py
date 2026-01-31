@@ -7,20 +7,16 @@ kubernetes clusters.
 """
 import os
 import sys
-import json
 import copy
 import pprint
 import asyncio
 import pathlib
 import logging
 import textwrap
-import unittest
-import importlib
 import contextlib
 import subprocess
-from typing import List, AsyncIterator, Tuple, Any, NamedTuple, Dict
+from typing import List, AsyncIterator, Any, NamedTuple, Dict
 
-import dffml.cli.dataflow
 from dffml import *
 
 logging.basicConfig(level=logging.DEBUG)

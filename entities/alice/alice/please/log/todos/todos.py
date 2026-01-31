@@ -1,15 +1,7 @@
 import os
-import sys
 import copy
-import pathlib
-import inspect
-import textwrap
-import unittest
-import platform
 import itertools
-import contextlib
-import dataclasses
-from typing import NamedTuple, NewType, Optional, Type, AsyncIterator, Dict
+from typing import NewType, AsyncIterator
 
 
 import dffml
@@ -17,7 +9,6 @@ import dffml_feature_git.feature.definitions
 import dffml_operations_innersource.operations
 
 
-from ...contribute.recommended_community_standards.recommended_community_standards import AliceGitRepo
 from ...contribute.util.gh import gh_issue_create
 
 

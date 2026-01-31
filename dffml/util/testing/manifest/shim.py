@@ -138,7 +138,7 @@ import contextlib
 import subprocess
 import dataclasses
 import importlib.util
-from typing import Dict, List, Callable, Any, Union, Optional
+from typing import Dict, List, Callable, Any, Optional
 
 
 def popen_write_to_stdin(

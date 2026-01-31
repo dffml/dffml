@@ -913,7 +913,6 @@ docs = load_docs_dffml()
 print("Number of dffml docs:", len(docs))
 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.document_loaders import WebBaseLoader
 from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
 
@@ -1099,7 +1098,6 @@ import operator
 from typing import Annotated, Sequence, TypedDict
 
 from langchain import hub
-from langchain.output_parsers import PydanticOutputParser
 from langchain.prompts import PromptTemplate
 from langchain_core.utils.function_calling import convert_to_openai_function
 from langchain_core.utils.function_calling import convert_to_openai_tool

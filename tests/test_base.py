@@ -193,8 +193,11 @@ class FakeTestingContext(BaseDataFlowFacilitatorObjectContext):
 class FakeTestingConfig2:
     name: str = field("Name of FakeTesting2")
     num: float
-    features: Features = Features(
-        Feature("default", int, 1), Feature("features", int, 10)
+    features: Features = field(
+        "Features for FakeTesting2",
+        default_factory=lambda: Features(
+            Feature("default", int, 1), Feature("features", int, 10)
+        ),
     )
     label: str = "unlabeled"
 
